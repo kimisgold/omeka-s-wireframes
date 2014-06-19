@@ -7,7 +7,7 @@
         var import_vocabs = $('body.import.vocabs');
         
         // Populate field template with vocabularies, then make a fresh new property field.
-        $.getJSON('/~kim/omeka-s-wireframes/javascript/vocabularies.json',function(data) {
+        $.getJSON('vocabularies.json',function(data) {
             var properties_list_template = $('.template .all-vocabs ul');
             var count = 0;
             $.each(data, function(i) {
@@ -171,7 +171,7 @@
         // Load prechosen fields.
         $('select[name="item-type"]').change(function() {
             var item_type = $(this).find('option:selected').text().toLowerCase();
-            $.getJSON('/~kim/omeka-s-wireframes/javascript/RDF.json',function(data) {
+            $.getJSON('RDF.json',function(data) {
                 $('#add-item .field:not(.new)').each(function() {
                     if (!$(this).hasClass('keep') && !$(this).hasClass('item-class')) {
                         $(this).remove();
