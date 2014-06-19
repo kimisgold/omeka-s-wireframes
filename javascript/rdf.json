@@ -1,0 +1,18 @@
+{
+    "document":[
+        {
+            "Title (Dublin Core)": "The name given to the resource. Typically, a Title will be a name by which the resource is formally known.",
+            "Contributor (Dublin Core)": "An entity responsible for making contributions to the resource.",
+            "Coverage (Dublin Core)": "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.",
+            "Creator (Dublin Core)": "An entity primarily responsible for making the resource."
+        }
+    ],
+    "still image":[
+        {
+            "Title (Dublin Core)": "The name given to the resource. Typically, a Title will be a name by which the resource is formally known.",
+            "Contributor (Dublin Core)": "An entity responsible for making contributions to the resource.",
+            "Creator (Dublin Core)": "An entity primarily responsible for making the resource.",
+            "Depiction (FOAF)": "A common use of depiction (and depicts) is to indicate the contents of a digital image, for example the people or objects represented in an online photo gallery."
+        }
+    ]
+}

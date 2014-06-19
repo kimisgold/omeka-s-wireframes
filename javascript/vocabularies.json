@@ -1,0 +1,23 @@
+{
+    "Dublin Core":[
+        {
+            "Title": "The name given to the resource. Typically, a Title will be a name by which the resource is formally known.",
+            "Subject": "The topic of the resource.",
+            "Description": "An account of the resource.",
+            "Contributor": "An entity responsible for making contributions to the resource.",
+            "Coverage": "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.",
+            "Creator": "An entity primarily responsible for making the resource.",
+            "Source": "A related resource from which the described resource is derived."
+        }
+    ],
+    "FOAF":[
+        {
+            "Homepage": "A homepage for some thing.",
+            "Is Primary Topic Of": "A document that this thing is the primary topic of. ",
+            "Knows": "A person known by this person (indicating some level of reciprocated interaction between the parties).",
+            "Made": "Something that was made by this agent. ",
+            "Maker": "An agent that made this thing.",
+            "Personal Mailbox": "A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that there is (across time and change) at most one individual that ever has any particular value for foaf:mbox."
+        }
+    ]
+}
