@@ -46,8 +46,13 @@
                 <div class="property">weblog</div>
             </div>
         </div>
-        <div class="sub-class">
-            <h3>Agent (for Omeka Site 1)</h3>
+        <div class="property-set">
+            <div class="actions expand-collapse-parent expand">
+                <a href="#" class="icon-edit expand"><span class="screen-reader-text">Edit property set</span></a>
+                <a href="#" class="icon-ellipsis expand"><span class="screen-reader-text">More details</span></a>
+            </div>
+            <h3>Modified Agent</h3>
+            <span class="owner">created by kimisgold</span>
             <div class="properties">
                 <a href="#" class="expand"><span class="screen-reader-text">Expand/Collapse</span></a>
                 <div class="property">gender</div>
@@ -70,10 +75,14 @@
     </div>
     <div class="class">
         <div class="original-class">
+            <div class="actions expand-collapse-parent expand">
+                <a href="#" class="icon-add"><span class="screen-reader-text">Add new class</span>
+                <a href="#" class="icon-ellipsis expand"><span class="screen-reader-text">More details</span></a>
+            </div>
             <h3 class="title expand">Document</h3>
             <div class="description">
                 <p>The Document class represents those things which are, broadly conceived, 'documents'.</p>
-                <p>The Image class is a sub-class of Document, since all images are documents.</p>
+                <p>The Image class is a property-set of Document, since all images are documents.</p>
             </div>
             <div class="properties">
                 <a href="#" class="expand"><span class="screen-reader-text">Expand/Collapse</span></a>
@@ -85,6 +94,10 @@
     </div>
     <div class="class">
         <div class="original-class">
+            <div class="actions expand-collapse-parent expand">
+                <a href="#" class="icon-add"><span class="screen-reader-text">Add new class</span>
+                <a href="#" class="icon-ellipsis expand"><span class="screen-reader-text">More details</span></a>
+            </div>
             <h3 class="title expand">Group</h3>
             <div class="description">
                 <p>The Group class represents a collection of individual agents (and may itself play the role of a Agent, ie. something that can perform actions).</p>
@@ -98,16 +111,23 @@
     </div>
     <div class="class">
         <div class="original-class">
+            <div class="actions expand-collapse-parent expand">
+                <a href="#" class="icon-add"><span class="screen-reader-text">Add new class</span>
+                <a href="#" class="icon-ellipsis expand"><span class="screen-reader-text">More details</span></a>
+            </div>
             <h3 class="title expand">Image</h3>
             <div class="description">
-                <p>The class Image is a sub-class of Document corresponding to those documents which are images.</p>
+                <p>The class Image is a property-set of Document corresponding to those documents which are images.</p>
             </div>
         </div>
     </div>
     <div class="class">
         <div class="original-class">
-            <h3 class="title expand">Label Property</h3>
-            <div class="original-name">Original name: LabelProperty</div>
+            <div class="actions expand-collapse-parent expand">
+                <a href="#" class="icon-add"><span class="screen-reader-text">Add new class</span>
+                <a href="#" class="icon-ellipsis expand"><span class="screen-reader-text">More details</span></a>
+            </div>
+            <h3 class="title expand">LabelProperty</h3>
             <div class="description">
                 <p>A LabelProperty is any RDF property with texual values that serve as labels.</p>
             </div>
@@ -115,8 +135,11 @@
     </div>
     <div class="class">
         <div class="original-class">
-            <h3 class="title expand">Online Account</h3>
-            <div class="original-name">Original name: OnlineAccount</div>
+            <div class="actions expand-collapse-parent expand">
+                <a href="#" class="icon-add"><span class="screen-reader-text">Add new class</span>
+                <a href="#" class="icon-ellipsis expand"><span class="screen-reader-text">More details</span></a>
+            </div>
+            <h3 class="title expand">OnlineAccount</h3>
             <div class="description">
                 <p>The OnlineAccount class represents the provision of some form of online service, by some party (indicated indirectly via a accountServiceHomepage) to some Agent.</p>
             </div>
@@ -124,24 +147,40 @@
     </div>
     <div class="class">
         <div class="original-class">
+            <div class="actions expand-collapse-parent expand">
+                <a href="#" class="icon-add"><span class="screen-reader-text">Add new class</span>
+                <a href="#" class="icon-ellipsis expand"><span class="screen-reader-text">More details</span></a>
+            </div>
             <h3 class="title expand">OnlineChatAccount</h3>
             <div class="description">
-                <p>A OnlineChatAccount is a OnlineAccount devoted to chat / instant messaging. The account may offer other services too; FOAF's sub-classes of OnlineAccount are not mutually disjoint.</p>
+                <p>A OnlineChatAccount is a OnlineAccount devoted to chat / instant messaging. The account may offer other services too; FOAF's property-setes of OnlineAccount are not mutually disjoint.</p>
             </div>
         </div>
     </div>
     <div class="class">
         <div class="original-class">
+            <div class="actions expand-collapse-parent expand">
+                <a href="#" class="icon-add"><span class="screen-reader-text">Add new class</span>
+                <a href="#" class="icon-ellipsis expand"><span class="screen-reader-text">More details</span></a>
+            </div>
               <h3 class="title expand">OnlineEcommerceAccount</h3>
         </div>
     </div>
     <div class="class">
         <div class="original-class">
+            <div class="actions expand-collapse-parent expand">
+                <a href="#" class="icon-add"><span class="screen-reader-text">Add new class</span>
+                <a href="#" class="icon-ellipsis expand"><span class="screen-reader-text">More details</span></a>
+            </div>
             <h3 class="title expand">OnlineGamingAccount</h3>
         </div>
     </div>
     <div class="class">
         <div class="original-class">
+            <div class="actions expand-collapse-parent expand">
+                <a href="#" class="icon-add"><span class="screen-reader-text">Add new class</span>
+                <a href="#" class="icon-ellipsis expand"><span class="screen-reader-text">More details</span></a>
+            </div>
             <h3 class="title expand">Organization</h3>
             <div class="description">
                 <p>The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc.</p>
@@ -150,16 +189,28 @@
     </div>
     <div class="class">
         <div class="original-class">
+            <div class="actions expand-collapse-parent expand">
+                <a href="#" class="icon-add"><span class="screen-reader-text">Add new class</span>
+                <a href="#" class="icon-ellipsis expand"><span class="screen-reader-text">More details</span></a>
+            </div>
             <h3 class="title expand">Person</h3>
         </div>
     </div>
     <div class="class">
         <div class="original-class">
+            <div class="actions expand-collapse-parent expand">
+                <a href="#" class="icon-add"><span class="screen-reader-text">Add new class</span>
+                <a href="#" class="icon-ellipsis expand"><span class="screen-reader-text">More details</span></a>
+            </div>
             <h3 class="title expand">PersonalProfile</h3>
         </div>
     </div>
     <div class="class">
         <div class="original-class">
+            <div class="actions expand-collapse-parent expand">
+                <a href="#" class="icon-add"><span class="screen-reader-text">Add new class</span>
+                <a href="#" class="icon-ellipsis expand"><span class="screen-reader-text">More details</span></a>
+            </div>
             <h3 class="title expand">Project</h3>
         </div>
     </div>
@@ -169,12 +220,10 @@
     <h2>Properties</h2>
     <div class="property">
         <h3>Account</h3>
-        <div class="original-name">Original name: account</div>
         <div class="description"><p>Indicates an account held by this agent.</p></div>
     </div>
     <div class="property">
         <h3>Account Name</h3>
-        <div class="original-name">Original name: accountName</div>
         <div class="description"><p>Indicates the name (identifier) associated with this online account.</p></div>
     </div>
     <div class="property">
@@ -245,10 +294,6 @@
     <div class="property"><h3>workInfoHomepage</h3></div>
     <div class="property"><h3>workplaceHomepage</h3></div>
     <div class="property"><h3>yahooChatID</h3></div>
-</div>
-
-<div id="page-actions">
-    <a href="edit" class="button">Edit Vocabulary</a>
 </div>
 
 <?php include('../footer.php'); ?>

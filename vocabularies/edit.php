@@ -47,8 +47,9 @@
                     <div class="property">weblog</div>
                 </div>
             </div>
-            <div class="sub-class">
-                <h3>Agent (for Omeka Site 1)</h3>
+            <div class="property-set">
+                <h3>Modified Agent</h3>
+                <span class="owner">Created by kimisgold</span>
                 <div class="properties">
                     <div class="property">gender</div>
                     <div class="property">yahooChatID</div>

@@ -188,6 +188,39 @@ body {
         @include border-radius(3px);
     }
     
+    input[type="checkbox"] ~ label:before {
+        content: "";
+        display: block;
+        float: right;
+        background-color: rgba(0,0,0,.15);
+        height: 1.5 * $base-line-height;
+        width: 1.5 * $base-line-height;
+        margin: rhythm(-.25);
+    }
+    
+    input[type="checkbox"]:checked ~ label:before{
+        content: "\e616";
+        font-family: 'icomoon';
+        speak: none;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        text-align: center;
+        line-height: 1.5 * $base-line-height;
+    }
+    
+    input[type="checkbox"] {
+        position: absolute;
+        left: -9999px;
+    }
+    
+    input[type="checkbox"] ~ label {
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+    }
     /* @end */
 
 /* @end */
@@ -253,7 +286,7 @@ header {
     position: relative;
     
     &:after {
-        content: "\e60f";
+        content: "\e602";
     }
     
     &:last-of-type {
@@ -365,6 +398,7 @@ div[role="main"] {
 .actions {
     float: right;
     width: 7em;
+    text-align: right;
 }
 
 .actions,
@@ -1014,6 +1048,10 @@ div[role="main"] {
     content: "\e615";
 }
 
+.icon-check:before {
+    content: "\e616";
+}
+
 .screen-reader-text {
     position: absolute;
     top: -9999px;
@@ -1421,54 +1459,42 @@ div[role="main"] {
     font-size: $base-font-size;
     line-height: $base-line-height;
     @include trailer(0);
-    display: block;
-    float: left;
-    margin-right: 1em;
-    clear: left;
+    display: inline-block;
+    margin-right: .5em;
 }
-    
+
+.vocabs .owner {
+    display: inline-block;
+
+    &:before {
+        content: "(";
+    }
+
+    &:after {
+        content: ")";
+    }
+}
 
 .vocabs .original-class,
-.vocabs .sub-class {
+.vocabs .property-set {
     background-color: rgba(0,0,0,.08);
     padding: rhythm(.25);
     @include trailer(.25);
     overflow: hidden;
     position: relative;
+
+    .collapse ~ .properties .property {
+        position: static;
+        left: auto
+    }
+    
+    .collapse ~ .properties .property {
+        @include leader(.25);
+    }
     
     .properties {
         clear: left;
-        @include leader(.25);
         display: block;
-        
-        .expand,
-        .collapse {
-            position: absolute;
-            top: rhythm(.25);
-            right: rhythm(.25);
-            color: #000;
-        }
-        
-        .expand:after,
-        .collapse:after {
-            font-family: "icomoon";
-            display: block;
-            cursor: pointer;
-            z-index: 1;
-        }
-        
-        .expand:after {
-            content: "\e613";
-        }
-        
-        .collapse:after {
-            content: "\e611";
-        }
-        
-        .collapse ~ .property {
-            position: static;
-            left: auto
-        }
     }
 
     .property {
@@ -1484,10 +1510,9 @@ div[role="main"] {
     
     .description {
         position: relative;
-        width: 90%;
         
         p {
-            width: 100%;
+            width: 90%;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1499,7 +1524,7 @@ div[role="main"] {
     }
 }
 
-.vocabs .sub-class {
+.vocabs .property-set {
     margin-left: 2em;
 }
 
@@ -1520,19 +1545,18 @@ div[role="main"] {
 }
 
 .vocabs .description {
-    font-weight: italic;
     display: block;
     height: $base-line-height;
     overflow: hidden;
     font-style: italic;
 }
 
-.vocabs .original-name:before {
-    content: "(";
+.vocabs.show .section-nav {
+    @include padding-leader();
 }
 
-.vocabs .original-name:after {
-    content: ")";
-}
+/* @end */
+
+/* @group ----- Edit Property Set ----- */
 
 /* @end */
