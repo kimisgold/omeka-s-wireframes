@@ -30,7 +30,7 @@
         });
         
         
-        $('.section').click(function(e) {
+        $('a.section').click(function(e) {
             e.preventDefault();
             if (!$(this).hasClass('active')) {
                 $('.section.active,.item-section.active').removeClass('active');
@@ -41,10 +41,12 @@
             }
         });
         
-        $(document).on('click', '.expand, .collapse', function(e) {
+        $(document).on('click', 'a.expand, a.collapse', function(e) {
             e.preventDefault();
-            $(this).toggleClass('collapse');
-            $(this).toggleClass('expand');
+            $(this).toggleClass('collapse').toggleClass('expand');
+            if ($('.expand-collapse-parent').length > 0) {
+                $(this).parent().toggleClass('collapse').toggleClass('expand');
+            }
         });
         
         $(document).on('click', '.modal-content .item a', function(e) {

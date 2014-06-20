@@ -14,13 +14,16 @@
     <h2>Classes</h2>
     <div class="class">
         <div class="original-class">
+            <div class="actions expand-collapse-parent expand">
+                <a href="#" class="icon-add"><span class="screen-reader-text">Add new class</span>
+                <a href="#" class="icon-ellipsis expand"><span class="screen-reader-text">More details</span></a>
+            </div>
             <h3 class="title">Agent</h3>
             <div class="description">
-                <p>The Agent class is the class of agents; things that do stuff. A well known sub-class is Person, representing people. Other kinds of agents include Organization and Group.</p>
+                <p>The Agent class is the class of agents; things that do stuff. A well known property-set is Person, representing people. Other kinds of agents include Organization and Group.</p>
                 <p>The Agent class is useful in a few places in FOAF where Person would have been overly specific. For example, the IM chat ID properties such as jabberID are typically associated with people, but sometimes belong to software bots.</p>
             </div>
             <div class="properties">
-                <a href="#" class="expand"><span class="screen-reader-text">Expand/Collapse</span></a>
                 <div class="property">gender</div>
                 <div class="property">yahooChatID</div>
                 <div class="property">account</div>
