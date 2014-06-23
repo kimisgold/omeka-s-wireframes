@@ -7,7 +7,7 @@
         var import_vocabs = $('body.import.vocabs');
         
         // Populate field template with vocabularies, then make a fresh new property field.
-        $.getJSON('vocabularies.json',function(data) {
+        $.getJSON('../javascript/vocabularies.json',function(data) {
             var properties_list_template = $('.template .all-vocabs ul');
             var count = 0;
             $.each(data, function(i) {
