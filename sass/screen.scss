@@ -14,7 +14,7 @@
 /* @group ----- Generic HTML elements ----- */
 
 * {
-    box-sizing: border-box;
+    @include box-sizing(border-box);
 }
 
 em, i {
