@@ -1126,33 +1126,43 @@ div[role="main"] {
     
     button.icon-search {
         height: rhythm();
+        width: rhythm();
         line-height: $base-line-height;
         padding: 0 10px;
         @include border-radius(0 3px 3px 0);
         min-height: intrinsic;
         position: absolute;
         top: rhythm(.5);
+        left: 244px;
+        z-index: 1003;
+        text-indent: -9999px;
+        
+        &:before {
+            text-indent: 0px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            line-height: 24px;
+            width: 100%;
+        }
     }
 
-    input[type="text"] {
+    .item-search > input[type="text"] {
         width: 14em;
         height: rhythm();
     }
     
-    .icon-search {
-        z-index: 1003;
-        position: absolute;
-        top: rhythm(.5);
-        left: 244px;
+    input.page-input {
+        height: rhythm();
     }
     
     .more-options {
         height: rhythm(2);
-        line-height: $base-line-height;
-        padding: padding(.25) 10px;
+        line-height: rhythm(1.5);
+        padding: rhythm(.25) 10px;
         position: absolute;
         top: 0;
-        left: 290px;
+        left: rhythm(3) + 14em;
         @include border-radius(0);
         min-height: intrinsic;
         background-color: #fff;
@@ -1164,6 +1174,7 @@ div[role="main"] {
         
         &:hover {
             color: $red;
+            background-color: #fff;
         }
         
         &.collapse {
@@ -1208,7 +1219,7 @@ div[role="main"] {
         }
         
         .field {
-            @include trailer();
+            @include trailer(.25);
         }
     }
     

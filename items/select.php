@@ -6,8 +6,8 @@
     <div class="modal-search-nav">
         <div class="item-search">
             <input type="text" id="item-list-search">
-            <button type="submit" class="icon-search">
-            <button class="more-options expand">Advanced Search</button>
+            <button type="submit" class="icon-search">Search</button>
+            <a href="#" class="more-options button expand">Advanced Search</a>
             <div class="search-options">
                 <form id="advanced-select-item-search">
                     <div class="field">
@@ -26,7 +26,7 @@
                         <label>Tag</label>
                         <input type="text">
                     </div>
-                    <button type="submit icon-search">Search</button>
+                    <button type="submit">Search</button>
                 </form>
             </div>
         </div>
