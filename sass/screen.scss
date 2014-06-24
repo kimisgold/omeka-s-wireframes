@@ -619,6 +619,11 @@ div[role="main"] {
         } 
     }
     
+    .unset label,
+    .unset .inputs {
+        display: none;
+    }
+    
     .property .set-property {
         position: absolute;
         top: -9999px;
@@ -786,10 +791,11 @@ div[role="main"] {
             right: 10px;
             background-color: #333;
             color: #fff;
-            padding: 0 5px;
             @include border-radius(3px);
             z-index: 1;
             max-width: 100%;
+            @include adjust-font-size-to(14px, 1, $base-font-size);
+            padding: rhythm(.25) 5px;
         }
     
         &:hover + p:before {
@@ -1586,9 +1592,26 @@ div[role="main"] {
 
 /* @group ----- Edit Property Set ----- */
 
-.property-sets .field-description {
-    line-height: $base-line-height;
-    height: $base-line-height;
+.property-sets .field:not(.unset) .field-meta label {
+    display: block;
+    line-height: 1.5 * $base-line-height;
+    height: 1.5 * $base-line-height;
+    @include trailer(.25);
+    
+    &:first-of-type {
+        font-weight: bold;
+        display: inline-block;
+    }
 }
+
+.property-sets .inputs {
+    @include leader(1.75);
+    
+    input[type="text"] {
+        width: 100%;
+        @include trailer(.25);
+    }
+}
+
 
 /* @end */

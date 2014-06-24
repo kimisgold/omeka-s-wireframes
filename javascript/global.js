@@ -132,11 +132,8 @@
             var field_desc = $(this).siblings('.description');
             field_desc.attr('class', 'field-description');
             $(this).parents('.properties').before(field_desc);
-            this_field.find('input[type="text"]').replaceWith(field_label);
+            this_field.find('input[placeholder="name"]').replaceWith(field_label);
             this_field.removeClass('unset');
-            if ($('body').hasClass('property-sets')) {
-                field_label.unwrap();
-            }
         });
 
         
