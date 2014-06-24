@@ -29,7 +29,7 @@
             makeNewField();
         });
         
-        
+        // Switch between section tabs.
         $('a.section').click(function(e) {
             e.preventDefault();
             if (!$(this).hasClass('active')) {
@@ -41,6 +41,7 @@
             }
         });
         
+        // Set classes for expandable/collapsible content.
         $(document).on('click', 'a.expand, a.collapse', function(e) {
             e.preventDefault();
             $(this).toggleClass('collapse').toggleClass('expand');
@@ -49,6 +50,7 @@
             }
         });
         
+        // In the 'Select Item' modal, toggle item details.
         $(document).on('click', '.modal-content .item a', function(e) {
             e.preventDefault();
             if ($(this).parents('.previewed').length > 0) {
@@ -65,7 +67,9 @@
             }
         });
         
+        // Carry over any entered value from simple items search to advanced items search.
         add_edit_items.on('click', '.more-options', function(e) {
+            e.preventDefault();
             var keywords = $('#item-list-search').val();
             $('input[name="advanced-keyword"').val(keywords);
         });
@@ -87,7 +91,7 @@
         });
         
         // Make new property field whenever "add property" button clicked.
-        add_edit_items.on('click', '.add-property', function(e) {
+        $(document).on('click', '.add-property', function(e) {
             e.preventDefault();
             makeNewField();
         });
@@ -130,6 +134,9 @@
             $(this).parents('.properties').before(field_desc);
             this_field.find('input[type="text"]').replaceWith(field_label);
             this_field.removeClass('unset');
+            if ($('body').hasClass('property-sets')) {
+                field_label.unwrap();
+            }
         });
 
         
@@ -196,7 +203,7 @@
         });
         
         // Keep new fields that have been changed.
-        $(document).on('change', '.field input', function() {
+        $(document).on('change', '.items .field input', function() {
             $(this).parents('.field').addClass('keep');
         });
     });
@@ -226,24 +233,25 @@
         } else {
             $('.field.template').before(new_field);
         }
-        
-        $('.modal-link').modal({
-            trigger: '.modal-link',
-            olay:'div.overlay',
-            modals:'div.modal',
-            animationEffect: 'fadein',
-            animationSpeed: 400,
-            moveModalSpeed: 'fast',
-            background: '000000',
-            opacity: 0.8,
-            openOnLoad: false,
-            docClose: true,
-            closeByEscape: true,
-            moveOnScroll: true,
-            resizeWindow: true,
-            close:'.closeBtn'
-        });
-
+        var modal = $('.modal-link');
+        if (modal.length > 0) {
+            $('.modal-link').modal({
+                trigger: '.modal-link',
+                olay:'div.overlay',
+                modals:'div.modal',
+                animationEffect: 'fadein',
+                animationSpeed: 400,
+                moveModalSpeed: 'fast',
+                background: '000000',
+                opacity: 0.8,
+                openOnLoad: false,
+                docClose: true,
+                closeByEscape: true,
+                moveOnScroll: true,
+                resizeWindow: true,
+                close:'.closeBtn'
+            });
+        }
     }
     
     var cleanText = function(text) {

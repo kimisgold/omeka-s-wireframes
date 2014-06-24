@@ -211,6 +211,21 @@ body {
         line-height: 1.5 * $base-line-height;
     }
     
+    input[type="checkbox"] ~ label:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        bottom: 0;
+        background-color: rgba(255,255,255,.75);
+        z-index: 0;
+    }
+    
+    input[type="checkbox"]:checked ~ label:after {
+        background-color: transparent;
+    }
+    
     input[type="checkbox"] {
         position: absolute;
         left: -9999px;
@@ -1570,5 +1585,10 @@ div[role="main"] {
 /* @end */
 
 /* @group ----- Edit Property Set ----- */
+
+.property-sets .field-description {
+    line-height: $base-line-height;
+    height: $base-line-height;
+}
 
 /* @end */

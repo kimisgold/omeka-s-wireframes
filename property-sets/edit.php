@@ -85,11 +85,10 @@
             <input type="checkbox" id="holdsAccount" checked="checked">
             <label for="holdsAccount">holdsAccount</label>
         </div>
-        <div class="field">
-            <input type="checkbox" id="gender" checked="checked">
-            <label for="gender">gender</label>
-        </div>
         <div class="new unset field template">
+            <div class="field-actions">
+                    <a href="#" class="remove button icon-remove"><span class="screen-reader-text">Remove</span></a>
+            </div>
             <div class="field-meta">
                 <input type="text" title="new-property-name" placeholder="name">
                 <div class="properties">
@@ -102,7 +101,7 @@
                 </div>
             </div>
         </div>
-        <button>Add property</button>
+        <button class="add-property">Add property</button>
     </fieldset>
     <div id="save-sidebar" class="section-nav">
         <a href="show" class="button">Add New Set</a>
