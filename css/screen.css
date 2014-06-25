@@ -1828,13 +1828,37 @@ div[role="main"] {
 }
 
 /* line 1607, ../sass/screen.scss */
-.property-sets .inputs {
-  margin-top: 2.625em;
+.property-sets .property-set-meta .field .field-meta label,
+.property-sets .property-set-meta .inputs input[type="text"] {
+  margin-bottom: 0;
 }
-/* line 1610, ../sass/screen.scss */
+
+/* line 1612, ../sass/screen.scss */
 .property-sets .inputs input[type="text"] {
   width: 100%;
   margin-bottom: 0.375em;
+}
+
+/* line 1617, ../sass/screen.scss */
+.property-sets .properties .inputs {
+  margin-top: 2.625em;
+}
+
+/* line 1621, ../sass/screen.scss */
+.property-sets .original-class {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 0.75em;
+  margin-bottom: 1.5em;
+}
+/* line 1626, ../sass/screen.scss */
+.property-sets .original-class h2 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+}
+/* line 1632, ../sass/screen.scss */
+.property-sets .original-class p:last-child {
+  margin-bottom: 0;
 }
 
 /* @end */
