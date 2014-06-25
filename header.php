@@ -1,4 +1,4 @@
-<?php $root = ''; // Set this variable for your local directory structure. ?>
+<?php $root = '/~kim'; // Set this variable for your local directory structure. ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -27,7 +27,7 @@
             <li><a href="<?php echo $root; ?>/omeka-s-wireframes/items/browse" class="icon-items">Items</a></li>
             <li><a href="#" class="icon-item-sets">Item Sets</a></li>
             <li><a href="<?php echo $root; ?>/omeka-s-wireframes/vocabularies/" class="icon-vocabularies">Vocabularies</a></li>
-            <li><a href="#" class="icon-media">Media</a></li>
+            <li><a href="#" class="icon-assets">Assets</a></li>
             <li><a href="#" class="icon-modules">Modules</a></li>
             <li><a href="#" class="icon-users">Users</a></li>
             <li><a href="#" class="icon-sites">Sites</a></li>
