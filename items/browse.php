@@ -19,7 +19,7 @@
         <tr>
             <td><input type="checkbox"></td>
             <td>
-                <span class="item-name"><a href="#">Rocket Row</a></span>
+                <span class="record-name"><a href="#">Rocket Row</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
@@ -33,7 +33,7 @@
         <tr>
             <td><input type="checkbox"></td>
             <td>
-                <span class="item-name"><a href="#">Tennis Courts in the South Yard</a></span>
+                <span class="record-name"><a href="#">Tennis Courts in the South Yard</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
@@ -47,7 +47,7 @@
         <tr>
             <td><input type="checkbox"></td>
             <td>
-                <span class="item-name"><a href="#">Smithsonian South Shed</a></span>
+                <span class="record-name"><a href="#">Smithsonian South Shed</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
@@ -61,7 +61,7 @@
         <tr>
             <td><input type="checkbox"></td>
             <td>
-                <span class="item-name"><a href="#">Japanese Lantern</a></span>
+                <span class="record-name"><a href="#">Japanese Lantern</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
@@ -75,7 +75,7 @@
         <tr>
             <td><input type="checkbox"></td>
             <td>
-                <span class="item-name"><a href="#">Early Cherry Blossom Festival</a></span>
+                <span class="record-name"><a href="#">Early Cherry Blossom Festival</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
@@ -89,7 +89,7 @@
         <tr>
             <td><input type="checkbox"></td>
             <td>
-                <span class="item-name"><a href="#">Discovery of America</a></span>
+                <span class="record-name"><a href="#">Discovery of America</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
@@ -103,7 +103,7 @@
         <tr>
             <td><input type="checkbox"></td>
             <td>
-                <span class="item-name"><a href="#">American Colonization Society Hall</a></span>
+                <span class="record-name"><a href="#">American Colonization Society Hall</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
@@ -117,7 +117,7 @@
         <tr>
             <td><input type="checkbox"></td>
             <td>
-                <span class="item-name"><a href="#">Federal Government Building</a></span>
+                <span class="record-name"><a href="#">Federal Government Building</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
@@ -131,7 +131,7 @@
         <tr>
             <td><input type="checkbox"></td>
             <td>
-                <span class="item-name"><a href="#">United States Slave Trade</a></span>
+                <span class="record-name"><a href="#">United States Slave Trade</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
@@ -145,7 +145,7 @@
         <tr>
             <td><input type="checkbox"></td>
             <td>
-                <span class="item-name"><a href="#">Essay on the City of Washington</a></span>
+                <span class="record-name"><a href="#">Essay on the City of Washington</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
