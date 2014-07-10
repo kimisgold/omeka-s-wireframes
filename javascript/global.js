@@ -29,6 +29,31 @@
             makeNewField();
         });
         
+        // Setup tables' select all checkboxes.
+        $('label[for="select-all"]').click(function(e) {
+            e.preventDefault();
+            var select_all = $(this).siblings('input[type="checkbox"]');
+            var checkboxes = $(this).parents('table').find('td input[type="checkbox"]');
+            var checked = 0;
+            checkboxes.each(function() {
+                if($(this).prop('checked') == true) {
+                    checked = checked + 1;
+                }
+            });
+            if (checked < checkboxes.length) {
+                select_all.prop('checked', 'checked');
+                checkboxes.each(function() {
+                    $(this).prop('checked','checked');
+                });
+            } else {
+                select_all.attr('checked', false);
+                checkboxes.each(function() {
+                    $(this).removeAttr('checked');
+                    $(this).attr('checked', false);
+                });
+            }
+        });
+        
         // Switch between section tabs.
         $('a.section').click(function(e) {
             e.preventDefault();

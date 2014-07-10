@@ -116,7 +116,8 @@ body {
         margin: 0;
     }
     
-    input[type="text"] {
+    input[type="text"],
+    input[type="password"] {
         height: rhythm(1.5);
         border-color: rgba(0,0,0,.15);
         @include rhythm-borders(1px, 0, $base-font-size, solid);
@@ -188,17 +189,37 @@ body {
         @include border-radius(3px);
     }
     
+    input[type="checkbox"] ~ label.screen-reader-text {
+        top: 0;
+        left: 0;
+        text-indent: -9999px;
+    }
+
+    input[type="checkbox"] ~ label.screen-reader-text:before {
+        float:none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+
+    input[type="checkbox"] ~ label.screen-reader-text:after {
+        position: static;
+        content: "";
+    }
+    
     input[type="checkbox"] ~ label:before {
         content: "";
         display: block;
         float: right;
-        background-color: rgba(0,0,0,.15);
+        background-color: rgba(0,0,0,.05);
         height: 1.5 * $base-line-height;
         width: 1.5 * $base-line-height;
         margin: rhythm(-.25);
+        text-indent: 0;
     }
     
-    input[type="checkbox"]:checked ~ label:before{
+    input:checked ~ label:before{
         content: "\e616";
         font-family: 'icomoon';
         speak: none;
@@ -210,19 +231,16 @@ body {
         text-align: center;
         line-height: 1.5 * $base-line-height;
     }
-    
-    input[type="checkbox"] ~ label:after {
-        position: absolute;
-        content: "";
-        left: 0;
-        top: 0;
-        width: 100%;
-        bottom: 0;
-        background-color: rgba(255,255,255,.75);
-        z-index: 0;
+
+    input[type="checkbox"]:checked ~ label:before {
+        background-color: rgba(0,0,0,.15);
     }
     
-    input[type="checkbox"]:checked ~ label:after {
+    input[type="checkbox"]:checked ~ label {
+        background-color: transparent;
+    }
+    
+    input:checked ~ label:after {
         background-color: transparent;
     }
     
@@ -233,8 +251,12 @@ body {
     
     input[type="checkbox"] ~ label {
         display: inline-block;
-        width: 100%;
+        @include calc('width', '100% + ' + rhythm(.5));
         cursor: pointer;
+        z-index: 1;
+        margin: rhythm(-.25);
+        padding: rhythm(.25);
+        background-color: rgba(255,255,255,.5);
     }
     /* @end */
 
@@ -377,20 +399,22 @@ div[role="main"] {
     width: 100%;
 }
 
-.browse table td * {
-    display: inline;
-}
-
 .browse tr {
     border-color: #fff;
     @include trailing-border(5px, 0, $base-font-size, solid);
     background-color: #f2f2f2;
 }
 
+.browse .record-name {
+    display: block;
+    float: left;
+}
+
 .browse td,
 .browse th {
     padding: rhythm(.25) .5em;
     max-width: 5em;
+    position: relative;
 }
 
 .browse td,
@@ -411,9 +435,9 @@ div[role="main"] {
 }
 
 .actions {
+    display: block;
     float: right;
     width: 7em;
-    text-align: right;
 }
 
 .actions,
@@ -453,12 +477,12 @@ div[role="main"] {
     position: fixed;
     border-left: 1px solid #e7e7e7;
     right: gutter();
-    top: 0;
+    top: rhythm(6);
     bottom: 0;
     width: span(3 of 16);
     border-color: #e7e7e7;
     @include trailing-border(1px, 0, $base-font-size, solid);
-    padding-top: rhythm(6);
+    z-index: 100;
     
     a {
         display: block;
@@ -512,9 +536,11 @@ div[role="main"] {
 #save-sidebar {
     width: span(3 of 16);
     position: fixed;
+    border-left: 1px solid #e7e7e7;
     top: 0;
     right: gutter();
     padding: rhythm(1) 0 rhythm() gutter();
+    z-index: 0;
     
     input[type="submit"],
     button,
@@ -830,7 +856,8 @@ div[role="main"] {
         
         select,
         textarea,
-        input[type="text"] {
+        input[type="text"],
+        input[type="password"] {
             width: 75%;
             height: rhythm(1.5);
             padding: rhythm(.25);
