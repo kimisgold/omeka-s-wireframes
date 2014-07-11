@@ -14,26 +14,18 @@
     <fieldset id="user-meta" class="active section">
         <div class="field">
             <div class="field-meta">
-                <label for="username">Username</label>
+                <label for="user-handle">Username</label>
             </div>
             <div class="inputs">
-                <input type="text" id="username" name="username">
+                <input type="text" id="user-handle" name="user-handle">
             </div>
         </div>
         <div class="field">
             <div class="field-meta">
-                <label for="user-first">First Name</label>
+                <label for="user-name">Display Name</label>
             </div>
             <div class="inputs">
-                <input type="text" id="user-first" name="user-first">
-            </div>
-        </div>
-        <div class="field">
-            <div class="field-meta">
-                <label for="user-last">Last Name</label>
-            </div>
-            <div class="inputs">
-                <input type="text" id="user-last" name="user-last">
+                <input type="text" id="user-name" name="user-name">
             </div>
         </div>
         <div class="field">

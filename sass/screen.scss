@@ -193,6 +193,7 @@ body {
         top: 0;
         left: 0;
         text-indent: -9999px;
+        margin: 0;
     }
 
     input[type="checkbox"] ~ label.screen-reader-text:before {
@@ -538,6 +539,7 @@ div[role="main"] {
     position: fixed;
     border-left: 1px solid #e7e7e7;
     top: 0;
+    bottom: 0;
     right: gutter();
     padding: rhythm(1) 0 rhythm() gutter();
     z-index: 0;
