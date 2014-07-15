@@ -153,6 +153,7 @@ body {
         border-color: rgba(0,0,0,.15);
         @include rhythm-borders(1px, 0, $base-font-size, solid);
         margin: 0;
+        display: block;
     }
     
     input[type="submit"],
