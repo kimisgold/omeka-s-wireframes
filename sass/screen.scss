@@ -98,7 +98,15 @@ body {
     
     tr {
         border-color: #d7d7d7;
-        @include trailing-border(1px, 0, $base-font-size, solid);
+        @include leading-border(1px, 0, $base-font-size, solid);
+        
+        &:first-child, &:only-child {
+            border-color: transparent;
+        }
+    }
+    
+    thead + tbody tr:first-child {
+        border-color: #d7d7d7;
     }
     
     /* @end */
@@ -172,12 +180,17 @@ body {
     }
     
     .field {
-        @include trailer(.5);
         float: left;
         width: 100%;
         background-color: #e7e7e7;
         padding: rhythm(.25);
         position: relative;
+        border-color: rgba(0,0,0,.08);
+        @include leading-border(1px, 0, $base-font-size, solid);
+        
+        &:first-child {
+            border-color: transparent;
+        }
     }
 
     select {
@@ -194,6 +207,8 @@ body {
         left: 0;
         text-indent: -9999px;
         margin: 0;
+        width: rhythm(1.5);
+        right: 0;
     }
 
     input[type="checkbox"] ~ label.screen-reader-text:before {
@@ -259,6 +274,11 @@ body {
         padding: rhythm(.25);
         background-color: rgba(255,255,255,.5);
     }
+    
+    fieldset {
+        @include trailer();
+    }
+    
     /* @end */
 
 /* @end */
@@ -273,6 +293,12 @@ body {
     @include border-radius(3px);
     padding: rhythm(.25) 10px;
     @include leader(.25);
+}
+
+table .icon-sortable {
+    opacity: .4;
+    font-size: .75 * $base-font-size;
+    line-height: 100%;
 }
 
 /* @end */
@@ -322,6 +348,7 @@ header {
     margin: 0;
     @include border-radius(0px);
     position: relative;
+    height: rhythm(1.5);
     
     &:after {
         content: "\e602";
@@ -380,6 +407,22 @@ nav ul {
     font-family: "Source Sans Pro", sans-serif;
 }
 
+nav.pagination form {
+    display: inline-block;
+    min-width: min-content;
+    margin-right: 1em;
+}
+
+nav.pagination form * {
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+}
+
+nav.pagination form input[type="text"] {
+    margin-right: .25em;
+}
+
 /* @end */
 
 /* @group ----- Wrappers ----- */
@@ -398,11 +441,10 @@ div[role="main"] {
 
 .browse table {
     width: 100%;
+    @include trailer(.5);
 }
 
 .browse tr {
-    border-color: #fff;
-    @include trailing-border(5px, 0, $base-font-size, solid);
     background-color: #f2f2f2;
 }
 
@@ -416,6 +458,7 @@ div[role="main"] {
     padding: rhythm(.25) .5em;
     max-width: 5em;
     position: relative;
+    min-width: rhythm(1);
 }
 
 .browse td,
@@ -433,6 +476,16 @@ div[role="main"] {
 .browse td:nth-of-type(2),
 .browse th:nth-of-type(2) {
     max-width: 30%;
+}
+
+.browse .add.button,
+.browse .batch-edit.button {
+    float: left;
+    margin-right: .25em;
+}
+
+.browse .pagination {
+    float: right;
 }
 
 .actions {
@@ -803,6 +856,11 @@ div[role="main"] {
         width: 1.5 * $base-font-size;
         text-align: right;
     }
+
+    .field-actions button,
+    .field-actions a.button {
+        min-height: 0;
+    }
     
     .field-description {
         float: right;
@@ -1100,6 +1158,18 @@ div[role="main"] {
 
 .icon-check:before {
     content: "\e616";
+}
+
+.icon-sortable:before {
+    content: "\e617";
+}
+
+.icon-double-arrow-right:before {
+    content: "\e618";
+}
+
+.icon-double-arrow-left:before {
+    content: "\e619";
 }
 
 .screen-reader-text {
