@@ -82,7 +82,7 @@
         </div>
     </fieldset>
     <fieldset id="save-sidebar">
-        <a href="done" class="button">Import Vocabularies</a>
+        <a href="done" class="button">Import Vocabulary</a>
         <a href="index" class="cancel button">Cancel</a>
     </fieldset>
 </form>
