@@ -528,58 +528,38 @@ div[role="main"] {
 
 /* @group ----- Add views ----- */
 
+.add div[role="main"],
+.import div[role="main"],
+.edit div[role="main"] {
+    padding-top: rhythm(3);
+}
+
 .section-nav {
     position: fixed;
-    border-left: 1px solid #e7e7e7;
-    right: gutter();
-    top: rhythm(6);
-    bottom: 0;
-    width: span(3 of 16);
+    top: 0;
+    height: rhythm(2);
+    left: span(3 of 16) + gutter(10);
+    right: 0;
     border-color: #e7e7e7;
     @include trailing-border(1px, 0, $base-font-size, solid);
     z-index: 100;
     
     a {
         display: block;
-        border-color: #e7e7e7;
-        padding: rhythm(.5) gutter(2.5);
-        @include leading-border(1px, .5, $base-font-size, solid);
+        float: left;
+        padding: rhythm(.5) gutter(10);
         position: relative;
         z-index: 100;
     }
     
     .active {
         font-weight: bold;
-        
-        &:before,
-        &:after {
-            content: "";
-            display: block;
-            position: absolute;
-        }
-        
-        &:before {
-            top: 0;
-            left: -1px;
-            height: 100%;
-            width: 2px;
-            background-color: #fff;
-        }
-        
-        &:after {
-            left: 0;
-            right: 0;
-            height: 1px;
-            bottom: -1px;
-            background-color: #e7e7e7;
-        }
     }
 }
 
 .section:not(a),
 .item-section {
     display: none;
-    width: span(10 of 13) - gutter(7);
 }
 
 .section.active,
@@ -589,19 +569,21 @@ div[role="main"] {
 
 #page-actions,
 #save-sidebar {
-    width: span(3 of 16);
+    background-color: #fff;
+    width: span(13 of 16) - gutter(10);
     position: fixed;
-    border-left: 1px solid #e7e7e7;
-    top: 0;
-    bottom: 0;
-    right: gutter();
-    padding: rhythm(1) 0 rhythm() gutter();
+    padding: rhythm(.25) gutter(13) rhythm(.25) gutter();
     z-index: 0;
-    
+    top: 0;
+    height: rhythm(2);
+    right: 0;
+    text-align: right;
+    @include box-shadow(0 0 20px rgba(0,0,0,.08));
+
     input[type="submit"],
     button,
     .button {
-        width: 100%;
+        display: inline-block;
     }
 }
 
@@ -1525,9 +1507,7 @@ div[role="main"] {
     @include opacity(0);
 }
 
-.vocab-inputs {
-    width: span(10 of 13) - gutter(7);
-    
+.vocab-inputs {    
     input[type=text] {
         @include calc('width', "100% - " + (3 * $base-line-height));
     }

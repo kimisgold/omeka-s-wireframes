@@ -1,4 +1,4 @@
-<?php $bodyClass = "add item"; ?>
+<?php $bodyClass = "add items"; ?>
 <?php $js = '<script src="../javascript/jquery.modal.min.js"></script>' ?>
 
 <?php include('../header.php'); ?>
