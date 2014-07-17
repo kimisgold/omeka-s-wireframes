@@ -920,7 +920,7 @@ div[role="main"] {
         input[type="text"],
         input[type="password"] {
             width: 75%;
-            height: rhythm(1.5);
+            min-height: rhythm(1.5);
             padding: rhythm(.25);
         }
         

@@ -49,7 +49,7 @@
                             <a link="#" class="tab icon-link"><span class="screen-reader-text">External Resource</span></a>
                         </div>
                         <div class="active type input-option">
-                            <textarea name="dc-title"></textarea>
+                            <textarea name="dc-title" rows="1"></textarea>
                             <select class="value-language">
                                 <option>English (default)</option>
                                 <option>Afrikaans</option>
@@ -87,7 +87,7 @@
                             <a link="#" class="tab icon-link"><span class="screen-reader-text">External Resource</span></a>
                         </div>
                         <div class="active type input-option">
-                            <textarea name="dc-title"></textarea>
+                            <textarea name="dc-title" rows="1"></textarea>
                             <select class="value-language">
                                 <option>English (default)</option>
                                 <option>Afrikaans</option>
@@ -134,7 +134,7 @@
                             <a link="#" class="tab icon-link"><span class="screen-reader-text">External Resource</span></a>
                         </div>
                         <div class="active type input-option">
-                            <textarea name="dc-title"></textarea>
+                            <textarea name="dc-title" rows="1"></textarea>
                             <select class="value-language">
                                 <option>English (default)</option>
                                 <option>Afrikaans</option>

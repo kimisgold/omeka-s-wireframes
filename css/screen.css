@@ -1089,7 +1089,7 @@ div[role="main"] {
 .inputs input[type="text"],
 .inputs input[type="password"] {
   width: 75%;
-  height: 2.25em;
+  min-height: 2.25em;
   padding: 0.375em;
 }
 /* line 927, ../sass/screen.scss */
