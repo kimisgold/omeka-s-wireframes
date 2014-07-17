@@ -1,3 +1,4 @@
+<?php $bodyClass = "add users"; ?>
 <?php include('../header.php'); ?>
 
 <h1>Add User</h1>
@@ -83,7 +84,7 @@
             <label for="all-settings">Can configure multi-site settings</label>
         </div>
     </fieldset>
-    <div id="save-sidebar" class="section-nav">
+    <div id="save-sidebar">
         <a href="show" class="button">Add user</a>
         <a href="../users" class="button">Cancel</a>
     </div>
