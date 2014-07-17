@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Omeka S</title>
-    <link href="<?php echo $root; ?>/omeka-s-wireframes/css/screen.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo $root; ?>/omeka-s-wireframes/css/style.css" rel="stylesheet" type="text/css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="<?php echo $root; ?>/omeka-s-wireframes/javascript/global.js"></script>
     <?php echo $js; ?>
@@ -13,16 +13,23 @@
 <body class="<?php echo $bodyClass; ?>">
 <header>
     <div class="logo"><a href="<?php echo $root; ?>/omeka-s-wireframes/">Omeka S</a></div>
-    <div id="current-user">
+    <div id="mobile-nav">
+        <a href="#" class="icon-menu button"><span class="screen-reader-text">Navigation Menu</span></a>
+        <a href="#" class="icon-search button"><span class="screen-reader-text">Search Site</span></a>
+        <a href="#" class="icon-user button"><span class="screen-reader-text">User Menu</span></a>
+    </div>
+    <div id="user">
         <p>Welcome, <a href="#">Admin</a></p>
         <p><a href="#">Logout</a></p>
     </div>
     <div id="search">
-        <input type="text" name="global-search">
-        <button>Advanced Options</button>
-        <button type="submit">Search</button>
+        <form id="search-form">
+            <input type="text" name="global-search">
+            <button>Advanced Options</button>
+            <button type="submit">Search</button>
+        </form>
     </div>
-    <nav id="primary-nav">
+    <nav id="menu" role="navigation">
         <ul>
             <li><a href="<?php echo $root; ?>/omeka-s-wireframes/items/browse" class="icon-items">Items</a></li>
             <li><a href="#" class="icon-item-sets">Item Sets</a></li>

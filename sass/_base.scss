@@ -15,3 +15,10 @@ $susy: (
 // Colors
 
 $red: #FF0000;
+
+// Mixins
+
+@mixin calc($property, $expression) { 
+  #{$property}: -webkit-calc(#{$expression}); 
+  #{$property}: calc(#{$expression}); 
+} 
