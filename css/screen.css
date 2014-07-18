@@ -1747,17 +1747,19 @@ div[role="main"] {
   width: 74.54212%;
 }
 /* line 1531, ../sass/screen.scss */
-.vocab-inputs input[type=text] {
+.vocab-inputs input[type=text],
+.vocab-inputs textarea,
+.vocab-inputs select {
   width: -webkit-calc(100% - 72px);
   width: calc(100% - 72px);
 }
-/* line 1535, ../sass/screen.scss */
+/* line 1537, ../sass/screen.scss */
 .vocab-inputs .input-options {
   left: -webkit-calc(100% - 72px);
   left: calc(100% - 72px);
 }
 
-/* line 1540, ../sass/screen.scss */
+/* line 1542, ../sass/screen.scss */
 .vocabs .upload.input-option span {
   display: block;
   background-color: rgba(255, 255, 255, 0.5);
@@ -1769,48 +1771,48 @@ div[role="main"] {
 
 /* @end */
 /* @group ----- Imported Vocabulary ----- */
-/* line 1552, ../sass/screen.scss */
+/* line 1554, ../sass/screen.scss */
 .vocabulary ul {
   padding-left: 0;
   list-style: none;
   overflow: hidden;
 }
 
-/* line 1558, ../sass/screen.scss */
+/* line 1560, ../sass/screen.scss */
 .vocabulary h2 {
   margin-bottom: 0;
 }
 
-/* line 1562, ../sass/screen.scss */
+/* line 1564, ../sass/screen.scss */
 .vocabulary-contents > li {
   font-weight: bold;
 }
-/* line 1565, ../sass/screen.scss */
+/* line 1567, ../sass/screen.scss */
 .vocabulary-contents > li:first-of-type {
   margin-right: 1.04167%;
 }
-/* line 1569, ../sass/screen.scss */
+/* line 1571, ../sass/screen.scss */
 .vocabulary-contents > li li {
   font-weight: normal;
   display: inline;
 }
-/* line 1573, ../sass/screen.scss */
+/* line 1575, ../sass/screen.scss */
 .vocabulary-contents > li li:after {
   content: ", ";
 }
-/* line 1577, ../sass/screen.scss */
+/* line 1579, ../sass/screen.scss */
 .vocabulary-contents > li li:last-child:after {
   content: "";
 }
 
 /* @end */
 /* @group ----- Show Vocabulary ----- */
-/* line 1587, ../sass/screen.scss */
+/* line 1589, ../sass/screen.scss */
 .vocabs h2 {
   margin-bottom: 0;
 }
 
-/* line 1591, ../sass/screen.scss */
+/* line 1593, ../sass/screen.scss */
 .vocabs h3 {
   font-size: 16px;
   line-height: 24px;
@@ -1819,20 +1821,20 @@ div[role="main"] {
   margin-right: .5em;
 }
 
-/* line 1599, ../sass/screen.scss */
+/* line 1601, ../sass/screen.scss */
 .vocabs .owner {
   display: inline-block;
 }
-/* line 1602, ../sass/screen.scss */
+/* line 1604, ../sass/screen.scss */
 .vocabs .owner:before {
   content: "(";
 }
-/* line 1606, ../sass/screen.scss */
+/* line 1608, ../sass/screen.scss */
 .vocabs .owner:after {
   content: ")";
 }
 
-/* line 1611, ../sass/screen.scss */
+/* line 1613, ../sass/screen.scss */
 .vocabs .original-class,
 .vocabs .property-set {
   background-color: rgba(0, 0, 0, 0.08);
@@ -1841,24 +1843,24 @@ div[role="main"] {
   overflow: hidden;
   position: relative;
 }
-/* line 1619, ../sass/screen.scss */
+/* line 1621, ../sass/screen.scss */
 .vocabs .original-class .collapse ~ .properties .property,
 .vocabs .property-set .collapse ~ .properties .property {
   position: static;
   left: auto;
 }
-/* line 1624, ../sass/screen.scss */
+/* line 1626, ../sass/screen.scss */
 .vocabs .original-class .collapse ~ .properties .property,
 .vocabs .property-set .collapse ~ .properties .property {
   margin-top: 0.375em;
 }
-/* line 1628, ../sass/screen.scss */
+/* line 1630, ../sass/screen.scss */
 .vocabs .original-class .properties,
 .vocabs .property-set .properties {
   clear: left;
   display: block;
 }
-/* line 1633, ../sass/screen.scss */
+/* line 1635, ../sass/screen.scss */
 .vocabs .original-class .property,
 .vocabs .property-set .property {
   display: inline-block;
@@ -1872,12 +1874,12 @@ div[role="main"] {
   position: absolute;
   left: -9999px;
 }
-/* line 1644, ../sass/screen.scss */
+/* line 1646, ../sass/screen.scss */
 .vocabs .original-class .description,
 .vocabs .property-set .description {
   position: relative;
 }
-/* line 1647, ../sass/screen.scss */
+/* line 1649, ../sass/screen.scss */
 .vocabs .original-class .description p,
 .vocabs .property-set .description p {
   width: 90%;
@@ -1885,24 +1887,24 @@ div[role="main"] {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 1655, ../sass/screen.scss */
+/* line 1657, ../sass/screen.scss */
 .vocabs .original-class .field-actions,
 .vocabs .property-set .field-actions {
   width: 15%;
 }
 
-/* line 1660, ../sass/screen.scss */
+/* line 1662, ../sass/screen.scss */
 .vocabs .property-set {
   margin-left: 2em;
 }
 
-/* line 1664, ../sass/screen.scss */
+/* line 1666, ../sass/screen.scss */
 .vocabs .section > h2:first-child {
   position: absolute;
   left: -9999px;
 }
 
-/* line 1669, ../sass/screen.scss */
+/* line 1671, ../sass/screen.scss */
 #vocab-properties .property {
   background-color: rgba(0, 0, 0, 0.08);
   margin-bottom: 0.375em;
@@ -1910,12 +1912,12 @@ div[role="main"] {
   overflow: hidden;
 }
 
-/* line 1676, ../sass/screen.scss */
+/* line 1678, ../sass/screen.scss */
 .vocabs .description p:only-child {
   margin-bottom: 0;
 }
 
-/* line 1680, ../sass/screen.scss */
+/* line 1682, ../sass/screen.scss */
 .vocabs .description {
   display: block;
   height: 24px;
@@ -1923,56 +1925,56 @@ div[role="main"] {
   font-style: italic;
 }
 
-/* line 1687, ../sass/screen.scss */
+/* line 1689, ../sass/screen.scss */
 .vocabs.show .section-nav {
   padding-top: 1.5em;
 }
 
 /* @end */
 /* @group ----- Edit Property Set ----- */
-/* line 1695, ../sass/screen.scss */
+/* line 1697, ../sass/screen.scss */
 .property-sets .field:not(.unset) .field-meta label {
   display: block;
   line-height: 36px;
   height: 36px;
   margin-bottom: 0.375em;
 }
-/* line 1701, ../sass/screen.scss */
+/* line 1703, ../sass/screen.scss */
 .property-sets .field:not(.unset) .field-meta label:first-of-type {
   font-weight: bold;
   display: inline-block;
 }
 
-/* line 1707, ../sass/screen.scss */
+/* line 1709, ../sass/screen.scss */
 .property-sets .property-set-meta .field .field-meta label,
 .property-sets .property-set-meta .inputs input[type="text"] {
   margin-bottom: 0;
 }
 
-/* line 1712, ../sass/screen.scss */
+/* line 1714, ../sass/screen.scss */
 .property-sets .inputs input[type="text"] {
   width: 100%;
   margin-bottom: 0.375em;
 }
 
-/* line 1717, ../sass/screen.scss */
+/* line 1719, ../sass/screen.scss */
 .property-sets .properties .inputs {
   margin-top: 2.625em;
 }
 
-/* line 1721, ../sass/screen.scss */
+/* line 1723, ../sass/screen.scss */
 .property-sets .original-class {
   background-color: rgba(0, 0, 0, 0.03);
   padding: 0.75em;
   margin-bottom: 1.5em;
 }
-/* line 1726, ../sass/screen.scss */
+/* line 1728, ../sass/screen.scss */
 .property-sets .original-class h2 {
   font-size: 24px;
   line-height: 24px;
   font-weight: bold;
 }
-/* line 1732, ../sass/screen.scss */
+/* line 1734, ../sass/screen.scss */
 .property-sets .original-class p:last-child {
   margin-bottom: 0;
 }

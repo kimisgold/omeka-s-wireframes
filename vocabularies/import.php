@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="inputs">
-                <textarea id="vocab-prefix" name="vocab-prefix" rows="1" required></textarea>
+                <input type="text" id="vocab-prefix" name="vocab-prefix" required>
             </div>
         </div>
         <div class="field">
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="inputs">
-                <textarea id="namespace-uri" name="namespace-uri" rows="1"></textarea>
+                <input type="text" id="namespace-uri" name="namespace-uri">
             </div>
         </div>
         <div class="field">
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="inputs">
-                <textarea name="vocab-label" id="vocab-label" rows="1"></textarea>
+                <input type="text" name="vocab-label" id="vocab-label">
             </div>
         </div>
         <div class="field">

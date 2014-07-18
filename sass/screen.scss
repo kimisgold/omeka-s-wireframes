@@ -1528,7 +1528,9 @@ div[role="main"] {
 .vocab-inputs {
     width: span(10 of 13) - gutter(7);
     
-    input[type=text] {
+    input[type=text],
+    textarea,
+    select {
         @include calc('width', "100% - " + (3 * $base-line-height));
     }
     
