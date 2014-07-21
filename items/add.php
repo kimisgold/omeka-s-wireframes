@@ -8,14 +8,15 @@
     
 <nav class="section-nav">
     <ul>
-        <li><a href="#" class="item-metadata section active">Metadata</a></li>
-        <li><a href="#" class="item-files section">Files</a></li>
+        <li><a href="#" class="item-values section active">Values</a></li>
+        <li><a href="#" class="item-media section">Media</a></li>
+        <li><a href="#" class="item-visibility section">Visibility</a></li>
     </ul>
 </nav>
 
 <form id="add-item">
 
-    <div id="item-metadata" class="item-section active">
+    <div id="item-values" class="item-section active">
         <fieldset>
             <div class="item-class field">
                 <div class="field-meta">
@@ -27,7 +28,7 @@
                 </div>
                 <div class="inputs">
                     <select name="item-type">
-                        <option>None</option>
+                        <option>Resource</option>
                         <option>Document</option>
                         <option>Still Image</option>
                         <option>Moving Image</option>
@@ -167,6 +168,33 @@
     </div>
     
     <?php include('files.php'); ?>
+
+    <div id="item-visibility" class="item-section">
+        <fieldset>
+            <div class="field">
+                <input type="checkbox" id="item-public" name="item-public">
+                <label for="item-public">Public</label>
+            </div>
+            <div class="field">
+                <input type="checkbox" id="item-sharing" name="item-sharing">
+                <label for="item-sharing">Shareable</label>
+            </div>
+            <div class="field">
+                <div class="field-meta">
+                    <label for="item-set">Item Set</label>
+                </div>
+                <div class="inputs">
+                    <select id="item-set" name="item-set">
+                        <option>War of the Roses</option>
+                        <option>Meiji Era</option>
+                        <option>The Incan Empire</option>
+                    </select>
+                </div>
+                <div class="field-actions">
+                    <a href="#" class="add-value button icon-add"><span class="screen-reader-text">Add Value</span></a>
+                </div>
+        </fieldset>
+    </div>
 
     <fieldset id="save-sidebar">
         <input type="submit" name="add-item-submit" value="Create Item" />

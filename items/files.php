@@ -1,8 +1,8 @@
-<div id="item-files" class="item-section">
+<div id="item-media" class="item-section">
     <div class="existing-files">
     </div>
     <div class="upload-zone">
-        <p>Drag files here or</p>
-        <button>Choose files to upload</button>
+        <p>Drag file here or</p>
+        <button>Choose file to upload</button>
     </div>
 </div>
