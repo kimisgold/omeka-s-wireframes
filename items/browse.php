@@ -21,9 +21,8 @@
     <thead>
         <tr>
             <th><input type="checkbox" id="select-all"><label class="screen-reader-text" for="select-all">Select all</label></th>
-            <th>Name <a href="#" class="icon-sortable"><span class="screen-reader-text">Sort by name</span></a></th>
-            <th>Type <a href="#" class="icon-sortable"><span class="screen-reader-text">Sort by type</span></a></th>
-            <th>Creator <a href="#" class="icon-sortable"><span class="screen-reader-text">Sort by creator</span></a></th>
+            <th>Title <a href="#" class="icon-sortable"><span class="screen-reader-text">Sort by name</span></a></th>
+            <th>Class <a href="#" class="icon-sortable"><span class="screen-reader-text">Sort by type</span></a></th>
             <th>Date Added <a href="#" class="icon-arrow-up"><span class="screen-reader-text">Sort by date added (descending)</span></a></th>
         </tr>
     </thead>
@@ -34,12 +33,10 @@
                 <span class="record-name"><a href="#">Rocket Row</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
                     <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
-            <td></td>
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
@@ -48,12 +45,10 @@
                 <span class="record-name"><a href="#">Tennis Courts in the South Yard</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
                     <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
-            <td></td>
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
@@ -62,12 +57,10 @@
                 <span class="record-name"><a href="#">Smithsonian South Shed</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
                     <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
-            <td></td>
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
@@ -76,12 +69,10 @@
                 <span class="record-name"><a href="#">Japanese Lantern</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
                     <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
-            <td></td>
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
@@ -90,12 +81,10 @@
                 <span class="record-name"><a href="#">Early Cherry Blossom Festival</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
                     <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Event</td>
-            <td></td>
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
@@ -104,12 +93,10 @@
                 <span class="record-name"><a href="#">Discovery of America</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
                     <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
-            <td><a href="#">Luigi Persico (sculptor)</a></td>
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
@@ -118,12 +105,10 @@
                 <span class="record-name"><a href="#">American Colonization Society Hall</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
                     <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
-            <td>I. Cranford Nielson</td>
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
@@ -132,12 +117,10 @@
                 <span class="record-name"><a href="#">Federal Government Building</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
                     <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Event</td>
-            <td><a href="#">Tom Olin (photographer)</a></td>
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
@@ -146,12 +129,10 @@
                 <span class="record-name"><a href="#">United States Slave Trade</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
                     <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Still Image</td>
-            <td>Leonard Harbaugh (builder, original building)</td>
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
@@ -160,12 +141,10 @@
                 <span class="record-name"><a href="#">Essay on the City of Washington</a></span>
                 <ul class="actions">
                     <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-view"><span class="screen-reader-text">View</span></a></li>
                     <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Document</td>
-            <td></td>
             <td>Mar 28, 2014</td>
         </tr>
     </tbody>
