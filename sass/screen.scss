@@ -309,13 +309,22 @@ table .icon-sortable {
 header {
     width: span(3 of 16);
     text-align: left;
-    padding: rhythm() 0;
+    padding: rhythm(1.5) 0 rhythm();
     float: left;
 }
 
 #current-user {
-    display: inline-block;
-    margin-right: 1em;
+    display: block;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    background-color: #333;
+    width: 100%;
+    left: 0;
+    color: #E7E7E7;
+    text-align: right;
+    padding: rhythm(.25) gutter();
+    z-index: 1000;
 }
 
 #current-user p {
@@ -327,6 +336,14 @@ header {
         display: inline-block;
         margin: 0 .5em 0 .25em;
     }
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    padding: rhythm(.25) gutter();
 }
 
 #search {
@@ -431,7 +448,7 @@ nav.pagination form input[type="text"] {
 div[role="main"] {
     width: span(13 of 16);
     margin-left: gutter() + span(3);
-    padding: rhythm() gutter();
+    padding: rhythm(2.25) gutter() rhythm();
     background-color: #fff;
     min-height: 100%;
 }
@@ -531,29 +548,51 @@ div[role="main"] {
 .add div[role="main"],
 .import div[role="main"],
 .edit div[role="main"] {
-    padding-top: rhythm(3);
+    padding-bottom: rhythm(3);
 }
 
 .section-nav {
     position: fixed;
-    top: 0;
-    height: rhythm(2);
+    bottom: 0;
+    height: rhythm(1.75);
     left: span(3 of 16) + gutter(10);
     right: 0;
-    border-color: #e7e7e7;
-    @include trailing-border(1px, 0, $base-font-size, solid);
     z-index: 100;
+    
+    &:before {
+        content: "";
+        height: rhythm(.125);
+        position: fixed;
+        bottom: rhythm(1.75);
+        left: span(3 of 16) + gutter(10);
+        right: 0;
+        z-index: 100;
+        background: #fff;
+        border-color: #e7e7e7;
+        @include leading-border(1px, 0, $base-font-size, solid);
+    }
     
     a {
         display: block;
         float: left;
-        padding: rhythm(.5) gutter(10);
+        padding: rhythm(.375) 1em rhythm(.125) gutter();
         position: relative;
         z-index: 100;
+        background-color: #fff;
+        border-color: #e7e7e7;
+        border-left: 1px solid #e7e7e7;
+        border-right: 1px solid #e7e7e7;
+        @include h-borders(1px, 0, $base-font-size, solid);
+        margin-left: .25em;
+    }
+    
+    li:first-of-type a {
+        margin-left: gutter(13);
     }
     
     .active {
         font-weight: bold;
+        border-top-color: #fff;
     }
 }
 
@@ -572,18 +611,25 @@ div[role="main"] {
     background-color: #fff;
     width: span(13 of 16) - gutter(10);
     position: fixed;
-    padding: rhythm(.25) gutter(13) rhythm(.25) gutter();
+    padding: rhythm(.25) gutter() rhythm(.25) gutter();
     z-index: 0;
-    top: 0;
-    height: rhythm(2);
+    bottom: 0;
+    height: rhythm(1.75);
     right: 0;
     text-align: right;
-    @include box-shadow(0 0 20px rgba(0,0,0,.08));
+    margin-bottom: 0;
+    border-color: #e7e7e7;
+    @include leading-border(1px, 0, $base-font-size, solid);
 
     input[type="submit"],
     button,
     .button {
         display: inline-block;
+        height: rhythm(1.25);
+        padding: rhythm(.125) 1em;
+        line-height: $base-line-height;
+        min-height: 0;
+        vertical-align: top;
     }
 }
 
