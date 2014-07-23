@@ -548,34 +548,35 @@ div[role="main"] {
 .add div[role="main"],
 .import div[role="main"],
 .edit div[role="main"] {
-    padding-bottom: rhythm(3);
+    padding-top: rhythm(4);
 }
 
 .section-nav {
     position: fixed;
-    bottom: 0;
+    top: rhythm(1.625);
     height: rhythm(1.75);
     left: span(3 of 16) + gutter(10);
     right: 0;
     z-index: 100;
+    border-top: 1px solid #fff;
     
     &:before {
         content: "";
         height: rhythm(.125);
         position: fixed;
-        bottom: rhythm(1.75);
+        top: rhythm(3.25);
         left: span(3 of 16) + gutter(10);
         right: 0;
         z-index: 100;
         background: #fff;
         border-color: #e7e7e7;
-        @include leading-border(1px, 0, $base-font-size, solid);
+        @include trailing-border(1px, 0, $base-font-size, solid);
     }
     
     a {
         display: block;
         float: left;
-        padding: rhythm(.375) 1em rhythm(.125) gutter();
+        padding: rhythm(.125) 1em rhythm(.375);
         position: relative;
         z-index: 100;
         background-color: #fff;
@@ -584,6 +585,7 @@ div[role="main"] {
         border-right: 1px solid #e7e7e7;
         @include h-borders(1px, 0, $base-font-size, solid);
         margin-left: .25em;
+        text-align: center;
     }
     
     li:first-of-type a {
@@ -592,7 +594,7 @@ div[role="main"] {
     
     .active {
         font-weight: bold;
-        border-top-color: #fff;
+        border-bottom-color: #fff;
     }
 }
 
@@ -613,13 +615,13 @@ div[role="main"] {
     position: fixed;
     padding: rhythm(.25) gutter() rhythm(.25) gutter();
     z-index: 0;
-    bottom: 0;
+    top: rhythm(1.5);
     height: rhythm(1.75);
     right: 0;
     text-align: right;
     margin-bottom: 0;
     border-color: #e7e7e7;
-    @include leading-border(1px, 0, $base-font-size, solid);
+    @include trailing-border(1px, 0, $base-font-size, solid);
 
     input[type="submit"],
     button,
