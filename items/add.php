@@ -16,9 +16,9 @@
 
 <form id="add-item">
 
-    <div id="item-values" class="item-section active">
+    <div id="item-values" class="section active">
         <fieldset>
-            <div class="item-class field">
+            <div class="item-values field">
                 <div class="field-meta">
                     <label for="item-class">Class</label>
                     <div class="field-description">
@@ -35,7 +35,7 @@
                     </select>
                 </div>
             </div>
-            <div class="field">
+            <div class="item-values field">
                 <div class="field-actions">
                     <a href="#" class="add-value button icon-add"><span class="screen-reader-text">Add Value</span></a>
                 </div>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="field">
+            <div class="item-values field">
                 <div class="field-actions">
                     <a href="#" class="add-value button icon-add"><span class="screen-reader-text">Add Value</span></a>
                 </div>
@@ -111,7 +111,7 @@
                     </div>
                 </div>
             </div>
-            <div class="new field template">
+            <div class="new item-values field template">
                 <div class="field-actions">
                     <a href="#" class="remove button icon-remove"><span class="screen-reader-text">Remove</span></a>
                     <a href="#" class="add-value button icon-add"><span class="screen-reader-text">Add Value</span></a>
@@ -169,7 +169,7 @@
     
     <?php include('files.php'); ?>
 
-    <div id="item-visibility" class="item-section">
+    <div id="item-visibility" class="section">
         <fieldset>
             <div class="field">
                 <input type="checkbox" id="item-public" name="item-public">
@@ -180,19 +180,35 @@
                 <label for="item-sharing">Shareable</label>
             </div>
             <div class="field">
+                <div class="field-actions">
+                    <a href="#" class="add-value button icon-add"><span class="screen-reader-text">Add Value</span></a>
+                </div>
                 <div class="field-meta">
                     <label for="item-set">Item Set</label>
                 </div>
                 <div class="inputs">
-                    <select id="item-set" name="item-set">
-                        <option>War of the Roses</option>
-                        <option>Meiji Era</option>
-                        <option>The Incan Empire</option>
-                    </select>
+                    <div class="value">
+                        <select id="item-set" name="item-set">
+                            <option>War of the Roses</option>
+                            <option>Meiji Era</option>
+                            <option>The Incan Empire</option>
+                        </select>
+                        <button class="remove-value">Remove value</button>
+                    </div>
                 </div>
-                <div class="field-actions">
-                    <a href="#" class="add-value button icon-add"><span class="screen-reader-text">Add Value</span></a>
+            </div>
+            <div class="new item-visibility field template">
+                <div class="inputs">
+                    <div class="value">
+                        <select id="item-set" name="item-set">
+                            <option>War of the Roses</option>
+                            <option>Meiji Era</option>
+                            <option>The Incan Empire</option>
+                        </select>
+                        <button class="remove-value active">Remove value</button>
+                    </div>
                 </div>
+            </div>
         </fieldset>
     </div>
 

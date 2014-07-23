@@ -576,14 +576,12 @@ div[role="main"] {
     }
 }
 
-.section:not(a),
-.item-section {
+.section:not(a) {
     display: none;
     width: span(10 of 13) - gutter(7);
 }
 
-.section.active,
-.item-section.active {
+.section.active {
     display: block;
 }
 
