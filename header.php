@@ -18,7 +18,7 @@
         <a href="#" class="icon-search button"><span class="screen-reader-text">Search Site</span></a>
         <a href="#" class="icon-user button"><span class="screen-reader-text">User Menu</span></a>
     </div>
-    <div id="user">
+    <div id="current-user">
         <p>Welcome, <a href="#">Admin</a></p>
         <p><a href="#">Logout</a></p>
     </div>

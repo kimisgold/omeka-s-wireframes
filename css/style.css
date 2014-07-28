@@ -442,12 +442,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   /* line 317, ../sass/_screen.scss */
-  #user p {
+  #current-user p {
     margin: 0;
     display: inline-block;
   }
   /* line 321, ../sass/_screen.scss */
-  #user p:not(:first-of-type):before {
+  #current-user p:not(:first-of-type):before {
     content: "\2022";
     display: inline-block;
     margin: 0 .5em 0 .25em;
@@ -2040,7 +2040,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: intrinsic;
   }
 
-  /* line 6, ../sass/_tablet.scss */
+  /* @group ---- Header ----- */
+  /* line 8, ../sass/_tablet.scss */
   header {
     width: -webkit-calc(100% - 33.33333%);
     width: calc(100% - 33.33333%);
@@ -2054,35 +2055,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     right: 16.66667%;
     z-index: 1000;
   }
-  /* line 18, ../sass/_tablet.scss */
+  /* line 20, ../sass/_tablet.scss */
   header .button {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
     position: absolute;
     top: 0;
+    z-index: 1001;
   }
-  /* line 24, ../sass/_tablet.scss */
+  /* line 27, ../sass/_tablet.scss */
   header .icon-menu.button {
     left: 0;
     border-right: 1px solid rgba(0, 0, 0, 0.08);
     width: 2.25em;
   }
-  /* line 30, ../sass/_tablet.scss */
+  /* line 33, ../sass/_tablet.scss */
   header .icon-search.button {
     left: 2.25em;
   }
-  /* line 34, ../sass/_tablet.scss */
+  /* line 37, ../sass/_tablet.scss */
   header .icon-user.button {
     right: 0;
   }
 
-  /* line 39, ../sass/_tablet.scss */
+  /* line 42, ../sass/_tablet.scss */
   .logo {
     line-height: 36px;
+    padding: 0 16.66667%;
+    width: 100%;
+    text-align: center;
+    display: block;
   }
 
-  /* line 43, ../sass/_tablet.scss */
+  /* @end */
+  /* line 52, ../sass/_tablet.scss */
   div[role="main"] {
     margin: 2.25em 0 0 0;
     width: 100%;
@@ -2091,8 +2098,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     position: relative;
   }
 
-  /* line 50, ../sass/_tablet.scss */
-  #user,
+  /* line 59, ../sass/_tablet.scss */
+  #current-user,
   #menu,
   #save-sidebar,
   #page-actions,
@@ -2104,9 +2111,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     z-index: 1000;
   }
 
-  /* line 62, ../sass/_tablet.scss */
+  /* line 71, ../sass/_tablet.scss */
   #menu.active,
-  #user.active,
+  #current-user.active,
   #search.active {
     top: 2.25em;
     left: 16.66667%;
@@ -2118,12 +2125,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   /* @group ----- Navigation ----- */
-  /* line 76, ../sass/_tablet.scss */
+  /* line 85, ../sass/_tablet.scss */
   #menu {
     text-align: left;
   }
 
-  /* line 80, ../sass/_tablet.scss */
+  /* line 89, ../sass/_tablet.scss */
   #menu a {
     display: block;
     padding: 0.75em 1.38889%;
@@ -2134,19 +2141,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-color: #fff;
   }
 
-  /* line 88, ../sass/_tablet.scss */
+  /* line 97, ../sass/_tablet.scss */
   #mobile-nav {
     display: block;
   }
 
-  /* line 92, ../sass/_tablet.scss */
+  /* line 101, ../sass/_tablet.scss */
   #mobile-nav a.active {
     background-color: #990000;
   }
 
   /* @end */
   /* @group ----- Search ----- */
-  /* line 100, ../sass/_tablet.scss */
+  /* line 109, ../sass/_tablet.scss */
   #search-form {
     margin: 3em 4.16667%;
   }

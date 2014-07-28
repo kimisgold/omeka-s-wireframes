@@ -3,6 +3,8 @@ body {
     height: intrinsic;
 }
 
+/* @group ---- Header ----- */
+
 header {
     @include calc('width', '100% - ' + (2 * gutter(1)));
     float: none;
@@ -19,6 +21,7 @@ header {
         @include border-radius(0);
         position: absolute;
         top: 0;
+        z-index: 1001;
     }
     
     .icon-menu.button {
@@ -38,7 +41,13 @@ header {
 
 .logo {
     line-height: 1.5 * $base-line-height;
+    padding: 0 gutter(1);
+    width: 100%;
+    text-align: center;
+    display: block;
 }
+
+/* @end */
 
 div[role="main"] {
     margin: rhythm(1.5) 0 0 0;
@@ -47,7 +56,7 @@ div[role="main"] {
     position: relative;
 }
 
-#user,
+#current-user,
 #menu,
 #save-sidebar,
 #page-actions,
@@ -60,7 +69,7 @@ footer {
 }
 
 #menu.active,
-#user.active,
+#current-user.active,
 #search.active {
     top: rhythm(1.5);
     left: gutter(1);
