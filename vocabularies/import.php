@@ -3,7 +3,7 @@
 
 <h1>Import Vocabulary</h1>
 
-<p class="directions">Omeka accepts the following file formats for vocabularies: RDF, N-Triples.</p>
+<p class="directions">Omeka accepts the following file formats for vocabularies: RDF/XML, N-Triples.</p>
 
 <form id="import-vocabs">
     <fieldset class="vocab-inputs">
@@ -13,7 +13,7 @@
             </div>
             <div class="inputs">
                 <select id="vocab-format" name="vocab-format" required>
-                    <option>RDF</option>
+                    <option>RDF/XML</option>
                     <option>N-Triples</option>
                 </select>
             </div>
@@ -27,9 +27,6 @@
                       <span class="default">No file selected</span>
                       <div class="upload-input button">Import from file <input type="file"></div>
                 </div>
-                <div class="input-options">
-                    <a link="#" class="tab icon-upload active"><span class="screen-reader-text">File upload</span></a>
-                </div>
             </div>
         </div>
         <div class="field">
@@ -41,7 +38,7 @@
                 </div>
             </div>
             <div class="inputs">
-                <textarea id="vocab-prefix" name="vocab-prefix" required></textarea>
+                <input type="text" id="vocab-prefix" name="vocab-prefix" required>
             </div>
         </div>
         <div class="field">
@@ -53,7 +50,7 @@
                 </div>
             </div>
             <div class="inputs">
-                <textarea id="namespace-uri" name="namespace-uri"></textarea>
+                <input type="text" id="namespace-uri" name="namespace-uri">
             </div>
         </div>
         <div class="field">
@@ -65,7 +62,7 @@
                 </div>
             </div>
             <div class="inputs">
-                <textarea name="vocab-label" id="vocab-label"></textarea>
+                <input type="text" name="vocab-label" id="vocab-label">
             </div>
         </div>
         <div class="field">
@@ -77,7 +74,7 @@
                 </div>
             </div>
             <div class="inputs">
-                <textarea id="vocab-comment" name="vocab-comment"></textarea>
+                <textarea id="vocab-comment" name="vocab-comment" rows="3"></textarea>
             </div>
         </div>
     </fieldset>

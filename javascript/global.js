@@ -45,8 +45,10 @@
                 });
                 properties_list_template.append(current_vocab);                
             });
-
-            makeNewField();
+            
+            $('form .section').each(function() {
+                makeNewField($(this).attr('id'));
+            });
         });
         
         // Setup tables' select all checkboxes.
@@ -78,7 +80,7 @@
         $('a.section').click(function(e) {
             e.preventDefault();
             if (!$(this).hasClass('active')) {
-                $('.section.active,.item-section.active').removeClass('active');
+                $('.section.active').removeClass('active');
                 var section_class = $(this).attr('class');
                 var section_id = section_class.replace(/section/, '');
                 $(this).addClass('active');
@@ -138,7 +140,7 @@
         // Make new property field whenever "add property" button clicked.
         $(document).on('click', '.add-property', function(e) {
             e.preventDefault();
-            makeNewField();
+            makeNewField('item-values');
         });
         
         
@@ -177,7 +179,7 @@
             var field_desc = $(this).siblings('.description');
             field_desc.attr('class', 'field-description');
             $(this).parents('.properties').before(field_desc);
-            this_field.find('input[placeholder="name"]').replaceWith(field_label);
+            this_field.find('input[placeholder="Property name"]').replaceWith(field_label);
             this_field.removeClass('unset');
         });
 
@@ -185,7 +187,9 @@
         // Make new value inputs whenever "add value" button clicked.
         add_edit_items.on('click', '.add-value', function(e) {
             e.preventDefault();
-            var new_value = $('.field.template .value').first().clone();
+            var value_section = '.' + $(this).parents('.section').attr('id');
+            console.log(value_section);
+            var new_value = $(value_section + '.field.template .value ').first().clone();
             $(this).parents('.field').find('.value').last().after(new_value);
             var value_count = $(this).parents('.field').find('.value').length;
             if (value_count == 2) {
@@ -231,7 +235,7 @@
                 if (data[item_type]) {
                     $.each(data[item_type][0], function(key,value) {
                         if ($('label:contains(' + key + ')').length == 0) {
-                            makeNewField(key,value);
+                            makeNewField('item-values',key,value);
                         }
                     });
                 }
@@ -251,8 +255,10 @@
     });
 
     // Duplicates the new field template, and makes it visible by removing the "template" class.
-    var makeNewField = function(prop,desc) {
-        var new_field = $('.field.template').clone();
+    var makeNewField = function(section,prop,desc) {
+        var field_section = '#' + section;
+        console.log(field_section);
+        var new_field = $(field_section + ' .field.template').clone();
         new_field.removeClass('template');
         new_field.find('.remove-value').removeClass('active');
         if (prop) {
@@ -273,7 +279,8 @@
         if (prop) {
             $('.new.field').first().before(new_field);
         } else {
-            $('.field.template').before(new_field);
+            //$('.field.template').before(new_field);
+            $(field_section).find('fieldset').append(new_field);
         }
         var modal = $('.modal-link');
         if (modal.length > 0) {

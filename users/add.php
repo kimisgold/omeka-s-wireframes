@@ -4,14 +4,14 @@
 
 <nav class="section-nav">
     <ul>
-        <li><a href="#" class="user-meta section active">Metadata</a></li>
+        <li><a href="#" class="user-profile section active">Profile</a></li>
         <li><a href="#" class="user-permissions section">Permissions</a></li>
     </ul>
 </nav>
 
 
 <form id="add-user">
-    <fieldset id="user-meta" class="active section">
+    <fieldset id="user-profile" class="active section">
         <div class="field">
             <div class="field-meta">
                 <label for="user-handle">Username</label>
