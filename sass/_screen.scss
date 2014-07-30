@@ -1764,3 +1764,75 @@ div[role="main"] {
 }
 
 /* @end */
+
+/* @group ----- Install ----- */
+
+body.install {
+    padding: 0;
+    margin: rhythm(2) 0;
+    width: span(8);
+    @include container;
+    height: auto;
+}
+
+.install {
+
+    header {
+        background-color: rgba(0,0,0,.3);
+        position: static;
+        @include container;
+        width: auto;
+        float: none;
+        padding: rhythm() 0;
+        border-color: rgba(0,0,0,.15);
+        border-bottom-color: transparent;
+        @include rhythm-borders(1px, 0, $base-font-size, solid);
+        color: #fff;
+    }
+    
+    .logo {
+        position: static;
+        width: auto;
+        float: none;
+        padding: 0;
+        text-align: center;
+        font-size: 2 * $base-font-size;
+        line-height: 2 * $base-line-height;
+    }
+    
+    div[role="main"] {
+        width: 100%;
+        min-height: 0;
+        margin: 0;
+        padding: rhythm(2) span(1 of 8);
+        border-color: rgba(0,0,0,.15);
+        border-top-color: transparent;
+        @include rhythm-borders(1px, 0, $base-font-size, solid);
+        
+        & > .error {
+            background-color: lighten($red, 45%);
+            margin: 0 0 rhythm();
+        }
+    }
+    
+    label {
+        display: inline-block;
+        width: span(3 of 9);
+    }
+    
+    input {
+          @include calc('width','66.66% - 3px');
+    }
+    
+    button[type="submit"] {
+        display: block;
+        margin: auto;
+        clear: both;
+    }
+    
+    .field:last-of-type {
+        @include trailer();
+    }
+}
+
+/* @end */

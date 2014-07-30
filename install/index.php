@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Omeka S</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../javascript/global.js"></script>
+</head>
+<body class="install">
+<header>
+    <div class="logo">Omeka S</div>
+</header>
+<div role="main">
+    <div class="error">
+        This is an example error.
+    </div>
+    <form id="install-form">
+        <div class="field">
+            <label for="username">Admin username</label>
+            <input type="text" name="username" id="username">
+            <div class="error">
+                Enter username before continuing.
+            </div>
+        </div>
+        <div class="field">
+            <label for="display-name">Name</label>
+            <input type="text" name="display-name" id="display-name">
+        </div>
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div class="field">
+            <label for="confirm-email">Retype Email</label>
+            <input type="text" name="confirm-email" id="confirm-email">
+        </div>
+        <div class="field">
+            <label for="user-password">Password</label>
+            <input type="password" name="user-password" id="user-password">
+        </div>
+        <div class="field">
+            <label for="confirm-password">Retype Password</label>
+            <input type="password" name="confirm-password" id="confirm-password">
+        </div>
+        <button type="submit">Install</button>
+    </form>
+</div>
+<footer>
+</footer>
+</body>
+</html>
