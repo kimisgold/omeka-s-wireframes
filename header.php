@@ -1,4 +1,4 @@
-<?php $root = ''; // Set this variable for your local directory structure. ?>
+<?php $root = '/~kim'; // Set this variable for your local directory structure. ?>
 <!doctype html>
 <html lang="en">
 <head>

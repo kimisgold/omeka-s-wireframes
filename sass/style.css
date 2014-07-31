@@ -290,16 +290,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* @end */
   /* @end */
   /* @group ----- Reusable classes ----- */
-  .error {
-    color: red;
-    display: block;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    padding: 0.375em 10px;
-    margin-top: 0.375em; }
+  .errors {
+    padding: 0;
+    margin: 0; }
+    .errors .error {
+      background-color: rgba(255, 255, 255, 0.5);
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      padding: 0.375em 10px;
+      margin-top: 0.375em;
+      color: red;
+      display: block;
+      width: 100%; }
 
   table .icon-sortable {
     opacity: .4;
@@ -511,32 +514,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-top: 6em; }
 
   .section-nav {
-    position: fixed;
-    top: 2.4375em;
+    border-top: 1px solid #fff;
     height: 2.625em;
-    left: 20.41667%;
-    right: 0;
-    z-index: 100;
-    border-top: 1px solid #fff; }
+    overflow: hidden;
+    *zoom: 1;
+    position: relative;
+    margin-bottom: 1.5em; }
     .section-nav:before {
       content: "";
       height: 0.1875em;
-      position: fixed;
-      top: 4.875em;
-      left: 20.41667%;
+      background-color: #fff;
+      position: absolute;
+      bottom: 1px;
+      left: 0;
       right: 0;
-      z-index: 100;
+      z-index: 0;
       background: #fff;
       border-color: #e7e7e7;
+      border-top-width: 0.0625em;
+      border-top-style: solid;
+      padding-top: -0.0625em;
       border-bottom-width: 0.0625em;
       border-bottom-style: solid;
       padding-bottom: -0.0625em; }
     .section-nav a {
       display: block;
       float: left;
-      padding: 0.1875em 1em 0.5625em;
+      height: 2.25em;
+      line-height: 30px;
+      padding: 0.1875em 1em;
       position: relative;
-      z-index: 100;
+      z-index: 1;
       background-color: #fff;
       border-color: #e7e7e7;
       border-left: 1px solid #e7e7e7;
@@ -549,8 +557,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       padding-bottom: -0.0625em;
       margin-left: .25em;
       text-align: center; }
-    .section-nav li:first-of-type a {
-      margin-left: 1.28205%; }
     .section-nav .active {
       font-weight: bold;
       border-bottom-color: #fff; }
@@ -567,7 +573,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 79.58333%;
     position: fixed;
     padding: 0.375em 1.04167% 0.375em 1.04167%;
-    z-index: 0;
+    z-index: 1;
     top: 2.25em;
     height: 2.625em;
     right: 0;
@@ -1465,6 +1471,74 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       font-weight: bold; }
     .property-sets .original-class p:last-child {
       margin-bottom: 0; }
+
+  /* @end */
+  /* @group ----- Install ----- */
+  body.install {
+    padding: 0;
+    margin: 3em 0;
+    width: 50%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto; }
+    body.install::after {
+      content: " ";
+      display: block;
+      clear: both; }
+
+  .install header {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: static;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    float: none;
+    padding: 1.5em 0;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-bottom-color: transparent;
+    border-width: 0.0625em;
+    border-style: solid;
+    padding: -0.0625em;
+    color: #fff; }
+    .install header::after {
+      content: " ";
+      display: block;
+      clear: both; }
+  .install .logo {
+    position: static;
+    width: auto;
+    float: none;
+    padding: 0;
+    text-align: center;
+    font-size: 32px;
+    line-height: 48px; }
+  .install div[role="main"] {
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: 3em 12.5%;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-top-color: transparent;
+    border-width: 0.0625em;
+    border-style: solid;
+    padding: -0.0625em; }
+    .install div[role="main"] > .error {
+      background-color: #ffe5e5;
+      margin: 0 0 1.5em; }
+  .install label {
+    display: inline-block;
+    width: 33.33333%; }
+  .install input {
+    width: -webkit-calc(66.66% - 3px);
+    width: calc(66.66% - 3px); }
+  .install button[type="submit"] {
+    display: block;
+    margin: auto;
+    clear: both; }
+  .install .field:last-of-type {
+    margin-bottom: 1.5em; }
 
   /* @end */ }
 @media screen and (max-width: 980px) {

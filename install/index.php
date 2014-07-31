@@ -13,16 +13,18 @@
     <div class="logo">Omeka S</div>
 </header>
 <div role="main">
-    <div class="error">
-        This is an example error.
-    </div>
+    <ul class="flash">
+        <li class="error">This is an example error.</li>
+        <li class="warning">This is an example error.</li>
+    </ul>
     <form id="install-form">
         <div class="field">
             <label for="username">Admin username</label>
             <input type="text" name="username" id="username">
-            <div class="error">
-                Enter username before continuing.
-            </div>
+            <ul class="flash">
+                <li class="error">Enter username before continuing.</li>
+                <li class="warning">Enter username before continuing.</li>
+            </ul>
         </div>
         <div class="field">
             <label for="display-name">Name</label>
