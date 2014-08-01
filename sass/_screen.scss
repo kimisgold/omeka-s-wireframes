@@ -1797,17 +1797,14 @@ div[role="main"] {
 
 /* @end */
 
-/* @group ----- Install ----- */
+/* @group ----- Minimal Layout ----- */
 
-body.install {
+body.minimal {
     padding: 0;
     margin: rhythm(2) 0;
     width: span(8);
     @include container;
     height: auto;
-}
-
-.install {
 
     header {
         background-color: rgba(0,0,0,.3);
@@ -1861,6 +1858,13 @@ body.install {
             }
         }
     }
+}
+
+/* @end */
+
+/* @group ----- Install ----- */
+
+.install {
     
     label {
         display: inline-block;

@@ -8,7 +8,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="../javascript/global.js"></script>
 </head>
-<body class="install">
+<body class="install minimal">
 <header>
     <div class="logo">Omeka S</div>
 </header>
