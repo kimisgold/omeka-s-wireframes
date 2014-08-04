@@ -7,7 +7,7 @@
             e.preventDefault();
             var button_class = $(this).attr('class');
             var nav_id = button_class.replace(/button/, '');
-            var nav_object = $('#' + nav_id.replace(/icon-/, ''));
+            var nav_object = $('#' + nav_id.replace(/fa-/, ''));
             if ($('header .active').length > 0) {
                 if (!($(this).hasClass('active'))) {
                     $('header .active').removeClass('active');
@@ -217,7 +217,7 @@
             if (!$(this).hasClass('active')) {
                 tab.siblings('.tab.active').removeClass('active');
                 tab.parent().siblings('.active:not(.remove-value)').removeClass('active');
-                var current_class = '.' + tab.attr('class').split(" icon-")[1];
+                var current_class = '.' + tab.attr('class').split(" fa-")[1];
                 tab.addClass('active');
                 tab.parent().siblings(current_class).addClass('active');
             }

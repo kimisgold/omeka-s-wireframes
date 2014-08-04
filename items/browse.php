@@ -11,19 +11,19 @@
         <input type="text" name="page-input-top" id="page-input-top" value="1" size="4">
         <span class="page-count">of 3</span>
     </form>
-    <a href="#" class="first icon-double-arrow-left button"><span class="screen-reader-text">Previous</span></a>
-    <a href="#" class="previous icon-arrow-left button"><span class="screen-reader-text">Previous</span></a>
-    <a href="#" class="next icon-arrow-right button"><span class="screen-reader-text">Next</span></a>
-    <a href="#" class="last icon-double-arrow-right button"><span class="screen-reader-text">Previous</span></a>
+    <a href="#" class="first fa-angle-double-left button"><span class="screen-reader-text">First</span></a>
+    <a href="#" class="previous fa-angle-left button"><span class="screen-reader-text">Previous</span></a>
+    <a href="#" class="next fa-angle-right button"><span class="screen-reader-text">Next</span></a>
+    <a href="#" class="last fa-angle-double-right button"><span class="screen-reader-text">Last</span></a>
 </nav>
 
 <table id="items-list">
     <thead>
         <tr>
             <th><input type="checkbox" id="select-all"><label class="screen-reader-text" for="select-all">Select all</label></th>
-            <th>Title <a href="#" class="icon-sortable"><span class="screen-reader-text">Sort by name</span></a></th>
-            <th>Class <a href="#" class="icon-sortable"><span class="screen-reader-text">Sort by type</span></a></th>
-            <th>Date Added <a href="#" class="icon-arrow-up"><span class="screen-reader-text">Sort by date added (descending)</span></a></th>
+            <th>Title <a href="#" class="fa-caret-down"><span class="screen-reader-text">Sort by name</span></a></th>
+            <th>Class <a href="#" class="fa-caret-down"><span class="screen-reader-text">Sort by type</span></a></th>
+            <th>Date Added <a href="#" class="fa-caret-up"><span class="screen-reader-text">Sort by date added (descending)</span></a></th>
         </tr>
     </thead>
     <tbody>
@@ -32,8 +32,8 @@
             <td>
                 <span class="record-name"><a href="#">Rocket Row</a></span>
                 <ul class="actions">
-                    <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                    <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
@@ -44,8 +44,8 @@
             <td>
                 <span class="record-name"><a href="#">Tennis Courts in the South Yard</a></span>
                 <ul class="actions">
-                    <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                    <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
@@ -56,8 +56,8 @@
             <td>
                 <span class="record-name"><a href="#">Smithsonian South Shed</a></span>
                 <ul class="actions">
-                    <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                    <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
@@ -68,8 +68,8 @@
             <td>
                 <span class="record-name"><a href="#">Japanese Lantern</a></span>
                 <ul class="actions">
-                    <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                    <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
@@ -80,8 +80,8 @@
             <td>
                 <span class="record-name"><a href="#">Early Cherry Blossom Festival</a></span>
                 <ul class="actions">
-                    <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                    <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Event</td>
@@ -92,8 +92,8 @@
             <td>
                 <span class="record-name"><a href="#">Discovery of America</a></span>
                 <ul class="actions">
-                    <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                    <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
@@ -104,8 +104,8 @@
             <td>
                 <span class="record-name"><a href="#">American Colonization Society Hall</a></span>
                 <ul class="actions">
-                    <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                    <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
@@ -116,8 +116,8 @@
             <td>
                 <span class="record-name"><a href="#">Federal Government Building</a></span>
                 <ul class="actions">
-                    <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                    <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Event</td>
@@ -128,8 +128,8 @@
             <td>
                 <span class="record-name"><a href="#">United States Slave Trade</a></span>
                 <ul class="actions">
-                    <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                    <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Still Image</td>
@@ -140,8 +140,8 @@
             <td>
                 <span class="record-name"><a href="#">Essay on the City of Washington</a></span>
                 <ul class="actions">
-                    <li><a href="#" class="icon-edit"><span class="screen-reader-text">Edit</span></a></li>
-                    <li><a href="#" class="icon-ellipsis"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                    <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
                 </ul>
             </td>
             <td>Document</td>

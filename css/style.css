@@ -250,8 +250,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-indent: 0; }
 
   input:checked ~ label:before {
-    content: "\e616";
-    font-family: 'icomoon';
+    content: "\f00c";
+    font-family: 'FontAwesome';
     speak: none;
     font-weight: normal;
     font-variant: normal;
@@ -379,16 +379,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     position: relative;
     height: 2.25em; }
     #search button:after {
-      content: "\e602"; }
+      content: "\f141"; }
     #search button:last-of-type {
       border-left: 1px solid rgba(255, 255, 255, 0.2);
       -moz-border-radius: 0 3px 3px 0;
       -webkit-border-radius: 0;
       border-radius: 0 3px 3px 0; }
       #search button:last-of-type:after {
-        content: "\e614"; }
+        content: "\f002"; }
     #search button:after {
-      font-family: "icomoon";
+      font-family: "FontAwesome";
       text-indent: 0;
       position: absolute;
       top: 0;
@@ -434,7 +434,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 16px;
     display: inline-block;
     margin-right: .5em;
-    font-family: "icomoon"; }
+    font-family: "FontAwesome"; }
 
   #menu a {
     font-family: "Source Sans Pro", sans-serif; }
@@ -670,10 +670,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-color: transparent;
     color: red;
     padding: 0;
-    font-size: 24px;
-    height: 24px;
     min-height: intrinsic;
     margin: 0; }
+    .field a.remove.button:before,
+    .field a.add-value.button:before {
+      vertical-align: top; }
 
   .unset .value,
   .unset .add-value,
@@ -754,8 +755,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     .properties > ul > li:last-of-type li:last-of-type {
       margin-bottom: 0em; }
     .properties > ul > li:after, .properties > ul > li > ul > li:after {
-      content: "\e613";
-      font-family: "icomoon";
+      content: "\f0da";
+      font-family: "FontAwesome";
       position: absolute;
       right: 10px;
       top: 0.375em; }
@@ -766,7 +767,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     .properties > ul > li > ul > li:after {
       right: 0; }
     .properties > ul > li.show:after {
-      content: "\e611" !important; }
+      content: "\f0d7" !important; }
   .properties > ul > li ul, .properties > ul > li ul ul {
     position: absolute;
     top: -9999px;
@@ -956,14 +957,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* @end */
   /* @end */
   /* @group ----- Iconfont ----- */
-  @font-face {
-    font-family: 'icomoon';
-    src: url("../fonts/icomoon.eot?-luw49f");
-    src: url("../fonts/icomoon.eot?#iefix-luw49f") format("embedded-opentype"), url("../fonts/icomoon.woff?-luw49f") format("woff"), url("../fonts/icomoon.ttf?-luw49f") format("truetype"), url("../fonts/icomoon.svg?-luw49f#icomoon") format("svg");
-    font-weight: normal;
-    font-style: normal; }
-  [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: 'icomoon';
+  [class^="fa-"]:before, [class*=" fa-"]:before {
+    font-family: 'FontAwesome';
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -974,90 +969,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
 
-  .icon-search:before {
-    content: "\e614"; }
+  .fa-items:before {
+    content: "\f1b3"; }
 
-  .icon-remove:before,
-  .icon-close:before {
-    content: "\e60e"; }
-
-  .icon-type:before {
-    content: "\e60c"; }
-
-  .icon-link:before {
-    content: "\e60d"; }
-
-  .icon-edit:before {
-    content: "\e600"; }
-
-  .icon-view:before {
-    content: "\e601"; }
-
-  .icon-ellipsis:before {
-    content: "\e602"; }
-
-  .icon-info:before {
-    content: "\e603"; }
-
-  .icon-items:before {
-    content: "\e604"; }
-
-  .icon-users:before {
-    content: "\e605"; }
-
-  .icon-settings:before {
-    content: "\e607"; }
-
-  .icon-vocabularies:before {
-    content: "\e608"; }
-
-  .icon-item-sets:before {
-    content: "\e609"; }
-
-  .icon-modules:before {
-    content: "\e606"; }
-
-  .icon-assets:before {
-    content: "\e60a"; }
-
-  .icon-sites:before {
-    content: "\e60b"; }
-
-  .icon-add:before {
-    content: "\e60f"; }
-
-  .icon-arrow-down:before {
-    content: "\e611"; }
-
-  .icon-arrow-up:before {
-    content: "\e612"; }
-
-  .icon-arrow-left:before {
-    content: "\e610"; }
-
-  .icon-arrow-right:before {
-    content: "\e613"; }
-
-  .icon-upload:before {
-    content: "\e615"; }
-
-  .icon-check:before {
-    content: "\e616"; }
-
-  .icon-sortable:before {
-    content: "\e617"; }
-
-  .icon-double-arrow-right:before {
-    content: "\e618"; }
-
-  .icon-double-arrow-left:before {
-    content: "\e619"; }
-
-  .icon-menu:before {
-    content: "\e61a"; }
-
-  .icon-user:before {
-    content: "\e61b"; }
+  .fa-text:before {
+    content: "\f11c"; }
 
   .screen-reader-text {
     position: absolute;
@@ -1094,7 +1010,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       font-weight: bold; }
 
   .modal-link.button {
-    clear: both; }
+    float: left; }
 
   .modal-header {
     background-color: rgba(0, 0, 0, 0.2);
@@ -1123,7 +1039,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       padding-bottom: 0.3125em; }
     .modal-search-nav #item-list-search {
       float: left; }
-    .modal-search-nav button.icon-search {
+    .modal-search-nav button.fa-search {
       height: 1.5em;
       width: 1.5em;
       line-height: 24px;
@@ -1137,7 +1053,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       left: 244px;
       z-index: 1003;
       text-indent: -9999px; }
-      .modal-search-nav button.icon-search:before {
+      .modal-search-nav button.fa-search:before {
         text-indent: 0px;
         position: absolute;
         left: 0;
@@ -1174,12 +1090,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       .modal-search-nav .more-options.collapse {
         border-color: transparent; }
     .modal-search-nav .expand:after {
-      content: "\e613";
-      font-family: "icomoon";
+      content: "\f0da";
+      font-family: "FontAwesome";
       margin-left: 3px; }
     .modal-search-nav .collapse:after {
-      content: "\e611";
-      font-family: "icomoon";
+      content: "\f0d7";
+      font-family: "FontAwesome";
       margin-left: 3px; }
     .modal-search-nav .collapse + .search-options {
       left: 0;
@@ -1198,22 +1114,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       .modal-search-nav .search-options label + * {
         display: inline-block;
         width: 70%; }
-      .modal-search-nav .search-options .field {
-        margin-bottom: 0.375em; }
     .modal-search-nav .pagination {
       position: absolute;
       top: 0;
-      right: 0;
+      right: 20px;
       height: 3em; }
       .modal-search-nav .pagination li {
         float: left;
         height: 3em;
-        padding: 0.75em 10px; }
+        padding: 0.75em 1px; }
+      .modal-search-nav .pagination li:first-of-type {
+        padding-right: 10px; }
       .modal-search-nav .pagination input {
         width: 3em;
         text-align: center;
         color: #333;
         margin: 0 3px; }
+      .modal-search-nav .pagination a.button {
+        height: 24px;
+        width: 24px;
+        padding: 0 5px;
+        min-height: 0; }
 
   .search-options {
     clear: left; }
@@ -1228,6 +1149,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       right: 0;
       height: 3em;
       z-index: 1001; }
+    .search-options .field:last-of-type {
+      margin-bottom: 1.5em; }
 
   .closeBtn {
     font-size: 20px;
@@ -1601,13 +1524,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       position: absolute;
       top: 0;
       z-index: 1001; }
-    header .icon-menu.button {
+    header .fa-navicon.button {
       left: 0;
       border-right: 1px solid rgba(0, 0, 0, 0.08);
       width: 2.25em; }
-    header .icon-search.button {
+    header .fa-search.button {
       left: 2.25em; }
-    header .icon-user.button {
+    header .fa-user.button {
       right: 0; }
 
   .logo {

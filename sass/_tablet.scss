@@ -24,17 +24,17 @@ header {
         z-index: 1001;
     }
     
-    .icon-menu.button {
+    .fa-navicon.button {
         left: 0;
         border-right: 1px solid rgba(0,0,0,.08);
         width: rhythm(1.5);
     }
     
-    .icon-search.button {
+    .fa-search.button {
         left: rhythm(1.5);
     }
     
-    .icon-user.button {
+    .fa-user.button {
         right: 0;
     }
 }

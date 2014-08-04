@@ -25,7 +25,7 @@
     <fieldset class="property-set-properties section active">
         <div class="new unset field template">
             <div class="field-actions">
-                    <a href="#" class="remove button icon-remove"><span class="screen-reader-text">Remove</span></a>
+                    <a href="#" class="remove button fa-times"><span class="screen-reader-text">Remove</span></a>
             </div>
             <div class="field-meta">
                 <input type="text" title="new-property-name" placeholder="name">

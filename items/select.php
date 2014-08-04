@@ -1,12 +1,12 @@
 <div id="item-select" class="modal">
     <div class="modal-header">
-        <a href="#" class="closeBtn icon-close"><span class="screen-reader-text">Close Me</span></a>
+        <a href="#" class="closeBtn fa-times"><span class="screen-reader-text">Close Me</span></a>
         <h1>Select Item</h1>
     </div>
     <div class="modal-search-nav">
         <div class="item-search">
             <input type="text" id="item-list-search">
-            <button type="submit" class="icon-search">Search</button>
+            <button type="submit" class="fa-search">Search</button>
             <a href="#" class="more-options button expand">Advanced Search</a>
             <div class="search-options">
                 <form id="advanced-select-item-search">
@@ -33,9 +33,11 @@
         <nav class="pagination">
             <h2 class="screen-reader-text">Pagination</h2>
             <ul>
-                <li><a href="#" class="previous icon-arrow-left"><span class="screen-reader-text">Previous</span></a></li>
                 <li>Page <input type="text" class="page-input" value="1"> of 4</li>
-                <li><a href="#" class="next icon-arrow-right"><span class="screen-reader-text">Next</span></a></li>
+                <li><a href="#" class="first fa-angle-double-left button"><span class="screen-reader-text">First</span></a></li>
+                <li><a href="#" class="previous fa-angle-left button"><span class="screen-reader-text">Previous</span></a></li>
+                <li><a href="#" class="next fa-angle-right button"><span class="screen-reader-text">Next</span></a></li>
+                <li><a href="#" class="last fa-angle-double-right button"><span class="screen-reader-text">Last</span></a></li>
             </ul>
         </nav>
     </div>    

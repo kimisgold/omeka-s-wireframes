@@ -22,7 +22,7 @@
                 <div class="field-meta">
                     <label for="item-class">Class</label>
                     <div class="field-description">
-                        <p class="icon-info"><span class="screen-reader-text">More Info</span></p>
+                        <p class="fa-info-circle"><span class="screen-reader-text">More Info</span></p>
                         <p>Etiam porta sem malesuada magna mollis euismod.</p>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
             </div>
             <div class="item-values field">
                 <div class="field-actions">
-                    <a href="#" class="add-value button icon-add"><span class="screen-reader-text">Add Value</span></a>
+                    <a href="#" class="add-value button fa-plus"><span class="screen-reader-text">Add Value</span></a>
                 </div>
                 <div class="field-meta">
                     <label>Title</label>
@@ -45,9 +45,9 @@
                 <div class="inputs">
                     <div class="value">
                         <div class="input-options">
-                            <a link="#" class="tab active icon-type"><span class="screen-reader-text">Text</span></a>
-                            <a link="#" class="tab icon-items"><span class="screen-reader-text">Omeka Item</span></a>
-                            <a link="#" class="tab icon-link"><span class="screen-reader-text">External Resource</span></a>
+                            <a link="#" class="tab active fa-text"><span class="screen-reader-text">Text</span></a>
+                            <a link="#" class="tab fa-items"><span class="screen-reader-text">Omeka Item</span></a>
+                            <a link="#" class="tab fa-link"><span class="screen-reader-text">External Resource</span></a>
                         </div>
                         <div class="active type input-option">
                             <textarea name="dc-title" rows="1"></textarea>
@@ -75,7 +75,7 @@
             </div>
             <div class="item-values field">
                 <div class="field-actions">
-                    <a href="#" class="add-value button icon-add"><span class="screen-reader-text">Add Value</span></a>
+                    <a href="#" class="add-value button fa-plus"><span class="screen-reader-text">Add Value</span></a>
                 </div>
                 <div class="field-meta">
                     <label>Description</label>
@@ -83,9 +83,9 @@
                 <div class="inputs">
                     <div class="value">
                         <div class="input-options">
-                            <a link="#" class="tab active icon-type"><span class="screen-reader-text">Text</span></a>
-                            <a link="#" class="tab icon-items"><span class="screen-reader-text">Omeka Item</span></a>
-                            <a link="#" class="tab icon-link"><span class="screen-reader-text">External Resource</span></a>
+                            <a link="#" class="tab active fa-text"><span class="screen-reader-text">Text</span></a>
+                            <a link="#" class="tab fa-items"><span class="screen-reader-text">Omeka Item</span></a>
+                            <a link="#" class="tab fa-link"><span class="screen-reader-text">External Resource</span></a>
                         </div>
                         <div class="active type input-option">
                             <textarea name="dc-title" rows="1"></textarea>
@@ -113,8 +113,8 @@
             </div>
             <div class="new item-values field template">
                 <div class="field-actions">
-                    <a href="#" class="remove button icon-remove"><span class="screen-reader-text">Remove</span></a>
-                    <a href="#" class="add-value button icon-add"><span class="screen-reader-text">Add Value</span></a>
+                    <a href="#" class="remove button fa-times"><span class="screen-reader-text">Remove</span></a>
+                    <a href="#" class="add-value button fa-plus"><span class="screen-reader-text">Add Value</span></a>
                 </div>
                 <div class="field-meta">
                     <input type="text" title="new-property-name" placeholder="Property name">
@@ -130,9 +130,9 @@
                 <div class="inputs">
                     <div class="value">
                         <div class="input-options">
-                            <a link="#" class="tab active icon-type"><span class="screen-reader-text">Text</span></a>
-                            <a link="#" class="tab icon-items"><span class="screen-reader-text">Omeka Item</span></a>
-                            <a link="#" class="tab icon-link"><span class="screen-reader-text">External Resource</span></a>
+                            <a link="#" class="tab active fa-text"><span class="screen-reader-text">Text</span></a>
+                            <a link="#" class="tab fa-items"><span class="screen-reader-text">Omeka Item</span></a>
+                            <a link="#" class="tab fa-link"><span class="screen-reader-text">External Resource</span></a>
                         </div>
                         <div class="active type input-option">
                             <textarea name="dc-title" rows="1"></textarea>
@@ -181,7 +181,7 @@
             </div>
             <div class="field">
                 <div class="field-actions">
-                    <a href="#" class="add-value button icon-add"><span class="screen-reader-text">Add Value</span></a>
+                    <a href="#" class="add-value button fa-plus"><span class="screen-reader-text">Add Value</span></a>
                 </div>
                 <div class="field-meta">
                     <label for="item-set">Item Set</label>
