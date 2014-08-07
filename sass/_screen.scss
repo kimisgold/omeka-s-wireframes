@@ -477,6 +477,7 @@ div[role="main"] {
     padding: rhythm(4) gutter() rhythm();
     background-color: #fff;
     min-height: 100%;
+    overflow: hidden;
 }
 
 /* @end */
@@ -671,7 +672,7 @@ div[role="main"] {
         display: block;
         background-color: rgba(255,255,255,.5);
         padding: rhythm(.25) 10px;
-        width: 75%;
+        width: 100%;
         float: left;
     }
     
@@ -968,7 +969,7 @@ div[role="main"] {
         textarea,
         input[type="text"],
         input[type="password"] {
-            width: 75%;
+            width: 100%;
             min-height: rhythm(1.5);
             padding: rhythm(.25);
         }
@@ -992,7 +993,6 @@ div[role="main"] {
             
             &:last-of-type {
                 border-right: 0;
-                @include border-radius(0 3px 3px 0);
             }
             
             &:hover {
@@ -1060,10 +1060,10 @@ div[role="main"] {
     }
     
     .input-options {
-        position: absolute;
-        left: 75%;
-        top: 0;
         text-align: center;
+        width: 100%;
+        float: left;
+        background-color: rgba(0,0,0,.15);
     }
     
     .input-option {
@@ -1080,8 +1080,12 @@ div[role="main"] {
     
     .upload-zone {
         background-color: rgba(0,0,0,.08);
-        padding: rhythm() gutter();
+        padding: rhythm(2) gutter() rhythm() gutter();
         text-align: center;
+        
+        p {
+            @include trailer(0);
+        }
     }
     
     #item-files button {
@@ -1736,6 +1740,7 @@ body.minimal {
         padding: rhythm(2) span(1 of 8);
         border-color: rgba(0,0,0,.15);
         border-top-color: transparent;
+        overflow: hidden;
         @include rhythm-borders(1px, 0, $base-font-size, solid);
         
         & > .flash {

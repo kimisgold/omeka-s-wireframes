@@ -462,7 +462,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 19.79167%;
     padding: 6em 1.04167% 1.5em;
     background-color: #fff;
-    min-height: 100%; }
+    min-height: 100%;
+    overflow: hidden; }
 
   /* @end */
   /* @group ----- Browse views ----- */
@@ -634,7 +635,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 0.375em 10px;
-    width: 75%;
+    width: 100%;
     float: left; }
 
   .items.input-option a.button {
@@ -861,7 +862,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     .inputs textarea,
     .inputs input[type="text"],
     .inputs input[type="password"] {
-      width: 75%;
+      width: 100%;
       min-height: 2.25em;
       padding: 0.375em; }
     .inputs select {
@@ -879,10 +880,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       position: relative;
       cursor: pointer; }
       .inputs .tab:last-of-type {
-        border-right: 0;
-        -moz-border-radius: 0 3px 3px 0;
-        -webkit-border-radius: 0;
-        border-radius: 0 3px 3px 0; }
+        border-right: 0; }
       .inputs .tab:hover {
         background-color: red; }
       .inputs .tab.active {
@@ -933,10 +931,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       display: block; }
 
   .input-options {
-    position: absolute;
-    left: 75%;
-    top: 0;
-    text-align: center; }
+    text-align: center;
+    width: 100%;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.15); }
 
   .input-option {
     display: none; }
@@ -948,8 +946,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* @group ----- Files ----- */
   .upload-zone {
     background-color: rgba(0, 0, 0, 0.08);
-    padding: 1.5em 1.04167%;
+    padding: 3em 1.04167% 1.5em 1.04167%;
     text-align: center; }
+    .upload-zone p {
+      margin-bottom: 0em; }
 
   #item-files button {
     margin: 1.5em 0 0; }
@@ -1469,6 +1469,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       padding: 3em 12.5%;
       border-color: rgba(0, 0, 0, 0.15);
       border-top-color: transparent;
+      overflow: hidden;
       border-width: 0.0625em;
       border-style: solid;
       padding: -0.0625em; }
