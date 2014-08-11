@@ -34,7 +34,7 @@
     <nav id="menu" role="navigation">
         <ul>
             <li><a href="<?php echo $root; ?>/omeka-s-wireframes/items/browse" class="fa-cubes">Items</a></li>
-            <li><a href="#" class="fa-archive">Item Sets</a></li>
+            <li><a href="<?php echo $root; ?>/omeka-s-wireframes/item-sets/" class="fa-archive">Item Sets</a></li>
             <li><a href="<?php echo $root; ?>/omeka-s-wireframes/vocabularies/" class="fa-book">Vocabularies</a></li>
             <li><a href="#" class="fa-image">Assets</a></li>
             <li><a href="#" class="fa-plus-square">Modules</a></li>
