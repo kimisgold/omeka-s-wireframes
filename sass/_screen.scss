@@ -273,7 +273,7 @@ body {
 
 /* @group ----- Reusable classes ----- */
 
-div[role="main"] > .flash {
+div[role="main"] > .messages {
     @include trailer(.5);
     
     li {

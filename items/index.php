@@ -4,7 +4,7 @@
 
 <h1>Items</h1>
 
-<ul class="flash">
+<ul class="messages">
     <li class="error">This is what an error message looks like.</li>
     <li class="success">This is what a success message looks like.</li>
     <li class="warning">This is what a warning message looks like.</li>

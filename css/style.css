@@ -290,15 +290,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* @end */
   /* @end */
   /* @group ----- Reusable classes ----- */
-  div[role="main"] > .flash {
+  div[role="main"] > .messages {
     margin-bottom: 0.75em; }
-    div[role="main"] > .flash li {
+    div[role="main"] > .messages li {
       margin: 0 0 0.375em; }
-    div[role="main"] > .flash .error {
+    div[role="main"] > .messages .error {
       background-color: #ffe5e5; }
-    div[role="main"] > .flash .success {
+    div[role="main"] > .messages .success {
       background-color: #ccffcc; }
-    div[role="main"] > .flash .warning {
+    div[role="main"] > .messages .warning {
       background-color: #fff6e5; }
 
   .flash {

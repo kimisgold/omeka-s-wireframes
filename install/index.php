@@ -13,7 +13,7 @@
     <div class="logo">Omeka S</div>
 </header>
 <div role="main">
-    <ul class="flash">
+    <ul class="messages">
         <li class="error">This is an example error.</li>
         <li class="warning">This is an example error.</li>
     </ul>
