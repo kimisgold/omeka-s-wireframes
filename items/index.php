@@ -4,6 +4,12 @@
 
 <h1>Items</h1>
 
+<ul class="flash">
+    <li class="error">This is what an error message looks like.</li>
+    <li class="success">This is what a success message looks like.</li>
+    <li class="warning">This is what a warning message looks like.</li>
+</ul>
+
 <?php include('../common/pagination.php'); ?>
 
 <div id="page-actions">
@@ -75,7 +81,7 @@
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
-            <td><input type="checkbox" id="row-5"><label class="screen-reader-text" for="row-6">Select row</label></td>
+            <td><input type="checkbox" id="row-5"><label class="screen-reader-text" for="row-5">Select row</label></td>
             <td>
                 <span class="record-name"><a href="#">Early Cherry Blossom Festival</a></span>
                 <ul class="actions">
@@ -88,7 +94,7 @@
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
-            <td><input type="checkbox" id="row-7"><label class="screen-reader-text" for="row-7">Select row</label></td>
+            <td><input type="checkbox" id="row-6"><label class="screen-reader-text" for="row-6">Select row</label></td>
             <td>
                 <span class="record-name"><a href="#">Discovery of America</a></span>
                 <ul class="actions">
@@ -101,7 +107,7 @@
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
-            <td><input type="checkbox" id="row-8"><label class="screen-reader-text" for="row-9">Select row</label></td>
+            <td><input type="checkbox" id="row-7"><label class="screen-reader-text" for="row-7">Select row</label></td>
             <td>
                 <span class="record-name"><a href="#">American Colonization Society Hall</a></span>
                 <ul class="actions">
@@ -114,7 +120,7 @@
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
-            <td><input type="checkbox" id="row-9"><label class="screen-reader-text" for="row-9">Select row</label></td>
+            <td><input type="checkbox" id="row-8"><label class="screen-reader-text" for="row-8">Select row</label></td>
             <td>
                 <span class="record-name"><a href="#">Federal Government Building</a></span>
                 <ul class="actions">
@@ -127,7 +133,7 @@
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
-            <td><input type="checkbox" id="row-10"><label class="screen-reader-text" for="row-10">Select row</label></td>
+            <td><input type="checkbox" id="row-9"><label class="screen-reader-text" for="row-9">Select row</label></td>
             <td>
                 <span class="record-name"><a href="#">United States Slave Trade</a></span>
                 <ul class="actions">
@@ -140,7 +146,7 @@
             <td>Mar 28, 2014</td>
         </tr>
         <tr>
-            <td><input type="checkbox" id="row-11"><label class="screen-reader-text" for="row-11">Select row</label></td>
+            <td><input type="checkbox" id="row-10"><label class="screen-reader-text" for="row-10">Select row</label></td>
             <td>
                 <span class="record-name"><a href="#">Essay on the City of Washington</a></span>
                 <ul class="actions">

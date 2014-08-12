@@ -273,6 +273,26 @@ body {
 
 /* @group ----- Reusable classes ----- */
 
+div[role="main"] > .flash {
+    @include trailer(.5);
+    
+    li {
+        margin: 0 0 rhythm(.25);
+    }
+
+    .error {
+        background-color: lighten($red, 45%);
+    }
+    
+    .success {
+        background-color: lighten(green, 65%);
+    }
+    
+    .warning {
+        background-color: lighten(orange, 45%);
+    }
+}
+
 .flash {
     padding: 0;
     margin: 0;
@@ -1747,26 +1767,6 @@ body.minimal {
         border-top-color: transparent;
         overflow: hidden;
         @include rhythm-borders(1px, 0, $base-font-size, solid);
-        
-        & > .flash {
-            @include trailer();
-            
-            li {
-                margin: 0 0 rhythm(.25);
-            }
-
-            .error {
-                background-color: lighten($red, 45%);
-            }
-            
-            .success {
-                background-color: lighten(green, 65%);
-            }
-            
-            .warning {
-                background-color: lighten(orange, 45%);
-            }
-        }
     }
 }
 

@@ -290,6 +290,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* @end */
   /* @end */
   /* @group ----- Reusable classes ----- */
+  div[role="main"] > .flash {
+    margin-bottom: 0.75em; }
+    div[role="main"] > .flash li {
+      margin: 0 0 0.375em; }
+    div[role="main"] > .flash .error {
+      background-color: #ffe5e5; }
+    div[role="main"] > .flash .success {
+      background-color: #ccffcc; }
+    div[role="main"] > .flash .warning {
+      background-color: #fff6e5; }
+
   .flash {
     padding: 0;
     margin: 0; }
@@ -1476,16 +1487,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       border-width: 0.0625em;
       border-style: solid;
       padding: -0.0625em; }
-      body.minimal div[role="main"] > .flash {
-        margin-bottom: 1.5em; }
-        body.minimal div[role="main"] > .flash li {
-          margin: 0 0 0.375em; }
-        body.minimal div[role="main"] > .flash .error {
-          background-color: #ffe5e5; }
-        body.minimal div[role="main"] > .flash .success {
-          background-color: #ccffcc; }
-        body.minimal div[role="main"] > .flash .warning {
-          background-color: #fff6e5; }
 
   /* @end */
   /* @group ----- Install ----- */
