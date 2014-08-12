@@ -258,5 +258,8 @@
     </tbody>
 </table>
 
+  <div class="overlay"></div>
+  
+  <div class="modal"></div>
 
 <?php include('../footer.php'); ?>

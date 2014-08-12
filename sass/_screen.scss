@@ -1158,6 +1158,11 @@ div[role="main"] {
         line-height: $base-line-height;
         font-weight: bold;
     }
+    
+    &.small {
+        width: 30%;
+        height: 40%;
+    }
 }
 
 .modal-link.button {

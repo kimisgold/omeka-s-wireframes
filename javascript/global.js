@@ -75,6 +75,19 @@
                 });
             }
         });
+
+        if ($('body').hasClass('browse')) {
+            attachModal('.fa-trash-o');
+        }
+
+        $('body.browse .fa-trash-o').click(function(e) {
+            e.preventDefault();
+            $.get('../common/delete-confirm.php', function(data) {
+                $('.modal-content').html(data);
+                $('.modal').attr('id', 'delete-confirm').attr('class', 'small modal');
+                $('.modal-header h1').replaceWith($('.modal-content h1'));
+            });
+        });
         
         // Switch between section tabs.
         $('a.section').click(function(e) {
@@ -282,25 +295,30 @@
             //$('.field.template').before(new_field);
             $(field_section).find('fieldset').append(new_field);
         }
-        var modal = $('.modal-link');
-        if (modal.length > 0) {
-            $('.modal-link').modal({
-                trigger: '.modal-link',
-                olay:'div.overlay',
-                modals:'div.modal',
-                animationEffect: 'fadein',
-                animationSpeed: 400,
-                moveModalSpeed: 'fast',
-                background: '000000',
-                opacity: 0.8,
-                openOnLoad: false,
-                docClose: true,
-                closeByEscape: true,
-                moveOnScroll: true,
-                resizeWindow: true,
-                close:'.closeBtn'
-            });
+        var modalLink = $('.modal-link');
+        if (modalLink.length > 0) {
+            attachModal(modalLink);
         }
+    }
+    
+    var attachModal = function(modalLink) {
+        var modal = $(modalLink);
+        modal.modal({
+            trigger: modalLink,
+            olay:'div.overlay',
+            modals:'div.modal',
+            animationEffect: 'fadein',
+            animationSpeed: 400,
+            moveModalSpeed: 'fast',
+            background: '000000',
+            opacity: 0.8,
+            openOnLoad: false,
+            docClose: true,
+            closeByEscape: true,
+            moveOnScroll: true,
+            resizeWindow: true,
+            close:'.closeBtn'
+        });
     }
     
     var cleanText = function(text) {

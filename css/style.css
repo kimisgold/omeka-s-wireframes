@@ -1008,6 +1008,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       font-size: 16px;
       line-height: 24px;
       font-weight: bold; }
+    .modal.small {
+      width: 30%;
+      height: 40%; }
 
   .modal-link.button {
     float: left; }
