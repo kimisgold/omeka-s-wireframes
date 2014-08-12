@@ -1,12 +1,16 @@
 <?php $bodyClass = "items browse"; ?>
+<?php $js = '<script src="../javascript/jquery.modal.min.js"></script>' ?>
 <?php include('../header.php'); ?>
 
 <h1>Items</h1>
 
-<a href="add" class="add button">Add new item</a>
-<a href="batch-edit" class="batch-edit button">Edit selected items</a>
-
 <?php include('../common/pagination.php'); ?>
+
+<div id="page-actions">
+    <a href="add" class="button">Add new item</a>
+</div>
+
+<a href="batch-edit" class="batch-edit button">Batch edit selected</a>
 
 <table id="items-list">
     <thead>
@@ -25,6 +29,7 @@
                 <ul class="actions">
                     <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
@@ -37,6 +42,7 @@
                 <ul class="actions">
                     <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
@@ -49,6 +55,7 @@
                 <ul class="actions">
                     <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
@@ -61,6 +68,7 @@
                 <ul class="actions">
                     <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
@@ -73,6 +81,7 @@
                 <ul class="actions">
                     <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                 </ul>
             </td>
             <td>Event</td>
@@ -85,6 +94,7 @@
                 <ul class="actions">
                     <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
@@ -97,6 +107,7 @@
                 <ul class="actions">
                     <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                 </ul>
             </td>
             <td>Place</td>
@@ -109,6 +120,7 @@
                 <ul class="actions">
                     <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                 </ul>
             </td>
             <td>Event</td>
@@ -121,6 +133,7 @@
                 <ul class="actions">
                     <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                 </ul>
             </td>
             <td>Still Image</td>
@@ -133,6 +146,7 @@
                 <ul class="actions">
                     <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
                     <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                    <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                 </ul>
             </td>
             <td>Document</td>
@@ -140,5 +154,16 @@
         </tr>
     </tbody>
 </table>
+
+<div class="overlay"></div>
+
+<div class="modal">
+    <div class="modal-header">
+        <a href="#" class="closeBtn fa-times"><span class="screen-reader-text">Close Me</span></a>
+        <h1></h1>
+    </div>
+    <div class="modal-content">
+    </div>
+</div>
 
 <?php include('../footer.php'); ?>
