@@ -301,7 +301,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     div[role="main"] > .messages .warning {
       background-color: #fff6e5; }
 
-  .flash {
+  .messages {
     padding: 0;
     margin: 0; }
 
