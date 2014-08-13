@@ -153,7 +153,7 @@
         // Make new property field whenever "add property" button clicked.
         $(document).on('click', '.add-property', function(e) {
             e.preventDefault();
-            makeNewField('item-values');
+            makeNewField('resource-values');
         });
         
         
@@ -201,7 +201,6 @@
         add_edit_items.on('click', '.add-value', function(e) {
             e.preventDefault();
             var value_section = '.' + $(this).parents('.section').attr('id');
-            console.log(value_section);
             var new_value = $(value_section + '.field.template .value ').first().clone();
             $(this).parents('.field').find('.value').last().after(new_value);
             var value_count = $(this).parents('.field').find('.value').length;
@@ -270,7 +269,6 @@
     // Duplicates the new field template, and makes it visible by removing the "template" class.
     var makeNewField = function(section,prop,desc) {
         var field_section = '#' + section;
-        console.log(field_section);
         var new_field = $(field_section + ' .field.template').clone();
         new_field.removeClass('template');
         new_field.find('.remove-value').removeClass('active');
