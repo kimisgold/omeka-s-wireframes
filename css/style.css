@@ -339,6 +339,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 2.25em 0 1.5em;
     float: left; }
 
+  .skip {
+    position: absolute;
+    left: -9999px; }
+
+  .skip:focus {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    width: 10%;
+    z-index: 1002;
+    text-align: center;
+    background-color: #fff;
+    padding: 0.375em;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0;
+    border-radius: 0 0 3px 3px;
+    border-color: rgba(0, 0, 0, 0.08);
+    border-width: 0.0625em;
+    border-style: solid;
+    padding: -0.0625em; }
+
   #current-user {
     display: block;
     margin: 0;
@@ -1587,9 +1608,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #current-user.active,
   #search.active {
     top: 2.25em;
-    left: 16.66667%;
+    left: 8.33333%;
     bottom: 0;
-    right: 16.66667%;
+    right: 8.33333%;
     background-color: #fff;
     width: intrinsic;
     margin: 0; }

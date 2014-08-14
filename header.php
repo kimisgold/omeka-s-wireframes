@@ -14,6 +14,7 @@
 </head>
 <body class="<?php echo $bodyClass; ?>">
 <header>
+    <a href="#main" class="skip">Skip to content</a>
     <div class="logo"><a href="<?php echo $root; ?>/omeka-s-wireframes/">Omeka S</a></div>
     <div id="mobile-nav">
         <a href="#" class="fa-menu button"><span class="screen-reader-text">Navigation Menu</span></a>
@@ -44,4 +45,4 @@
         </ul>
     </nav>
 </header>
-<div role="main">
+<div role="main" id="main">

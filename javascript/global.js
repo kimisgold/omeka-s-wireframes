@@ -1,7 +1,14 @@
 (function($) {
 
     $(document).ready( function() {
-    
+        
+        // Skip to content button. See http://www.bignerdranch.com/blog/web-accessibility-skip-navigation-links/
+        $('.skip').click(function(e) {
+            $('#main').attr('tabindex', -1).on('blur focusout', function() {
+                $(this).removeAttr('tabindex');
+            }).focus();
+        });
+        
         // Mobile navigation
         $('#mobile-nav .button').click(function(e) {
             e.preventDefault();
