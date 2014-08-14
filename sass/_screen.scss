@@ -516,14 +516,15 @@ div[role="main"] {
 .browse .record-name {
     display: block;
     float: left;
+    @include calc('max-width', '100% - 5.5em');
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .browse td,
 .browse th {
     padding: rhythm(.25) .5em;
-    max-width: 5em;
     position: relative;
-    min-width: rhythm(1);
 }
 
 .browse td,
@@ -531,16 +532,19 @@ div[role="main"] {
 .browse table a {
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
+    max-width: 0;
 }
 
-.browse table a {
-    width: 100%;
+.browse td:first-of-type,
+.browse th:first-of-type {
+    min-width: rhythm(1.5);
+    width: rhythm(1.5);
 }
 
 .browse td:nth-of-type(2),
 .browse th:nth-of-type(2) {
-    max-width: 30%;
+    width: 60%;
 }
 
 .browse .add.button,
@@ -556,7 +560,6 @@ div[role="main"] {
 .actions {
     display: block;
     float: right;
-    width: 7em;
 }
 
 .actions,
@@ -1132,6 +1135,14 @@ div[role="main"] {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.fa-menu:before {
+    content: "\f0c9";
+}
+
+.fa-current-user:before {
+    content: "\f007";
+} 
 
 .fa-items:before {
     content: "\f1b3";

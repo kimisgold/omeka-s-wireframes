@@ -16,9 +16,9 @@
 <header>
     <div class="logo"><a href="<?php echo $root; ?>/omeka-s-wireframes/">Omeka S</a></div>
     <div id="mobile-nav">
-        <a href="#" class="fa-navicon button"><span class="screen-reader-text">Navigation Menu</span></a>
+        <a href="#" class="fa-menu button"><span class="screen-reader-text">Navigation Menu</span></a>
         <a href="#" class="fa-search button"><span class="screen-reader-text">Search Site</span></a>
-        <a href="#" class="fa-user button"><span class="screen-reader-text">User Menu</span></a>
+        <a href="#" class="fa-current-user button"><span class="screen-reader-text">User Menu</span></a>
     </div>
     <div id="current-user">
         <p>Welcome, <a href="#">Admin</a></p>
