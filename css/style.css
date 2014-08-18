@@ -1017,22 +1017,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .fa-text:before {
     content: "\f11c"; }
 
-  .fa-items {
+  .fa-items:before {
     content: "\f1b3"; }
 
-  .fa-item-set {
+  .fa-item-set:before {
     content: "\f187"; }
 
-  .fa-vocab {
+  .fa-vocab:before {
     content: "\f02d"; }
 
-  .fa-module {
+  .fa-module:before {
     content: "\f0fe"; }
 
-  .fa-site {
+  .fa-site:before {
     content: "\f108"; }
 
-  .fa-settings {
+  .fa-settings:before {
     content: "\f085"; }
 
   .screen-reader-text {
