@@ -34,14 +34,14 @@
     </div>
     <nav id="menu" role="navigation">
         <ul>
-            <li><a href="<?php echo $root; ?>/omeka-s-wireframes/items/" class="fa-cubes">Items</a></li>
-            <li><a href="<?php echo $root; ?>/omeka-s-wireframes/item-sets/" class="fa-archive">Item Sets</a></li>
-            <li><a href="<?php echo $root; ?>/omeka-s-wireframes/vocabularies/" class="fa-book">Vocabularies</a></li>
+            <li><a href="<?php echo $root; ?>/omeka-s-wireframes/items/" class="fa-items">Items</a></li>
+            <li><a href="<?php echo $root; ?>/omeka-s-wireframes/item-sets/" class="fa-item-set">Item Sets</a></li>
+            <li><a href="<?php echo $root; ?>/omeka-s-wireframes/vocabularies/" class="fa-vocab">Vocabularies</a></li>
             <li><a href="#" class="fa-image">Assets</a></li>
-            <li><a href="#" class="fa-plus-square">Modules</a></li>
+            <li><a href="#" class="fa-module">Modules</a></li>
             <li><a href="<?php echo $root; ?>/omeka-s-wireframes/users/" class="fa-users">Users</a></li>
-            <li><a href="#" class="fa-laptop">Sites</a></li>
-            <li><a href="#" class="fa-gears">Settings</a></li>
+            <li><a href="#" class="fa-site">Sites</a></li>
+            <li><a href="#" class="fa-settings">Settings</a></li>
         </ul>
     </nav>
 </header>
