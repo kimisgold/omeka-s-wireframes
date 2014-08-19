@@ -10,11 +10,11 @@
     <li class="warning">This is what a warning message looks like.</li>
 </ul>
 
-<?php include('../common/pagination.php'); ?>
-
 <div id="page-actions">
     <a href="add" class="button">Add new item</a>
 </div>
+
+<?php include('../common/pagination.php'); ?>
 
 <a href="batch-edit" class="batch-edit button">Batch edit selected</a>
 

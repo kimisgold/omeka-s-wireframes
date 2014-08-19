@@ -1558,7 +1558,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 0 8.33333%;
     height: intrinsic; }
 
-  /* @group ---- Header ----- */
+  /* @group ----- Header ----- */
   header {
     width: -webkit-calc(100% - 16.66667%);
     width: calc(100% - 16.66667%);
@@ -1594,27 +1594,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
     background-color: #e7e7e7; }
 
-  /* @end */
-  div[role="main"] {
-    margin: 2.25em 0 0 0;
-    width: 100%;
-    min-height: -webkit-calc(100% - 4.5em);
-    min-height: calc(100% - 4.5em);
-    position: relative;
-    padding-top: 3.75em; }
-    div[role="main"] > h1:first-of-type {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap; }
-
   #current-user,
   #menu,
   #save-sidebar,
-  #page-actions,
   #search,
   footer {
     position: fixed;
@@ -1633,6 +1615,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: intrinsic;
     margin: 0; }
 
+  /* @end */
+  /* @group ----- Global content ----- */
+  div[role="main"] {
+    margin: 2.25em 0 0 0;
+    width: 100%;
+    min-height: -webkit-calc(100% - 4.5em);
+    min-height: calc(100% - 4.5em);
+    position: relative;
+    padding-top: 3.75em; }
+    div[role="main"] > h1:first-of-type {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+
+  /* @end */
   /* @group ----- Navigation ----- */
   #menu {
     text-align: left; }
@@ -1652,10 +1653,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #mobile-nav a.active {
     background-color: #990000; }
 
+  #page-actions {
+    position: static;
+    text-align: left;
+    padding: 0;
+    width: 100%;
+    border-color: rgba(0, 0, 0, 0.08);
+    border-bottom-width: 0.0625em;
+    border-bottom-style: solid;
+    padding-bottom: -0.0625em;
+    height: auto;
+    margin-bottom: 0.75em; }
+
+  .pagination {
+    width: 100%; }
+
   /* @end */
   /* @group ----- Search ----- */
   #search-form {
     margin: 3em 4.16667%; }
+
+  /* @end */
+  /* @group ----- Browse views ----- */
+  .batch-edit.button {
+    margin: 0;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    position: relative;
+    z-index: 1; }
+
+  .browse table {
+    position: relative; }
+
+  .browse table:before {
+    content: "";
+    width: 100%;
+    height: 2.25em;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -2.25em;
+    z-index: 0; }
 
   /* @end */ }
 @media screen and (max-width: 480px) {
@@ -1667,7 +1708,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   header,
   #menu.active,
-  #user.active,
+  #current-user.active,
   #search.active {
     left: 0;
     right: 0; } }

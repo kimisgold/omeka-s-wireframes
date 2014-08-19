@@ -3,13 +3,13 @@
 
 <h1>Item Sets</h1>
 
-<?php include('../common/pagination.php'); ?>
-
 <div id="page-actions">
     <a href="#" class="button">Add Item Set</a>
 </div>
 
-<a href="#" class="button">Batch Edit Selected</a>
+<?php include('../common/pagination.php'); ?>
+
+<a href="#" class="batch-edit button">Batch Edit Selected</a>
 
 <table>
     <thead>
