@@ -1698,6 +1698,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-top: -2.25em;
     z-index: 0; }
 
+  /* @end */
+  /* @group ----- Add/Edit views ----- */
+  .field {
+    border-top-color: transparent;
+    margin-bottom: 1.5em; }
+
+  .field-meta,
+  .inputs {
+    width: 100%; }
+
+  .field-actions {
+    position: absolute;
+    top: 0.375em;
+    right: 1.66667%;
+    z-index: 1; }
+    .field-actions a {
+      float: none;
+      display: inline-block; }
+
+  .field-meta label,
+  .field-description p {
+    line-height: 24px;
+    margin-bottom: 0.375em; }
+
+  .field-meta label {
+    font-weight: bold; }
+
+  .field-description {
+    height: 24px;
+    float: none;
+    display: inline-block;
+    margin-left: .25em; }
+
   /* @end */ }
 @media screen and (max-width: 480px) {
   body {
