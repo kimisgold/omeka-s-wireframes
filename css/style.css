@@ -139,7 +139,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin: 0; }
 
   input[type="text"],
-  input[type="password"] {
+  input[type="password"],
+  input[type="email"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
     height: 2.25em;
     border-color: rgba(0, 0, 0, 0.15);
     border-width: 0.0625em;
@@ -715,7 +721,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   .unset .value,
   .unset .add-value,
-  .field a.remove.button,
+  .unset.field a.remove.button,
   .set-property,
   .properties,
   .browse-properties {
@@ -1541,10 +1547,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* @group ----- Install ----- */
   .install label {
     display: inline-block;
+    padding: 0.375em 0;
     width: 33.33333%; }
   .install input {
-    width: -webkit-calc(66.66% - 3px);
-    width: calc(66.66% - 3px); }
+    width: -webkit-calc(66.66% - 6px);
+    width: calc(66.66% - 6px);
+    vertical-align: top; }
   .install button[type="submit"] {
     display: block;
     margin: auto;
@@ -1710,12 +1718,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   .field-actions {
     position: absolute;
-    top: 0.375em;
+    top: 0.5625em;
     right: 1.66667%;
-    z-index: 1; }
+    z-index: 1;
+    width: 50%; }
     .field-actions a {
-      float: none;
-      display: inline-block; }
+      float: right;
+      display: block; }
+      .field-actions a.button {
+        margin-left: .5em !important; }
 
   .field-meta label,
   .field-description p {
@@ -1729,7 +1740,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 24px;
     float: none;
     display: inline-block;
-    margin-left: .25em; }
+    margin-left: .25em;
+    position: absolute; }
+
+  .unset .field-meta {
+    width: 100%; }
+
+  /* @end */
+  /* @group ----- Minimalist views ----- */
+  body.minimal {
+    width: 75%; }
+    body.minimal .logo {
+      background-color: transparent; }
+    body.minimal div[role="main"] > .messages {
+      margin-bottom: 1.5em; }
 
   /* @end */ }
 @media screen and (max-width: 480px) {
@@ -1744,6 +1768,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #current-user.active,
   #search.active {
     left: 0;
-    right: 0; } }
+    right: 0; }
+
+  body.minimal {
+    width: 100%;
+    margin: 0; }
+    body.minimal div[role="main"] {
+      padding: 1.5em 6.25%; } }
 
 /*# sourceMappingURL=style.css.map */

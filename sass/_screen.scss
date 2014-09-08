@@ -112,7 +112,10 @@ body {
     }
     
     input[type="text"],
-    input[type="password"] {
+    input[type="password"],
+    input[type="email"] {
+        @include appearance(none);
+        @include border-radius(0px);
         height: rhythm(1.5);
         border-color: rgba(0,0,0,.15);
         @include rhythm-borders(1px, 0, $base-font-size, solid);
@@ -1830,14 +1833,15 @@ body.minimal {
 /* @group ----- Install ----- */
 
 .install {
-    
     label {
         display: inline-block;
+        padding: rhythm(.25) 0;
         width: span(3 of 9);
     }
     
     input {
-          @include calc('width','66.66% - 3px');
+          @include calc('width','66.66% - 6px');
+          vertical-align: top;
     }
     
     button[type="submit"] {

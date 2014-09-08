@@ -21,7 +21,7 @@
         <div class="field">
             <label for="username">Admin username</label>
             <input type="text" name="username" id="username">
-            <ul class="flash">
+            <ul class="messages">
                 <li class="error">Enter username before continuing.</li>
                 <li class="warning">Enter username before continuing.</li>
             </ul>
