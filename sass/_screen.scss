@@ -703,6 +703,10 @@ div[role="main"] {
     width: 100%;
 }
 
+.add-property.button {
+    @include leader();
+}
+
     /* @group ----- Metadata ----- */
     
     #add-item .remove.field {
@@ -777,6 +781,7 @@ div[role="main"] {
     
     .unset .value,
     .unset .add-value,
+    .unset.new.field a.remove.button,
     .field a.remove.button,
     .set-property,
     .properties,

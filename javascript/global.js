@@ -53,9 +53,9 @@
                 properties_list_template.append(current_vocab);                
             });
             
-            $('form .section').each(function() {
-                makeNewField($(this).attr('id'));
-            });
+            if ($('#resource-values').length > 0) {
+                makeNewField('resource-values');
+            }
         });
         
         // Setup tables' select all checkboxes.
@@ -298,7 +298,7 @@
             $('.new.field').first().before(new_field);
         } else {
             //$('.field.template').before(new_field);
-            $(field_section).find('fieldset').append(new_field);
+            $(field_section).find('.template').before(new_field);
         }
         var modalLink = $('.modal-link');
         if (modalLink.length > 0) {

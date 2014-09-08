@@ -665,6 +665,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .modal #items-list {
     width: 100%; }
 
+  .add-property.button {
+    margin-top: 1.5em; }
+
   /* @group ----- Metadata ----- */
   #add-item .remove.field {
     background-color: #ff9999;
@@ -721,7 +724,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   .unset .value,
   .unset .add-value,
-  .unset.field a.remove.button,
+  .unset.new.field a.remove.button,
+  .field a.remove.button,
   .set-property,
   .properties,
   .browse-properties {

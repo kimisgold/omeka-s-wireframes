@@ -20,48 +20,46 @@
     
     <?php include('files.php'); ?>
 
-    <div id="item-visibility" class="section">
-        <fieldset>
-            <div class="field">
-                <input type="checkbox" id="item-public" name="item-public">
-                <label for="item-public">Public</label>
+    <fieldset id="item-visibility" class="section">
+        <div class="field">
+            <input type="checkbox" id="item-public" name="item-public">
+            <label for="item-public">Public</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" id="item-sharing" name="item-sharing">
+            <label for="item-sharing">Shareable</label>
+        </div>
+        <div class="field">
+            <div class="field-actions">
+                <a href="#" class="add-value button fa-plus"><span class="screen-reader-text">Add Value</span></a>
             </div>
-            <div class="field">
-                <input type="checkbox" id="item-sharing" name="item-sharing">
-                <label for="item-sharing">Shareable</label>
+            <div class="field-meta">
+                <label for="item-set">Item Set</label>
             </div>
-            <div class="field">
-                <div class="field-actions">
-                    <a href="#" class="add-value button fa-plus"><span class="screen-reader-text">Add Value</span></a>
-                </div>
-                <div class="field-meta">
-                    <label for="item-set">Item Set</label>
-                </div>
-                <div class="inputs">
-                    <div class="value">
-                        <select id="item-set" name="item-set">
-                            <option>War of the Roses</option>
-                            <option>Meiji Era</option>
-                            <option>The Incan Empire</option>
-                        </select>
-                        <button class="remove-value">Remove value</button>
-                    </div>
+            <div class="inputs">
+                <div class="value">
+                    <select id="item-set" name="item-set">
+                        <option>War of the Roses</option>
+                        <option>Meiji Era</option>
+                        <option>The Incan Empire</option>
+                    </select>
+                    <button class="remove-value">Remove value</button>
                 </div>
             </div>
-            <div class="new item-visibility field template">
-                <div class="inputs">
-                    <div class="value">
-                        <select id="item-set" name="item-set">
-                            <option>War of the Roses</option>
-                            <option>Meiji Era</option>
-                            <option>The Incan Empire</option>
-                        </select>
-                        <button class="remove-value active">Remove value</button>
-                    </div>
+        </div>
+        <div class="new item-visibility field template">
+            <div class="inputs">
+                <div class="value">
+                    <select id="item-set" name="item-set">
+                        <option>War of the Roses</option>
+                        <option>Meiji Era</option>
+                        <option>The Incan Empire</option>
+                    </select>
+                    <button class="remove-value active">Remove value</button>
                 </div>
             </div>
-        </fieldset>
-    </div>
+        </div>
+    </fieldset>
 
     <fieldset id="save-sidebar">
         <input type="submit" name="add-item-submit" value="Create Item" />
@@ -69,5 +67,9 @@
     </fieldset>
 
 </form>
-    
+
+<div class="overlay"></div>
+
+<?php include('select.php'); ?>
+
 <?php include('../footer.php'); ?>
