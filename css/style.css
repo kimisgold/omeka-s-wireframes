@@ -585,6 +585,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .edit div[role="main"] {
     padding-top: 6em; }
 
+  .add legend,
+  .edit legend {
+    position: absolute;
+    left: -9999px; }
+
   .section-nav {
     border-top: 1px solid #fff;
     height: 2.625em;
@@ -1698,7 +1703,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .browse table {
     position: relative; }
 
-  .browse table:before {
+  .browse .batch-edit + table:before {
     content: "";
     width: 100%;
     height: 2.25em;
@@ -1712,9 +1717,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   /* @end */
   /* @group ----- Add/Edit views ----- */
-  .field {
-    border-top-color: transparent;
-    margin-bottom: 1.5em; }
+  .add legend,
+  .edit legend {
+    position: relative;
+    left: auto;
+    font-size: 24px;
+    background-color: #ff6666;
+    display: block;
+    width: 100%;
+    padding: 0.5em 0.375em;
+    color: #fff;
+    cursor: pointer; }
+
+  .add legend:after,
+  .edit legend:after {
+    content: "\f0da";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 0.375em;
+    top: 0.5em; }
+
+  .add .active legend:after,
+  .edit .active legend:after {
+    content: "\f0d7"; }
+
+  .add .section,
+  .edit .section,
+  .add .active.section > *:not(legend),
+  .edit .active.section > *:not(legend) {
+    display: block; }
+
+  .add .section > *:not(legend),
+  .edit .section > *:not(legend),
+  .add .section .field.template,
+  .edit .section .field.template {
+    display: none; }
+
+  .add .active.section > .button,
+  .edit .active.section > .button {
+    display: inline-block; }
+
+  .section-nav {
+    position: absolute;
+    left: -9999px; }
 
   .field-meta,
   .inputs {

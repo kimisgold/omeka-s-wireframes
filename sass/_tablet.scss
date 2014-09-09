@@ -154,7 +154,7 @@ div[role="main"] {
     position: relative;
 }
 
-.browse table:before {
+.browse .batch-edit + table:before {
     content: "";
     width: 100%;
     height: rhythm(1.5);
@@ -171,9 +171,55 @@ div[role="main"] {
 
 /* @group ----- Add/Edit views ----- */
 
-.field {
-    border-top-color: transparent;
-    @include trailer();
+.add legend,
+.edit legend {
+    position: relative;
+    left: auto;
+    font-size: 1.5 * $base-font-size;
+    background-color: lighten($red, 20%);
+    display: block;
+    width: 100%;
+    padding: rhythm(.5, 1.5 * $base-font-size) rhythm(.375, 1.5 * $base-font-size);
+    color: #fff;
+    cursor: pointer;
+}
+
+.add legend:after,
+.edit legend:after {
+    content: "\f0da";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: rhythm(.375, 1.5 * $base-font-size);
+    top: rhythm(.5, 1.5 * $base-font-size);
+}
+
+.add .active legend:after,
+.edit .active legend:after {
+    content: "\f0d7";
+}
+
+.add .section,
+.edit .section,
+.add .active.section > *:not(legend),
+.edit .active.section > *:not(legend) {
+    display: block;
+}
+
+.add .section > *:not(legend),
+.edit .section > *:not(legend),
+.add .section .field.template,
+.edit .section .field.template {
+    display: none;
+}
+
+.add .active.section > .button,
+.edit .active.section > .button {
+    display: inline-block;
+}
+
+.section-nav {
+    position: absolute;
+    left: -9999px;
 }
 
 .field-meta,

@@ -97,16 +97,21 @@
         });
         
         // Switch between section tabs.
-        $('a.section').click(function(e) {
+        $('a.section, .section legend').click(function(e) {
             e.preventDefault();
-            if (!$(this).hasClass('active')) {
-                $('.section.active').removeClass('active');
-                var section_class = $(this).attr('class');
+            var tab = $(this);
+            if (!tab.hasClass('active')) {
+                $('.section.active, legend.active').removeClass('active');
+                if (tab.is('legend')) {
+                    var section_class = tab.parents('.section').attr('id');
+                } else {
+                    var section_class = tab.attr('class');
+                }
                 var section_id = section_class.replace(/section/, '');
-                $(this).addClass('active');
+                tab.addClass('active');
                 $('#' + section_id).addClass('active');
             }
-        });
+        });        
         
         // Set classes for expandable/collapsible content.
         $(document).on('click', 'a.expand, a.collapse', function(e) {

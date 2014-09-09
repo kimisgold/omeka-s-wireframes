@@ -624,6 +624,12 @@ div[role="main"] {
     padding-top: rhythm(4);
 }
 
+.add legend,
+.edit legend {
+    position: absolute;
+    left: -9999px;
+}
+
 .section-nav {
     border-top: 1px solid #fff;
     height: rhythm(1.75);

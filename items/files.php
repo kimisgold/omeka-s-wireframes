@@ -1,4 +1,5 @@
 <fieldset id="item-media" class="section">
+    <legend>Media</legend>
     <div class="media field">
         <div class="field-actions">
             <a href="#" class="add-value button fa-plus"><span class="screen-reader-text">Add Value</span></a>

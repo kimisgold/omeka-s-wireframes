@@ -21,6 +21,7 @@
     <?php include('files.php'); ?>
 
     <fieldset id="item-visibility" class="section">
+        <legend>Visibility</legend>
         <div class="field">
             <input type="checkbox" id="item-public" name="item-public">
             <label for="item-public">Public</label>

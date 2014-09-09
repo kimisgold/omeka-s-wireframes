@@ -1,4 +1,5 @@
 <fieldset id="resource-values" class="section active">
+    <legend>Values</legend>
     <div class="resource-values field">
         <div class="field-meta">
             <label for="item-class">Class</label>
