@@ -171,6 +171,11 @@ div[role="main"] {
 
 /* @group ----- Add/Edit views ----- */
 
+.add fieldset,
+.edit fieldset {
+    margin-bottom: 0;
+}
+
 .add legend,
 .edit legend {
     position: relative;
@@ -182,6 +187,8 @@ div[role="main"] {
     padding: rhythm(.5, 1.5 * $base-font-size) rhythm(.375, 1.5 * $base-font-size);
     color: #fff;
     cursor: pointer;
+    border-color: rgba(0,0,0,.08);
+    @include trailing-border(1px, 0, $base-font-size, solid);
 }
 
 .add legend:after,
