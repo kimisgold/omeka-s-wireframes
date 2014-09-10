@@ -556,18 +556,12 @@ div[role="main"] {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 0;
 }
 
 .browse td:first-of-type,
 .browse th:first-of-type {
     min-width: rhythm(1.5);
     width: rhythm(1.5);
-}
-
-.browse td:nth-of-type(2),
-.browse th:nth-of-type(2) {
-    width: 60%;
 }
 
 .browse .add.button,
