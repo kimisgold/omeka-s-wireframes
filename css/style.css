@@ -523,7 +523,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .browse td,
   .browse th {
     padding: 0.375em 0.5em;
-    position: relative; }
+    position: relative;
+    vertical-align: top; }
 
   .browse td,
   .browse th,
@@ -535,7 +536,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .browse td:first-of-type,
   .browse th:first-of-type {
     min-width: 2.25em;
-    width: 2.25em; }
+    width: 2.25em;
+    background-color: #d2d2d2; }
 
   .browse .add.button,
   .browse .batch-edit.button {
@@ -547,7 +549,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   .actions {
     display: block;
-    float: right; }
+    position: absolute;
+    right: 0.375em;
+    top: 0.375em;
+    max-width: 5em;
+    text-align: right;
+    padding: 0; }
 
   .actions,
   .actions li {
@@ -1049,6 +1056,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     position: absolute;
     top: -9999px;
     left: -9999px; }
+
+  .external.button:after {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f08e";
+    margin-left: .5em; }
 
   /* @end */
   /* @group ----- Select Item Modal ----- */

@@ -1,3 +1,4 @@
+<?php $bodyClass = "add user"; ?>
 <?php include('../header.php'); ?>
 
 <h1>Add User</h1>
@@ -12,6 +13,7 @@
 
 <form id="add-user">
     <fieldset id="user-profile" class="active section">
+        <legend>Profile</legend>
         <div class="field">
             <div class="field-meta">
                 <label for="user-handle">Username</label>
@@ -51,8 +53,10 @@
             <div class="inputs">
                 <input type="password" id="user-confirm-password" name="user-confirm-password">
             </div>
-        </div>    </fieldset>
+        </div>    
+    </fieldset>
     <fieldset id="user-permissions" class="section">
+        <legend>Permissions</legend>
         <div class="field">
             <div class="field-meta">
                 <label for="user-role">Role</label>

@@ -548,6 +548,7 @@ div[role="main"] {
 .browse th {
     padding: rhythm(.25) .5em;
     position: relative;
+    vertical-align: top;
 }
 
 .browse td,
@@ -562,6 +563,7 @@ div[role="main"] {
 .browse th:first-of-type {
     min-width: rhythm(1.5);
     width: rhythm(1.5);
+    background-color: #d2d2d2;
 }
 
 .browse .add.button,
@@ -576,7 +578,12 @@ div[role="main"] {
 
 .actions {
     display: block;
-    float: right;
+    position: absolute;
+    right: rhythm(.25);
+    top: rhythm(.25);
+    max-width: 5em;
+    text-align: right;
+    padding: 0;
 }
 
 .actions,
@@ -1208,6 +1215,20 @@ div[role="main"] {
     position: absolute;
     top: -9999px;
     left: -9999px;
+}
+
+.external.button:after {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f08e";
+    margin-left: .5em;
 }
 
 /* @end */

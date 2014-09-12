@@ -3,7 +3,9 @@
 
 <h1>Users</h1>
 
-<a href="add" class="button">Add new user</a>
+<div id="page-actions">
+    <a href="add" class="button">Add new user</a>
+</div>
 
 <div class="mobile-container">
     <table id="items-list">
