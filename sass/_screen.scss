@@ -578,12 +578,7 @@ div[role="main"] {
 
 .actions {
     display: block;
-    position: absolute;
-    right: rhythm(.25);
-    top: rhythm(.25);
-    max-width: 5em;
-    text-align: right;
-    padding: 0;
+    float: right;
 }
 
 .actions,

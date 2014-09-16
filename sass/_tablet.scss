@@ -160,7 +160,7 @@ div[role="main"] {
     background-color: rgba(0, 0, 0, 0.5);
     display: block;
     position: absolute;
-    @include leader(-1.5);
+    @include leader(2);
     left: gutter();
     right: gutter();
     z-index: 0;
@@ -168,55 +168,31 @@ div[role="main"] {
 
 .mobile-container td:nth-of-type(2),
 .mobile-container th:nth-of-type(2) {
-    width: 60%;
+    width: 100%;
 }
 
 .mobile-container {
     width: 100%;
-    max-width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
 }
 
 .mobile-container table {
     width: min-intrinsic;
-    @include calc('margin-left', '60% + 2.5em');
     margin-bottom: 0;
     position: static;
 }
 
 .mobile-container th,
 .mobile-container td {
-    width: 1%;
+    position: absolute;
+    left: -9999px;
 }
 
 .mobile-container th:first-of-type,
 .mobile-container td:first-of-type,
 .mobile-container th:nth-of-type(2),
 .mobile-container td:nth-of-type(2) {
-    position: absolute;
-    background-color: #f2f2f2;
-    border-color: #d7d7d7;
-    @include trailing-border(1px, 0, $base-font-size, solid);
-    z-index: 1;
-}
-
-
-.mobile-container thead th:nth-of-type(2) {
-    @include padding-leader(.25);
-}
-
-.mobile-container th:first-of-type,
-.mobile-container td:first-of-type {
-    left: gutter();
-    @include calc('height', rhythm(1.5) + " + 1px");
-    padding-bottom: 1px;
-}
-
-.mobile-container th:nth-of-type(2),
-.mobile-container td:nth-of-type(2) {
-    @include calc('left', gutter() + " + 2.25em");
-    border-right: 1px solid #d7d7d7;
+    position: relative;
+    left: auto;
 }
 
 /* @end */
