@@ -538,6 +538,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     min-width: 2.25em;
     width: 2.25em; }
 
+  .browse td:first-of-type:not(:only-of-type),
+  .browse th:first-of-type:not(:only-of-type) {
+    background-color: #d2d2d2;
+    /* For multiline cells. */ }
+
   .browse .add.button,
   .browse .batch-edit.button {
     float: left;
@@ -1706,7 +1711,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-color: rgba(0, 0, 0, 0.5);
     display: block;
     position: absolute;
-    margin-top: 3em;
+    margin-top: -2.25em;
     left: 1.04167%;
     right: 1.04167%;
     z-index: 0; }
@@ -1716,7 +1721,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 100%; }
 
   .mobile-container {
-    width: 100%; }
+    width: 100%;
+    overflow: hidden; }
 
   .mobile-container table {
     width: min-intrinsic;

@@ -160,7 +160,7 @@ div[role="main"] {
     background-color: rgba(0, 0, 0, 0.5);
     display: block;
     position: absolute;
-    @include leader(2);
+    @include leader(-1.5);
     left: gutter();
     right: gutter();
     z-index: 0;
@@ -173,6 +173,7 @@ div[role="main"] {
 
 .mobile-container {
     width: 100%;
+    overflow: hidden;
 }
 
 .mobile-container table {

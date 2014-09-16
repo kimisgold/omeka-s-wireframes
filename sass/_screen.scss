@@ -565,6 +565,11 @@ div[role="main"] {
     width: rhythm(1.5);
 }
 
+.browse td:first-of-type:not(:only-of-type),
+.browse th:first-of-type:not(:only-of-type) {
+    background-color: #d2d2d2; /* For multiline cells. */
+}
+
 .browse .add.button,
 .browse .batch-edit.button {
     float: left;
