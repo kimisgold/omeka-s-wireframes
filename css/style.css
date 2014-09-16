@@ -536,8 +536,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .browse td:first-of-type,
   .browse th:first-of-type {
     min-width: 2.25em;
-    width: 2.25em;
-    background-color: #d2d2d2; }
+    width: 2.25em; }
 
   .browse .add.button,
   .browse .batch-edit.button {
@@ -1348,24 +1347,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0; }
 
-  .vocab-inputs {
-    width: 74.54212%; }
-    .vocab-inputs input[type=text],
-    .vocab-inputs textarea,
-    .vocab-inputs select {
-      width: -webkit-calc(100% - 72px);
-      width: calc(100% - 72px); }
-    .vocab-inputs .input-options {
-      left: -webkit-calc(100% - 72px);
-      left: calc(100% - 72px); }
-
   .vocabs .upload.input-option span {
     display: block;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 0.375em 10px;
-    width: -webkit-calc(100% - 72px);
-    width: calc(100% - 72px);
-    float: left; }
+    float: left;
+    width: 100%; }
 
   /* @end */
   /* @group ----- Imported Vocabulary ----- */
@@ -1747,6 +1734,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .mobile-container td:nth-of-type(2) {
     position: relative;
     left: auto; }
+
+  .modal.small {
+    width: 80%;
+    min-height: 40%; }
 
   /* @end */
   /* @group ----- Add/Edit views ----- */

@@ -563,7 +563,6 @@ div[role="main"] {
 .browse th:first-of-type {
     min-width: rhythm(1.5);
     width: rhythm(1.5);
-    background-color: #d2d2d2;
 }
 
 .browse .add.button,
@@ -1572,7 +1571,6 @@ div[role="main"] {
 /* @end */
 
 /* @group ----- Add Vocabulary ----- */
-
 .vocabs .field .upload-input {
     margin: rhythm(.25) 0 0;
     position: relative;
@@ -1592,26 +1590,12 @@ div[role="main"] {
     @include opacity(0);
 }
 
-.vocab-inputs {
-    width: span(10 of 13) - gutter(7);
-    
-    input[type=text],
-    textarea,
-    select {
-        @include calc('width', "100% - " + (3 * $base-line-height));
-    }
-    
-    .input-options {
-        @include calc('left', "100% - " + (3 * $base-line-height));
-    }
-}
-
 .vocabs .upload.input-option span {
     display: block;
     background-color: rgba(255,255,255,.5);
     padding: rhythm(.25) 10px;
-    @include calc('width', "100% - " + (3 * $base-line-height));
     float: left;
+    width: 100%;
 }
 
 /* @end */
