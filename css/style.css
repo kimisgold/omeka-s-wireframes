@@ -579,6 +579,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-overflow: ellipsis;
     white-space: nowrap; }
 
+  th a[class^="sort"] {
+    display: block;
+    width: 100%; }
+
+  th a[class="sorted-asc"],
+  th a[class="sorted-desc"] {
+    border-color: #d2d2d2;
+    padding: 0 .5em;
+    border-bottom-width: 0.1875em;
+    border-bottom-style: solid;
+    padding-bottom: 0.1875em;
+    margin: 0 0 -0.375em -0.5em;
+    width: -webkit-calc(100% + 1em);
+    width: calc(100% + 1em); }
+
   /* @end */
   /* @group ----- Add views ----- */
   .add div[role="main"],
@@ -1009,7 +1024,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* @end */
   /* @end */
   /* @group ----- Iconfont ----- */
-  [class^="fa-"]:before, [class*=" fa-"]:before {
+  [class^="fa-"]:before, [class*=" fa-"]:before,
+  [class^="sort"]:after, [class*=" sort"]:after {
     font-family: 'FontAwesome';
     speak: none;
     font-style: normal;
@@ -1050,6 +1066,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   .fa-settings:before {
     content: "\f085"; }
+
+  .sortable:after {
+    content: "\f0dc"; }
+
+  .sorted-asc:after {
+    content: "\f160"; }
+
+  .sorted-desc:after {
+    content: "\f161"; }
 
   .screen-reader-text {
     position: absolute;

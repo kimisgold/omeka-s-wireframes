@@ -614,6 +614,21 @@ div[role="main"] {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+th a[class^="sort"] {
+    display: block;
+    width: 100%;
+}
+
+th a[class="sorted-asc"],
+th a[class="sorted-desc"] {
+    border-color: #d2d2d2;
+    padding: 0 .5em;
+    @include trailing-border(3px, .25, $base-font-size, solid);
+    margin: 0 0 rhythm(-.25) -.5em;
+    @include calc('width', '100% + 1em');
+}
+
 /* @end */
 
 /* @group ----- Add views ----- */
@@ -1156,7 +1171,8 @@ div[role="main"] {
 /* @group ----- Iconfont ----- */
 
 
-[class^="fa-"]:before, [class*=" fa-"]:before {
+[class^="fa-"]:before, [class*=" fa-"]:before,
+[class^="sort"]:after, [class*=" sort"]:after {
     font-family: 'FontAwesome';
     speak: none;
     font-style: normal;
@@ -1208,6 +1224,18 @@ div[role="main"] {
 
 .fa-settings:before {
     content: "\f085";
+}
+
+.sortable:after {
+    content: "\f0dc";
+}
+
+.sorted-asc:after {
+    content: "\f160";
+}
+
+.sorted-desc:after {
+    content: "\f161";
 }
 
 .screen-reader-text {

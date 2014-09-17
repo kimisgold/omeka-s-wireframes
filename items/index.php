@@ -23,9 +23,9 @@
         <thead>
             <tr>
                 <th><input type="checkbox" id="select-all"><label class="screen-reader-text" for="select-all">Select all</label></th>
-                <th>Title <a href="#" class="fa-caret-down"><span class="screen-reader-text">Sort by name</span></a></th>
-                <th>Class <a href="#" class="fa-caret-down"><span class="screen-reader-text">Sort by type</span></a></th>
-                <th>Date Added <a href="#" class="fa-caret-up"><span class="screen-reader-text">Sort by date added (descending)</span></a></th>
+                <th><a href="#" class="sortable">Title <span class="screen-reader-text">(Sort by name)</span></a></th>
+                <th><a href="#" class="sortable">Class <span class="screen-reader-text">(Sort by type)</span></a></th>
+                <th><a href="#" class="sorted-asc">Date Added <span class="screen-reader-text">(Switch to descending order)</span></a></th>
             </tr>
         </thead>
         <tbody>
