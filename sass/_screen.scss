@@ -1075,7 +1075,8 @@ th a[class="sorted-desc"] {
         select,
         textarea,
         input[type="text"],
-        input[type="password"] {
+        input[type="password"],
+        input[type="email"] {
             width: 100%;
             min-height: rhythm(1.5);
             padding: rhythm(.25);
