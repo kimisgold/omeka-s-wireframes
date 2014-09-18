@@ -32,7 +32,7 @@
         </div>
         <div class="field">
             <div class="field-actions">
-                <a href="#" class="add-value button fa-plus"><span class="screen-reader-text">Add Value</span></a>
+                <a href="#" class="add-value button o-icon-add"><span class="screen-reader-text">Add Value</span></a>
             </div>
             <div class="field-meta">
                 <label for="item-set">Item Set</label>

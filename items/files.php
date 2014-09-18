@@ -2,7 +2,7 @@
     <legend>Media</legend>
     <div class="media field">
         <div class="field-actions">
-            <a href="#" class="add-value button fa-plus"><span class="screen-reader-text">Add Value</span></a>
+            <a href="#" class="add-value button o-icon-add"><span class="screen-reader-text">Add Value</span></a>
         </div>
         <div class="field-meta">
             <label>
@@ -12,10 +12,10 @@
         <div class="inputs">
             <div class="value">
                 <div class="input-options">
-                    <a link="#" class="tab active fa-upload"><span class="screen-reader-text">Upload</span></a>
-                    <a link="#" class="tab fa-link"><span class="screen-reader-text">Url</span></a>
-                    <a link="#" class="tab fa-flickr"><span class="screen-reader-text">Flickr</span></a>
-                    <a link="#" class="tab fa-youtube"><span class="screen-reader-text">Youtube</span></a>
+                    <a link="#" class="tab active o-icon-upload"><span class="screen-reader-text">Upload</span></a>
+                    <a link="#" class="tab o-icon-link"><span class="screen-reader-text">Url</span></a>
+                    <a link="#" class="tab o-icon-flickr"><span class="screen-reader-text">Flickr</span></a>
+                    <a link="#" class="tab o-icon-youtube"><span class="screen-reader-text">Youtube</span></a>
                 </div>
                 <div class="active upload input-option">
                     <div class="existing-files">
@@ -50,10 +50,10 @@
         <div class="inputs">
             <div class="value">
                 <div class="input-options">
-                    <a link="#" class="tab active fa-upload"><span class="screen-reader-text">Upload</span></a>
-                    <a link="#" class="tab fa-link"><span class="screen-reader-text">Url</span></a>
-                    <a link="#" class="tab fa-flickr"><span class="screen-reader-text">Flickr</span></a>
-                    <a link="#" class="tab fa-youtube"><span class="screen-reader-text">Youtube</span></a>
+                    <a link="#" class="tab active o-icon-upload"><span class="screen-reader-text">Upload</span></a>
+                    <a link="#" class="tab o-icon-link"><span class="screen-reader-text">Url</span></a>
+                    <a link="#" class="tab o-icon-flickr"><span class="screen-reader-text">Flickr</span></a>
+                    <a link="#" class="tab o-icon-youtube"><span class="screen-reader-text">Youtube</span></a>
                 </div>
                 <div class="active upload input-option">
                     <div class="existing-files">

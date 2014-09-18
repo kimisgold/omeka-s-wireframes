@@ -22,9 +22,9 @@
                 <td>
                     <span class="record-name"><a href="#">admin (Kim Nguyen)</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="fa-eye"><span class="screen-reader-text">View</span></a></li>
-                        <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-view"><span class="screen-reader-text">View</span></a></li>
+                        <li><a href="#" class="o-icon-more"><span class="screen-reader-text">Details</span></a></li>
                     </ul>
                 </td>
                 <td>Mar 28, 2014</td>
@@ -34,9 +34,9 @@
                 <td>
                     <span class="record-name"><a href="#">sherah1914 (Sheila Brennan)</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="fa-eye"><span class="screen-reader-text">View</span></a></li>
-                        <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-view"><span class="screen-reader-text">View</span></a></li>
+                        <li><a href="#" class="o-icon-more"><span class="screen-reader-text">Details</span></a></li>
                     </ul>
                 </td>
                 <td>Mar 28, 2014</td>
@@ -46,9 +46,9 @@
                 <td>
                     <span class="record-name"><a href="#">zerocrates (John Flatness)</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="fa-eye"><span class="screen-reader-text">View</span></a></li>
-                        <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-view"><span class="screen-reader-text">View</span></a></li>
+                        <li><a href="#" class="o-icon-more"><span class="screen-reader-text">Details</span></a></li>
                     </ul>
                 </td>
                 <td>Mar 28, 2014</td>

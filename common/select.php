@@ -1,6 +1,6 @@
 <div id="item-select" class="modal">
     <div class="modal-header">
-        <a href="#" class="closeBtn fa-times"><span class="screen-reader-text">Close Me</span></a>
+        <a href="#" class="closeBtn o-icon-close"><span class="screen-reader-text">Close Me</span></a>
         <h1>Select Item</h1>
     </div>
     <div class="modal-search-nav">

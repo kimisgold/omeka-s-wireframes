@@ -16,9 +16,9 @@
         <thead>
             <tr>
                 <th><input type="checkbox" id="select-all"><label class="screen-reader-text" for="select-all">Select all</label></th>
-                <th>Name <a href="#" class="fa-caret-down"><span class="screen-reader-text">Sort</span></a></th>
-                <th>Items <a href="#" class="fa-caret-down"><span class="screen-reader-text">Sort</span></a></th>
-                <th>Owner <a href="#" class="fa-caret-down"><span class="screen-reader-text">Sort</span></a></th>
+                <th><a href="#" class="sorted-asc" title="Sort by name">Name</a></th>
+                <th><a href="#" class="sortable" title="Sort by number of items">Items</a></th>
+                <th><a href="#" class="sortable" title="Sorted by owner, ascending">Owner</a></th>
             </tr>
         </thead>
         <tbody>
@@ -27,9 +27,9 @@
                 <td>
                     <span class="record-name"><a href="#">Histories of the National Mall</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">124</a></td>
@@ -40,9 +40,9 @@
                 <td>
                     <span class="record-name"><a href="#">War of 1812</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">125</a></td>
@@ -53,9 +53,9 @@
                 <td>
                     <span class="record-name"><a href="#">Civil Rights</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">543</a></td>
@@ -66,9 +66,9 @@
                 <td>
                     <span class="record-name"><a href="#">Popular Romance</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">215</a></td>
@@ -79,9 +79,9 @@
                 <td>
                     <span class="record-name"><a href="#">Gulag</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">123</a></td>
@@ -92,9 +92,9 @@
                 <td>
                     <span class="record-name"><a href="#">Muslim Journeys</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">125</a></td>
@@ -105,9 +105,9 @@
                 <td>
                     <span class="record-name"><a href="#">Presidents</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">432</a></td>
@@ -118,9 +118,9 @@
                 <td>
                     <span class="record-name"><a href="#">Teaching History</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">12</a></td>
@@ -131,9 +131,9 @@
                 <td>
                     <span class="record-name"><a href="#">Smithsonian</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">153</a></td>
@@ -144,9 +144,9 @@
                 <td>
                     <span class="record-name"><a href="#">Cooper Hewitt Collection</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">125</a></td>
@@ -157,9 +157,9 @@
                 <td>
                     <span class="record-name"><a href="#">Portraiture</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">325</a></td>
@@ -170,9 +170,9 @@
                 <td>
                     <span class="record-name"><a href="#">Space Race</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">51</a></td>
@@ -183,9 +183,9 @@
                 <td>
                     <span class="record-name"><a href="#">Martha Washington: A Life</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">234</a></td>
@@ -196,9 +196,9 @@
                 <td>
                     <span class="record-name"><a href="#">Bracero History ArchiveH</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">25</a></td>
@@ -209,9 +209,9 @@
                 <td>
                     <span class="record-name"><a href="#">Hurricane Digital Memory Bank</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">14</a></td>
@@ -222,9 +222,9 @@
                 <td>
                     <span class="record-name"><a href="#">Probing the Past: Virginia and Maryland Probate Inventories</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">1534</a></td>
@@ -235,9 +235,9 @@
                 <td>
                     <span class="record-name"><a href="#">Object of History</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">123</a></td>
@@ -248,9 +248,9 @@
                 <td>
                     <span class="record-name"><a href="#">Critical Infrastructure Protection Oral History Project</a></span>
                     <div class="actions">
-                        <a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">More Details</span></a>
-                        <a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a>
-                        <a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a>
+                        <a href="#" class="o-icon-more"><span class="screen-reader-text">More Details</span></a>
+                        <a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a>
+                        <a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a>
                     </div>
                 </td>
                 <td><a href="#">151</a></td>

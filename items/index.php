@@ -34,9 +34,9 @@
                 <td>
                     <span class="record-name"><a href="#">Rocket Row</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Place</td>
@@ -47,9 +47,9 @@
                 <td>
                     <span class="record-name"><a href="#">Tennis Courts in the South Yard</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Place</td>
@@ -60,9 +60,9 @@
                 <td>
                     <span class="record-name"><a href="#">Smithsonian South Shed</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Place</td>
@@ -73,9 +73,9 @@
                 <td>
                     <span class="record-name"><a href="#">Japanese Lantern</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Place</td>
@@ -86,9 +86,9 @@
                 <td>
                     <span class="record-name"><a href="#">Early Cherry Blossom Festival</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Event</td>
@@ -99,9 +99,9 @@
                 <td>
                     <span class="record-name"><a href="#">Discovery of America</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Place</td>
@@ -112,9 +112,9 @@
                 <td>
                     <span class="record-name"><a href="#">American Colonization Society Hall</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Place</td>
@@ -125,9 +125,9 @@
                 <td>
                     <span class="record-name"><a href="#">Federal Government Building</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Event</td>
@@ -138,9 +138,9 @@
                 <td>
                     <span class="record-name"><a href="#">United States Slave Trade</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Still Image</td>
@@ -151,9 +151,9 @@
                 <td>
                     <span class="record-name"><a href="#">Essay on the City of Washington</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="fa-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="fa-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="fa-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Document</td>
@@ -167,7 +167,7 @@
 
 <div class="modal">
     <div class="modal-header">
-        <a href="#" class="closeBtn fa-times"><span class="screen-reader-text">Close Me</span></a>
+        <a href="#" class="closeBtn o-icon-times"><span class="screen-reader-text">Close Me</span></a>
         <h1></h1>
     </div>
     <div class="modal-content">

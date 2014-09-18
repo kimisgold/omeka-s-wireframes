@@ -102,9 +102,7 @@ body {
     
     input,
     textarea,
-    button,
-    a.button,
-    .button {
+    button {
         font-family: "Source Sans Pro", sans-serif;
         font-size: $base-font-size;
         line-height: $base-line-height;
@@ -627,6 +625,43 @@ th a[class="sorted-desc"] {
     @include trailing-border(3px, .25, $base-font-size, solid);
     margin: 0 0 rhythm(-.25) -.5em;
     @include calc('width', '100% + 1em');
+}
+
+[class*="sort"]:after,
+[class*="sort"]:before {
+    position: absolute;
+    font-size: .75 * $base-font-size;
+    right: .5em;
+    top: rhythm(.625);
+}
+
+[class*="sort"]:hover:after {
+    color: $red;
+}
+
+.sortable:after,
+[class*="sort"]:before {
+    content: "\f0dc";
+    color: #999;
+}
+
+.sorted-asc:hover:after,
+.sorted-desc:after {
+    content: "\f0dd";
+}
+
+.sortable:hover:after,
+.sorted-desc:hover:after,
+.sorted-asc:after {
+    content: "\f0de";
+}
+
+[class*="sort"]:before {
+    z-index: 1;
+}
+
+[class*="sort"]:after {
+    z-index: 2;
 }
 
 /* @end */
@@ -1170,80 +1205,6 @@ th a[class="sorted-desc"] {
 
 /* @group ----- Iconfont ----- */
 
-
-[class^="fa-"]:before, [class*=" fa-"]:before,
-[class^="sort"]:after, [class*=" sort"]:after {
-    font-family: 'FontAwesome';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.fa-menu:before {
-    content: "\f0c9";
-}
-
-.fa-current-user:before {
-    content: "\f007";
-} 
-
-.fa-items:before {
-    content: "\f1b3";
-}
-
-.fa-text:before {
-    content: "\f11c";
-}
-
-.fa-items:before {
-    content: "\f1b3";
-}
-
-.fa-item-set:before {
-    content: "\f187";
-}
-
-.fa-vocab:before {
-    content: "\f02d";
-}
-
-.fa-module:before {
-    content: "\f0fe";
-}
-
-.fa-site:before {
-    content: "\f108";
-}
-
-.fa-settings:before {
-    content: "\f085";
-}
-
-.sortable:after {
-    content: "\f0dc";
-}
-
-.sorted-asc:after {
-    content: "\f160";
-}
-
-.sorted-desc:after {
-    content: "\f161";
-}
-
-.screen-reader-text {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-}
-
 .external.button:after {
     font-family: 'FontAwesome';
     speak: none;
@@ -1333,7 +1294,7 @@ th a[class="sorted-desc"] {
         float: left;
     }
     
-    button.fa-search {
+    button.o-icon-search {
         height: rhythm();
         width: rhythm();
         line-height: $base-line-height;
