@@ -84,7 +84,18 @@
         });
 
         if ($('body').hasClass('browse')) {
-            attachModal('.fa-trash-o');
+            $('.o-icon-more').click( function(e) {
+                e.preventDefault();
+                $('#more').toggleClass('active');
+            });
+            $('.o-icon-delete').click( function(e) {
+                e.preventDefault();
+                $('#delete').toggleClass('active');
+            });
+            $('.sidebar .o-icon-close').click( function(e) {
+                e.preventDefault();
+                $(this).parents('.sidebar').removeClass('active');
+            });
         }
 
         $('body.browse .fa-trash-o').click(function(e) {

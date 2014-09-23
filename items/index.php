@@ -34,9 +34,9 @@
                 <td>
                     <span class="record-name"><a href="#">Rocket Row</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-more"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Place</td>
@@ -47,9 +47,9 @@
                 <td>
                     <span class="record-name"><a href="#">Tennis Courts in the South Yard</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-more"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Place</td>
@@ -60,9 +60,9 @@
                 <td>
                     <span class="record-name"><a href="#">Smithsonian South Shed</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-more"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Place</td>
@@ -73,9 +73,9 @@
                 <td>
                     <span class="record-name"><a href="#">Japanese Lantern</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-more"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Place</td>
@@ -86,9 +86,9 @@
                 <td>
                     <span class="record-name"><a href="#">Early Cherry Blossom Festival</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-more"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Event</td>
@@ -99,9 +99,9 @@
                 <td>
                     <span class="record-name"><a href="#">Discovery of America</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-more"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Place</td>
@@ -112,9 +112,9 @@
                 <td>
                     <span class="record-name"><a href="#">American Colonization Society Hall</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-more"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Place</td>
@@ -125,9 +125,9 @@
                 <td>
                     <span class="record-name"><a href="#">Federal Government Building</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-more"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Event</td>
@@ -138,9 +138,9 @@
                 <td>
                     <span class="record-name"><a href="#">United States Slave Trade</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-more"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Still Image</td>
@@ -151,9 +151,9 @@
                 <td>
                     <span class="record-name"><a href="#">Essay on the City of Washington</a></span>
                     <ul class="actions">
-                        <li><a href="#" class="o-icon-pencil"><span class="screen-reader-text">Edit</span></a></li>
-                        <li><a href="#" class="o-icon-ellipsis-h"><span class="screen-reader-text">Details</span></a></li>
-                        <li><a href="#" class="o-icon-trash-o"><span class="screen-reader-text">Delete</span></a></li>
+                        <li><a href="#" class="o-icon-edit"><span class="screen-reader-text">Edit</span></a></li>
+                        <li><a href="#" class="o-icon-more"><span class="screen-reader-text">Details</span></a></li>
+                        <li><a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a></li>
                     </ul>
                 </td>
                 <td>Document</td>
@@ -161,13 +161,31 @@
             </tr>
         </tbody>
     </table>
+    <div id="more" class="sidebar">
+        <a href="#" class="o-icon-close" aria-label="Close details panel" title="Close"></a>
+        <h2>Rocket Row</h2>
+        <h3>Description</h3>
+        <p>Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue.</p>
+        <h3>Creator</h3>
+        <p>admin</p>
+        <h3>Coverage</h3>
+        <p>1800-1875</p>
+        <h3>Subject</h3>
+        <p>Place</p>
+    </div>
+    <div id="delete" class="sidebar">
+        <a href="#" class="o-icon-close" aria-label="Close details panel" title="Close"></a>
+        <h2>Delete record</h2>
+        <p>Are you sure you would like to delete this record?</p>
+        <button>Throw it in the garbage</button>
+    </div>
 </div>
 
 <div class="overlay"></div>
 
 <div class="modal">
     <div class="modal-header">
-        <a href="#" class="closeBtn o-icon-times"><span class="screen-reader-text">Close Me</span></a>
+        <a href="#" class="closeBtn o-icon-close"><span class="screen-reader-text">Close Me</span></a>
         <h1></h1>
     </div>
     <div class="modal-content">
