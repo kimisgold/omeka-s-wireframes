@@ -84,17 +84,23 @@
         });
 
         if ($('body').hasClass('browse')) {
-            $('.o-icon-more').click( function(e) {
+            $('.o-icon-more, .o-icon-delete').click( function(e) {
                 e.preventDefault();
-                $('#more').toggleClass('active');
-            });
-            $('.o-icon-delete').click( function(e) {
-                e.preventDefault();
-                $('#delete').toggleClass('active');
+                if ($(this).hasClass('o-icon-more')) { $('#more').toggleClass('active') };
+                if ($(this).hasClass('o-icon-delete')) { $('#delete').toggleClass('active') };
+                if ($('.sidebar').hasClass('active') || !$('div[role="main"]').hasClass('with-  sidebar')) {
+                    $('div[role="main"]').addClass('with-sidebar');
+                }
+                if ($('.sidebar.active').length < 1) {
+                    $('div[role="main"]').removeClass('with-sidebar');
+                }
             });
             $('.sidebar .o-icon-close').click( function(e) {
                 e.preventDefault();
                 $(this).parents('.sidebar').removeClass('active');
+                if ($('.sidebar.active').length < 1) {
+                    $('div[role="main"]').removeClass('with-sidebar');
+                }
             });
         }
 
