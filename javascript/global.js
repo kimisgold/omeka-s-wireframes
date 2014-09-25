@@ -293,6 +293,15 @@
         $(document).on('change', '.items .field input', function() {
             $(this).parents('.field').addClass('keep');
         });
+        
+        // Filters modules.
+        
+        if ($('body').hasClass('modules')) {
+            $('select.filters').on('change', function() {
+                var selected = $(this).children(':selected').attr('value');
+                $('#modules').attr('class', selected);
+            });
+        }
     });
 
     // Duplicates the new field template, and makes it visible by removing the "template" class.
