@@ -698,7 +698,7 @@
 }
 
 /* line 104, ../sass/font-awesome/_icons.scss */
-.fa-arrow-up:before {
+.fa-arrow-up:before, .o-icon-upgrade:before {
   content: "\f062";
 }
 
@@ -897,7 +897,7 @@
 }
 
 /* line 147, ../sass/font-awesome/_icons.scss */
-.fa-sign-out:before {
+.fa-sign-out:before, .o-icon-uninstall:before {
   content: "\f08b";
 }
 
@@ -917,7 +917,7 @@
 }
 
 /* line 151, ../sass/font-awesome/_icons.scss */
-.fa-sign-in:before {
+.fa-sign-in:before, .o-icon-install:before {
   content: "\f090";
 }
 
@@ -1057,7 +1057,7 @@
 }
 
 /* line 179, ../sass/font-awesome/_icons.scss */
-.fa-wrench:before {
+.fa-wrench:before, .o-icon-configure:before {
   content: "\f0ad";
 }
 
@@ -2651,12 +2651,12 @@
 }
 
 /* line 542, ../sass/font-awesome/_icons.scss */
-.fa-toggle-off:before {
+.fa-toggle-off:before, .o-icon-deactivate:before {
   content: "\f204";
 }
 
 /* line 543, ../sass/font-awesome/_icons.scss */
-.fa-toggle-on:before {
+.fa-toggle-on:before, .o-icon-activate:before {
   content: "\f205";
 }
 
@@ -2697,7 +2697,7 @@
   content: "\f20c";
 }
 
-/* line 109, ../sass/iconfonts.scss */
+/* line 133, ../sass/iconfonts.scss */
 .screen-reader-text {
   position: absolute;
   top: -9999px;

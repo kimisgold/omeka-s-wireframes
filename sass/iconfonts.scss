@@ -106,6 +106,30 @@
     @extend .fa-eye;
 }
 
+.o-icon-activate {
+    @extend .fa-toggle-on;
+}
+
+.o-icon-deactivate {
+    @extend .fa-toggle-off;
+}
+
+.o-icon-configure {
+    @extend .fa-wrench;
+}
+
+.o-icon-uninstall {
+    @extend .fa-sign-out;
+}
+
+.o-icon-install {
+    @extend .fa-sign-in;
+}
+
+.o-icon-upgrade {
+    @extend .fa-arrow-up;
+}
+
 .screen-reader-text {
     position: absolute;
     top: -9999px;
