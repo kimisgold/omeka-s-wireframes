@@ -14,6 +14,10 @@
     @extend .fa-user;
 } 
 
+.o-icon-search {
+    @extend .fa-search;
+}
+
 .o-icon-items {
     @extend .fa-cubes;
 }

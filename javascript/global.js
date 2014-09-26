@@ -14,7 +14,7 @@
             e.preventDefault();
             var button_class = $(this).attr('class');
             var nav_id = button_class.replace(/button/, '');
-            var nav_object = $('#' + nav_id.replace(/fa-/, ''));
+            var nav_object = $('#' + nav_id.replace(/o-icon-/, ''));
             if ($('header .active').length > 0) {
                 if (!($(this).hasClass('active'))) {
                     $('header .active').removeClass('active');
@@ -88,7 +88,7 @@
                 e.preventDefault();
                 if ($(this).hasClass('o-icon-more')) { $('#more').toggleClass('active') };
                 if ($(this).hasClass('o-icon-delete')) { $('#delete').toggleClass('active') };
-                if ($('.sidebar').hasClass('active') || !$('div[role="main"]').hasClass('with-  sidebar')) {
+                if ($('.sidebar').hasClass('active') || !$('div[role="main"]').hasClass('with-sidebar')) {
                     $('div[role="main"]').addClass('with-sidebar');
                 }
                 if ($('.sidebar.active').length < 1) {

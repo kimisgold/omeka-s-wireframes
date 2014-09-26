@@ -2238,17 +2238,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     z-index: 1001;
   }
   /* line 26, ../sass/_tablet.scss */
-  header .fa-menu.button {
+  header .o-icon-menu.button {
     left: 0;
     border-right: 1px solid rgba(0, 0, 0, 0.08);
     width: 2.25em;
   }
   /* line 32, ../sass/_tablet.scss */
-  header .fa-search.button {
+  header .o-icon-search.button {
     left: 2.25em;
   }
   /* line 36, ../sass/_tablet.scss */
-  header .fa-current-user.button {
+  header .o-icon-current-user.button {
     right: 0;
   }
 
@@ -2450,13 +2450,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   /* @end */
   /* @group ----- Add/Edit views ----- */
-  /* line 221, ../sass/_tablet.scss */
+  /* line 220, ../sass/_tablet.scss */
   .add fieldset,
   .edit fieldset {
     margin-bottom: 0;
   }
 
-  /* line 226, ../sass/_tablet.scss */
+  /* line 225, ../sass/_tablet.scss */
   .add legend,
   .edit legend {
     position: relative;
@@ -2474,7 +2474,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-bottom: -0.0625em;
   }
 
-  /* line 241, ../sass/_tablet.scss */
+  /* line 240, ../sass/_tablet.scss */
   .add legend:after,
   .edit legend:after {
     content: "\f0da";
@@ -2484,13 +2484,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: 0.5em;
   }
 
-  /* line 250, ../sass/_tablet.scss */
+  /* line 249, ../sass/_tablet.scss */
   .add .active legend:after,
   .edit .active legend:after {
     content: "\f0d7";
   }
 
-  /* line 255, ../sass/_tablet.scss */
+  /* line 254, ../sass/_tablet.scss */
   .add .section,
   .edit .section,
   .add .active.section > *:not(legend),
@@ -2498,7 +2498,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
   }
 
-  /* line 262, ../sass/_tablet.scss */
+  /* line 261, ../sass/_tablet.scss */
   .add .section > *:not(legend),
   .edit .section > *:not(legend),
   .add .section .field.template,
@@ -2506,25 +2506,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 
-  /* line 269, ../sass/_tablet.scss */
+  /* line 268, ../sass/_tablet.scss */
   .add .active.section > .button,
   .edit .active.section > .button {
     display: inline-block;
   }
 
-  /* line 274, ../sass/_tablet.scss */
+  /* line 273, ../sass/_tablet.scss */
   .section-nav {
     position: absolute;
     left: -9999px;
   }
 
-  /* line 279, ../sass/_tablet.scss */
+  /* line 278, ../sass/_tablet.scss */
   .field-meta,
   .inputs {
     width: 100%;
   }
 
-  /* line 284, ../sass/_tablet.scss */
+  /* line 283, ../sass/_tablet.scss */
   .field-actions {
     position: absolute;
     top: 0.5625em;
@@ -2532,29 +2532,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     z-index: 1;
     width: 50%;
   }
-  /* line 291, ../sass/_tablet.scss */
+  /* line 290, ../sass/_tablet.scss */
   .field-actions a {
     float: right;
     display: block;
   }
-  /* line 295, ../sass/_tablet.scss */
+  /* line 294, ../sass/_tablet.scss */
   .field-actions a.button {
     margin-left: .5em !important;
   }
 
-  /* line 302, ../sass/_tablet.scss */
+  /* line 301, ../sass/_tablet.scss */
   .field-meta label,
   .field-description p {
     line-height: 24px;
     margin-bottom: 0.375em;
   }
 
-  /* line 308, ../sass/_tablet.scss */
+  /* line 307, ../sass/_tablet.scss */
   .field-meta label {
     font-weight: bold;
   }
 
-  /* line 312, ../sass/_tablet.scss */
+  /* line 311, ../sass/_tablet.scss */
   .field-description {
     height: 24px;
     float: none;
@@ -2563,22 +2563,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     position: absolute;
   }
 
-  /* line 320, ../sass/_tablet.scss */
+  /* line 319, ../sass/_tablet.scss */
   .unset .field-meta {
     width: 100%;
   }
 
   /* @end */
   /* @group ----- Minimalist views ----- */
-  /* line 327, ../sass/_tablet.scss */
+  /* line 326, ../sass/_tablet.scss */
   body.minimal {
     width: 75%;
   }
-  /* line 330, ../sass/_tablet.scss */
+  /* line 329, ../sass/_tablet.scss */
   body.minimal .logo {
     background-color: transparent;
   }
-  /* line 334, ../sass/_tablet.scss */
+  /* line 333, ../sass/_tablet.scss */
   body.minimal div[role="main"] > .messages {
     margin-bottom: 1.5em;
   }

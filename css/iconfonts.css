@@ -238,7 +238,7 @@
 }
 
 /* line 6, ../sass/font-awesome/_icons.scss */
-.fa-search:before {
+.fa-search:before, .o-icon-search:before {
   content: "\f002";
 }
 
@@ -2697,7 +2697,7 @@
   content: "\f20c";
 }
 
-/* line 133, ../sass/iconfonts.scss */
+/* line 137, ../sass/iconfonts.scss */
 .screen-reader-text {
   position: absolute;
   top: -9999px;
