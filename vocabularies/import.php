@@ -33,7 +33,7 @@
             <div class="field-meta">
                 <label for="vocab-prefix">Prefix</label>
                 <div class="field-description">
-                    <p class="icon-info"><span class="screen-reader-text">More Info</span></p>
+                    <p class="o-icon-info"><span class="screen-reader-text">More Info</span></p>
                     <p>Etiam porta sem malesuada magna mollis euismod.</p>
                 </div>
             </div>
@@ -45,7 +45,7 @@
             <div class="field-meta">
                 <label for="namespace-uri">Namespace URI</label>
                 <div class="field-description">
-                    <p class="icon-info"><span class="screen-reader-text">More Info</span></p>
+                    <p class="o-icon-info"><span class="screen-reader-text">More Info</span></p>
                     <p>Etiam porta sem malesuada magna mollis euismod.</p>
                 </div>
             </div>
@@ -57,7 +57,7 @@
             <div class="field-meta">
                 <label for="vocab-label">Label</label>
                 <div class="field-description">
-                    <p class="icon-info"><span class="screen-reader-text">More Info</span></p>
+                    <p class="o-icon-info"><span class="screen-reader-text">More Info</span></p>
                     <p>Etiam porta sem malesuada magna mollis euismod.</p>
                 </div>
             </div>
@@ -69,7 +69,7 @@
             <div class="field-meta">
                 <label for="vocab-comment">Comment</label>
                 <div class="field-description">
-                    <p class="icon-info"><span class="screen-reader-text">More Info</span></p>
+                    <p class="o-icon-info"><span class="screen-reader-text">More Info</span></p>
                     <p>Etiam porta sem malesuada magna mollis euismod.</p>
                 </div>
             </div>

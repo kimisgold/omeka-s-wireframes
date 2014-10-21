@@ -19,8 +19,12 @@
     </ul>
     <form id="install-form">
         <div class="field">
-            <label for="username">Admin username</label>
-            <input type="text" name="username" id="username">
+            <div class="field-meta">
+                <label for="username">Admin username</label>
+            </div>
+            <div class="inputs">
+                <input type="text" name="username" id="username">
+            </div>
             <ul class="messages">
                 <li class="error">Enter username before continuing.</li>
                 <li class="warning">Enter username before continuing.</li>

@@ -514,10 +514,6 @@ nav.pagination form input[type="text"] {
     display: none;
 }
 
-.mobile-container {
-    position: relative;
-}
-
 /* @end */
 
 /* @group ----- Wrappers ----- */
@@ -924,13 +920,13 @@ div[role="main"].with-sidebar {
         .description {
             display: inline-block;
             
-            .icon-info {
+            .o-icon-info {
                 display: inline-block;
                 margin: 0 0 0 1em;
                 opacity: .75;
             }
             
-            .icon-info + p {
+            .o-icon-info + p {
                 position: absolute;
                 top: -9999px;
                 left: -9999px;
@@ -940,7 +936,7 @@ div[role="main"].with-sidebar {
         }
     }
     
-    .properties .property:hover .description.show .icon-info + p {
+    .properties .property:hover .description.show .o-icon-info + p {
         top: rhythm(1.5);
         left: 0;
         padding-left: 2em;
@@ -1063,7 +1059,7 @@ div[role="main"].with-sidebar {
         height: 1.5 * $base-line-height;
     }
     
-    .field-description .icon-info {
+    .field-description .o-icon-info {
         &:hover + p {
             top: rhythm(1.5);
             left: inherit;

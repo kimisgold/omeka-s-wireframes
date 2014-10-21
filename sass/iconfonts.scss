@@ -134,6 +134,10 @@
     @extend .fa-arrow-up;
 }
 
+.o-icon-info {
+    @extend .fa-info-circle;
+}
+
 .screen-reader-text {
     position: absolute;
     top: -9999px;
