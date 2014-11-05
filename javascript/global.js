@@ -83,24 +83,23 @@
             }
         });
 
+
+        // Attach sidebar triggers
         if ($('body').hasClass('browse')) {
-            $('.o-icon-more, .o-icon-delete').click( function(e) {
-                e.preventDefault();
-                if ($(this).hasClass('o-icon-more')) { $('#more').toggleClass('active') };
-                if ($(this).hasClass('o-icon-delete')) { $('#delete').toggleClass('active') };
-                if ($('.sidebar').hasClass('active') || !$('div[role="main"]').hasClass('with-sidebar')) {
-                    $('div[role="main"]').addClass('with-sidebar');
-                }
-                if ($('.sidebar.active').length < 1) {
-                    $('div[role="main"]').removeClass('with-sidebar');
-                }
+            $('.o-icon-more').click(function() {
+                openSidebar('more')
             });
-            $('.sidebar .o-icon-close').click( function(e) {
-                e.preventDefault();
-                $(this).parents('.sidebar').removeClass('active');
-                if ($('.sidebar.active').length < 1) {
-                    $('div[role="main"]').removeClass('with-sidebar');
-                }
+            $('.o-icon-delete').click(function() {
+                openSidebar('delete');
+            });
+        }
+        
+        if ($('body').hasClass('add')) {
+            $('body').on('click','[href="#resource-select"]', function() {
+                openSidebar('resource-select');
+            });
+            $('body').on('click','.resource-name a', function() {
+                openSidebar('resource-details');
             });
         }
 
@@ -144,22 +143,27 @@
             e.preventDefault();
             if ($(this).parents('.previewed').length > 0) {
                 $('.previewed').removeClass('previewed');
-                $('.modal').toggleClass('show-details');
+                $('#resource-select').toggleClass('active');
             } else {
                 if ($('.previewed').length > 0) {
                     $('.previewed').removeClass('previewed');
                     $(this).parents('.modal .item').addClass('previewed');
                 } else {
                     $(this).parents('.modal .item').addClass('previewed');
-                    $('.modal').addClass('show-details');
+                    $('#resource-select').addClass('active');
                 }
             }
+        });
+
+        $(document).on('click', '.resource-details .o-icon-close', function(e) {
+            e.preventDefault();
+            $('#resource-select').removeClass('show-details');
         });
         
         // Carry over any entered value from simple items search to advanced items search.
         add_edit_items.on('click', '.more-options', function(e) {
             e.preventDefault();
-            var keywords = $('#item-list-search').val();
+            var keywords = $('#resource-list-search').val();
             $('input[name="advanced-keyword"').val(keywords);
         });
         
@@ -258,25 +262,25 @@
             if (!$(this).hasClass('active')) {
                 tab.siblings('.tab.active').removeClass('active');
                 tab.parent().siblings('.active:not(.remove-value)').removeClass('active');
-                var current_class = '.' + tab.attr('class').split(" fa-")[1];
+                var current_class = '.' + tab.attr('class').split(" o-icon-")[1];
                 tab.addClass('active');
                 tab.parent().siblings(current_class).addClass('active');
             }
         });
         
         // Load prechosen fields.
-        $('select[name="item-type"]').change(function() {
+        $('select[name="resource-type"]').change(function() {
             var item_type = $(this).find('option:selected').text().toLowerCase();
             $.getJSON('RDF.json',function(data) {
                 $('#add-item .field:not(.new)').each(function() {
-                    if (!$(this).hasClass('keep') && !$(this).hasClass('item-class')) {
+                    if (!$(this).hasClass('keep') && !$(this).hasClass('resource-class')) {
                         $(this).remove();
                     }
                 });
                 if (data[item_type]) {
                     $.each(data[item_type][0], function(key,value) {
                         if ($('label:contains(' + key + ')').length == 0) {
-                            makeNewField('item-values',key,value);
+                            makeNewField('resource-values',key,value);
                         }
                     });
                 }
@@ -331,29 +335,24 @@
             //$('.field.template').before(new_field);
             $(field_section).find('.template').before(new_field);
         }
-        var modalLink = $('.modal-link');
-        if (modalLink.length > 0) {
-            attachModal(modalLink);
-        }
     }
     
-    var attachModal = function(modalLink) {
-        var modal = $(modalLink);
-        modal.modal({
-            trigger: modalLink,
-            olay:'div.overlay',
-            modals:'div.modal',
-            animationEffect: 'fadein',
-            animationSpeed: 400,
-            moveModalSpeed: 'fast',
-            background: '000000',
-            opacity: 0.8,
-            openOnLoad: false,
-            docClose: true,
-            closeByEscape: true,
-            moveOnScroll: true,
-            resizeWindow: true,
-            close:'.closeBtn'
+    var openSidebar = function(id) {
+        event.preventDefault();
+        var sidebar_id = $('#' + id);
+        sidebar_id.toggleClass('active');
+        if ($('.sidebar').hasClass('active') || !$('div[role="main"]').hasClass('with-sidebar')) {
+            $('div[role="main"]').addClass('with-sidebar');
+        }
+        if ($('.sidebar.active').length < 1) {
+            $('div[role="main"]').removeClass('with-sidebar');
+        }
+        $('.sidebar > .o-icon-close').click( function(e) {
+            e.preventDefault();
+            $(this).parent('.sidebar').removeClass('active');
+            if ($('.sidebar.active').length < 1) {
+                $('div[role="main"]').removeClass('with-sidebar');
+            }
         });
     }
     

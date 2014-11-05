@@ -1,5 +1,4 @@
 <?php $bodyClass = "items browse"; ?>
-<?php $js = '<script src="../javascript/jquery.modal.min.js"></script>' ?>
 <?php include('../header.php'); ?>
 
 <h1>Items</h1>
@@ -178,17 +177,6 @@
         <h2>Delete record</h2>
         <p>Are you sure you would like to delete this record?</p>
         <button>Throw it in the garbage</button>
-    </div>
-</div>
-
-<div class="overlay"></div>
-
-<div class="modal">
-    <div class="modal-header">
-        <a href="#" class="closeBtn o-icon-close"><span class="screen-reader-text">Close Me</span></a>
-        <h1></h1>
-    </div>
-    <div class="modal-content">
     </div>
 </div>
 

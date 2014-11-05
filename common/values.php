@@ -28,7 +28,7 @@
             <div class="value">
                 <div class="input-options">
                     <a link="#" class="tab active o-icon-text"><span class="screen-reader-text">Text</span></a>
-                    <a link="#" class="tab o-icon-items"><span class="screen-reader-text">Omeka Item</span></a>
+                    <a link="#" class="tab o-icon-items"><span class="screen-reader-text">Omeka Resource</span></a>
                     <a link="#" class="tab o-icon-link"><span class="screen-reader-text">External Resource</span></a>
                 </div>
                 <div class="active type input-option">
@@ -46,7 +46,7 @@
                 </div>
                 <div class="items input-option">
                     <span class="default">No item selected</span>
-                    <a href="#item-select" class="modal-link button">Select Omeka Item</a>
+                    <a href="#resource-select" class="button">Select Omeka Resource</a>
                 </div>
                 <div class="link input-option">
                     <input type="text" name="dc-title" placeholder="Enter URL">
@@ -66,7 +66,7 @@
             <div class="value">
                 <div class="input-options">
                     <a link="#" class="tab active o-icon-text"><span class="screen-reader-text">Text</span></a>
-                    <a link="#" class="tab o-icon-items"><span class="screen-reader-text">Omeka Item</span></a>
+                    <a link="#" class="tab o-icon-items"><span class="screen-reader-text">Omeka Resource</span></a>
                     <a link="#" class="tab o-icon-link"><span class="screen-reader-text">External Resource</span></a>
                 </div>
                 <div class="active type input-option">
@@ -84,7 +84,7 @@
                 </div>
                 <div class="items input-option">
                     <span class="default">No item selected</span>
-                    <a href="#item-select" class="modal-link button">Select Omeka Item</a>
+                    <a href="#resource-select" class="modal-link button">Select Omeka Resource</a>
                 </div>
                 <div class="link input-option">
                     <input type="text" name="dc-title" placeholder="Enter URL">
@@ -113,7 +113,7 @@
             <div class="value">
                 <div class="input-options">
                     <a link="#" class="tab active o-icon-text"><span class="screen-reader-text">Text</span></a>
-                    <a link="#" class="tab o-icon-items"><span class="screen-reader-text">Omeka Item</span></a>
+                    <a link="#" class="tab o-icon-items"><span class="screen-reader-text">Omeka Resource</span></a>
                     <a link="#" class="tab o-icon-link"><span class="screen-reader-text">External Resource</span></a>
                 </div>
                 <div class="active type input-option">
@@ -131,7 +131,7 @@
                 </div>
                 <div class="items input-option">
                     <span class="default">No item selected</span>
-                    <a href="#item-select" class="modal-link button">Select Omeka Item</a>
+                    <a href="#resource-select" class="modal-link button">Select Omeka Resource</a>
                 </div>
                 <div class="link input-option">
                     <input type="text" name="dc-title" placeholder="Enter URL">

@@ -69,8 +69,6 @@
 
 </form>
 
-<div class="overlay"></div>
-
-<?php include('select.php'); ?>
+<?php include('../common/select.php'); ?>
 
 <?php include('../footer.php'); ?>
