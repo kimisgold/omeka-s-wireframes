@@ -118,7 +118,8 @@
             </tr>
         </tbody>
     </table>
-    <div id="more" class="sidebar">
+    <div class="sidebar">
+        <a href="#" class="sidebar-close o-icon-close"><span class="screen-reader-text">Close</span></a>
         <h2>BagIt</h2>
         <h3>Version</h3>
         <p class="version">3.0</p>

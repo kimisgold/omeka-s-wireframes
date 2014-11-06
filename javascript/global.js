@@ -85,21 +85,36 @@
 
 
         // Attach sidebar triggers
-        if ($('body').hasClass('browse')) {
-            $('.o-icon-more').click(function() {
-                openSidebar('more')
-            });
-            $('.o-icon-delete').click(function() {
-                openSidebar('delete');
-            });
-        }
+        $('.o-icon-more').click(function(e) {
+            e.preventDefault();
+            openSidebar($('.sidebar'));
+            $('#delete').hide();
+            $('#more').show();
+        });
+
+        $('.o-icon-delete').click(function(e) {
+            e.preventDefault();
+            openSidebar($('.sidebar'));
+            $('#more').hide();
+            $('#delete').show();
+        });
+        
+        $('.sidebar-close').click(function(e) {
+            e.preventDefault();
+            $(this).parent('.active').removeClass('active');
+            if ($('.active.sidebar').length < 1) {
+                $('#content').removeClass('sidebar-open');
+            }
+        });
         
         if ($('body').hasClass('add')) {
-            $('body').on('click','[href="#resource-select"]', function() {
-                openSidebar('resource-select');
+            $('body').on('click','[href="#resource-select"]', function(e) {
+                e.preventDefault();
+                openSidebar($('#content > .sidebar'));
             });
-            $('body').on('click','.resource-name a', function() {
-                openSidebar('resource-details');
+            $('body').on('click','.resource-name a', function(e) {
+                e.preventDefault();
+                openSidebar($('.sidebar .sidebar'));
             });
         }
 
@@ -337,23 +352,11 @@
         }
     }
     
-    var openSidebar = function(id) {
-        event.preventDefault();
-        var sidebar_id = $('#' + id);
-        sidebar_id.toggleClass('active');
-        if ($('.sidebar').hasClass('active') || !$('div[role="main"]').hasClass('with-sidebar')) {
-            $('div[role="main"]').addClass('with-sidebar');
+    var openSidebar = function(element) {
+        element.addClass('active');
+        if (!$('#content').hasClass('sidebar-open')) {
+            $('#content').addClass('sidebar-open');
         }
-        if ($('.sidebar.active').length < 1) {
-            $('div[role="main"]').removeClass('with-sidebar');
-        }
-        $('.sidebar > .o-icon-close').click( function(e) {
-            e.preventDefault();
-            $(this).parent('.sidebar').removeClass('active');
-            if ($('.sidebar.active').length < 1) {
-                $('div[role="main"]').removeClass('with-sidebar');
-            }
-        });
     }
     
     var cleanText = function(text) {

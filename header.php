@@ -45,4 +45,4 @@
         </ul>
     </nav>
 </header>
-<div role="main" id="main">
+<div role="main" id="content">

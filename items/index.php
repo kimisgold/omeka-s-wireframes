@@ -160,23 +160,24 @@
             </tr>
         </tbody>
     </table>
-    <div id="more" class="sidebar">
-        <a href="#" class="o-icon-close" aria-label="Close details panel" title="Close"></a>
-        <h2>Rocket Row</h2>
-        <h3>Description</h3>
-        <p>Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue.</p>
-        <h3>Creator</h3>
-        <p>admin</p>
-        <h3>Coverage</h3>
-        <p>1800-1875</p>
-        <h3>Subject</h3>
-        <p>Place</p>
-    </div>
-    <div id="delete" class="sidebar">
-        <a href="#" class="o-icon-close" aria-label="Close details panel" title="Close"></a>
-        <h2>Delete record</h2>
-        <p>Are you sure you would like to delete this record?</p>
-        <button>Throw it in the garbage</button>
+    <div class="sidebar">
+        <a href="#" class="sidebar-close o-icon-close" aria-label="Close details panel" title="Close"></a>
+         <div id="more">
+            <h2>Rocket Row</h2>
+            <h3>Description</h3>
+            <p>Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue.</p>
+            <h3>Creator</h3>
+            <p>admin</p>
+            <h3>Coverage</h3>
+            <p>1800-1875</p>
+            <h3>Subject</h3>
+            <p>Place</p>
+        </div>
+        <div id="delete">
+            <h2>Delete record</h2>
+            <p>Are you sure you would like to delete this record?</p>
+            <button>Throw it in the garbage</button>
+        </div>
     </div>
 </div>
 

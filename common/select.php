@@ -1,5 +1,5 @@
 <div id="resource-select" class="sidebar">
-    <a href="#" class="closeBtn o-icon-close"><span class="screen-reader-text">Close Me</span></a>
+    <a href="#" class="sidebar-close o-icon-close"><span class="screen-reader-text">Close Me</span></a>
     <h1>Select Resource</h1>
     <div class="search-nav">
         <div class="resource-search">
@@ -70,7 +70,7 @@
         </div>
     </div>
     <div id="resource-details" class="sidebar">
-        <a href="#" class="closeBtn o-icon-close"><span class="screen-reader-text">Close Me</span></a>
+        <a href="#" class="sidebar-close o-icon-close"><span class="screen-reader-text">Close Me</span></a>
         <h1>Rocket Row</h1>
         <aside>
             <div class="images">
