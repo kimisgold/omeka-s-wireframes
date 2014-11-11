@@ -246,7 +246,7 @@
 
         
         // Make new value inputs whenever "add value" button clicked.
-        add_edit_items.on('click', '.add-value', function(e) {
+        add_edit_items.on('click', '.resource-values .add-value', function(e) {
             e.preventDefault();
             var value_section = '.' + $(this).parents('.section').attr('id');
             var new_value = $(value_section + '.field.template .value ').first().clone();
@@ -257,16 +257,32 @@
             }
         });
         
-        // Remove value.
-        add_edit_items.on('click', '.remove-value', function(e) {
+        $('.advanced-search').on('click', '.add-value', function(e) {
             e.preventDefault();
+            var inputs_section = $(this).parents('.actions').siblings('.inputs');
+            var new_value = inputs_section.find('.value').first().clone();
+            new_value.find('input:text, input:password, input:file, select, textarea').val('');
+            new_value.find('input:radio, input:checkbox').removeAttr('checked').removeAttr('selected');
+            inputs_section.append(new_value);
+            if (inputs_section.find('.value').length > 1) {
+                inputs_section.find('.remove-value').each(function() {
+                    $(this).addClass('active');
+                });
+            }
+        });
+        
+        // Remove value.
+        $('body').on('click', '.remove-value', function(e) {
+            e.preventDefault();
+            var this_field = $(this).parents('.field');
             var this_value = $(this).parents('.value');
-            var value_count = $(this).parents('.field').find('.value').length;
+            var value_count = this_field.find('.value').length;
             if (value_count > 1) {
-                if (value_count == 2) {
-                    $(this).parents('.field').find('.remove-value').last().removeClass('active');
-                }
                 this_value.remove();
+                value_count = this_field.find('.value').length;
+            }
+            if (value_count == 1) {
+                this_field.find('.remove-value').last().removeClass('active');
             }
         });
         

@@ -18,8 +18,8 @@
         </div>
     </div>
     <div class="resource-values field">
-        <div class="field-actions">
-            <a href="#" class="add-value button o-icon-close"><span class="screen-reader-text">Add Value</span></a>
+        <div class="actions">
+            <a href="#" class="add-value button o-icon-add"><span class="screen-reader-text">Add Value</span></a>
         </div>
         <div class="field-meta">
             <label>Title</label>
@@ -56,7 +56,7 @@
         </div>
     </div>
     <div class="resource-values field">
-        <div class="field-actions">
+        <div class="actions">
             <a href="#" class="add-value button o-icon-plus"><span class="screen-reader-text">Add Value</span></a>
         </div>
         <div class="field-meta">
@@ -94,7 +94,7 @@
         </div>
     </div>
     <div class="new resource-values field template">
-        <div class="field-actions">
+        <div class="actions">
             <a href="#" class="remove button o-icon-close"><span class="screen-reader-text">Remove</span></a>
             <a href="#" class="add-value button o-icon-add"><span class="screen-reader-text">Add Value</span></a>
         </div>
