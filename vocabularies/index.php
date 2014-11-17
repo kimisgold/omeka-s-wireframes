@@ -3,7 +3,16 @@
 
 <h1>Vocabularies</h1>
 
-<a href="import" class="button">Import new vocabulary</a>
+<div id="page-actions">
+    <a href="import" class="button">Import new vocabulary</a>
+</div>
+
+<nav class="section-nav">
+    <ul>
+        <li><a href="../vocabularies/index" class="active">Vocabularies</a></li>
+        <li><a href="../vocabularies/browse-templates">Resource Templates</a></li>
+    </ul>
+</nav>
 
 <table id="vocabs-list">
     <thead>

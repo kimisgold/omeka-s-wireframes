@@ -43,7 +43,7 @@
                 var current_vocab = $('<li class="vocabulary">' + i + '<ul></ul></li>');
                 $.each(data[i][0], function(key, value) {
                     var new_property = $('<li class="property">' + key + '</li>');
-                    var property_desc = $('<div class="description"><p class="icon-info"><span class="screen-reader-text">More Info</span></p></div>');
+                    var property_desc = $('<div class="description"><p class="o-icon-info"><span class="screen-reader-text">More Info</span></p></div>');
                     property_desc.append($('<p>' + value + '</p>'));
                     var set_property = $('<button class="set-property">Set Property</button>');
                     new_property.append(property_desc);
@@ -57,6 +57,32 @@
                 makeNewField('resource-values');
             }
         });
+
+        if ($('body').hasClass('resource-template')) {
+            $.getJSON('../javascript/vocabularies.json',function(data) {
+                var properties_list_template = $('.resource-template .all-vocabs ul');
+                var count = 0;
+                $.each(data, function(i) {
+                    count++;
+                    $('.all-vocabs .count').text(count);
+                    var current_vocab = $('<li class="vocabulary">' + i + '<ul></ul></li>');
+                    $.each(data[i][0], function(key, value) {
+                        var new_property = $('<li class="property">' + key + '</li>');
+                        var property_desc = $('<div class="description"><p class="o-icon-info"><span class="screen-reader-text">More Info</span></p></div>');
+                        property_desc.append($('<p>' + value + '</p>'));
+                        var set_property = $('<button class="set-property">Set Property</button>');
+                        new_property.append(property_desc);
+                        new_property.append(set_property);
+                        current_vocab.children('ul').append(new_property);
+                    });
+                    properties_list_template.append(current_vocab);                
+                });
+                
+                if ($('#resource-values').length > 0) {
+                    makeNewField('resource-values');
+                }
+            });
+        }
         
         // Setup tables' select all checkboxes.
         $('label[for="select-all"]').click(function(e) {
@@ -183,7 +209,7 @@
         });
         
         // Show property descriptions when clicking "more-info" icon.
-        add_edit_items.on('click', '.property .icon-info', function() {
+        add_edit_items.on('click', '.property .o-icon-info', function() {
             $(this).parents('.description').toggleClass('show');
         });
         
@@ -358,7 +384,7 @@
         if (desc) {
             var description_field = $('.field-description').first().clone();
             new_field.find('.field-meta label').after(description_field);
-            new_field.find('.icon-info + p').text(desc);
+            new_field.find('.o-icon-info + p').text(desc);
         }
         if (prop) {
             $('.new.field').first().before(new_field);

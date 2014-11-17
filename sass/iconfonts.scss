@@ -138,6 +138,26 @@
     @extend .fa-info-circle;
 }
 
+.o-icon-revert {
+    @extend .fa-rotate-left;
+}
+
+.o-icon-up {
+    @extend .fa-caret-up;
+}
+
+.o-icon-down {
+    @extend .fa-caret-down;
+}
+
+.o-icon-right {
+    @extend .fa-caret-right;
+}
+
+.o-icon-left {
+    @extend .fa-caret-left;
+}
+
 .screen-reader-text {
     position: absolute;
     top: -9999px;

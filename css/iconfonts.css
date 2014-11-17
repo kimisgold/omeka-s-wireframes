@@ -1197,22 +1197,22 @@
 }
 
 /* line 213, ../sass/font-awesome/_icons.scss */
-.fa-caret-down:before {
+.fa-caret-down:before, .o-icon-down:before {
   content: "";
 }
 
 /* line 214, ../sass/font-awesome/_icons.scss */
-.fa-caret-up:before {
+.fa-caret-up:before, .o-icon-up:before {
   content: "";
 }
 
 /* line 215, ../sass/font-awesome/_icons.scss */
-.fa-caret-left:before {
+.fa-caret-left:before, .o-icon-left:before {
   content: "";
 }
 
 /* line 216, ../sass/font-awesome/_icons.scss */
-.fa-caret-right:before {
+.fa-caret-right:before, .o-icon-right:before {
   content: "";
 }
 
@@ -1250,7 +1250,7 @@
 }
 
 /* line 226, ../sass/font-awesome/_icons.scss */
-.fa-rotate-left:before,
+.fa-rotate-left:before, .o-icon-revert:before,
 .fa-undo:before {
   content: "";
 }
@@ -2692,7 +2692,7 @@
   content: "";
 }
 
-/* line 141, ../sass/iconfonts.scss */
+/* line 161, ../sass/iconfonts.scss */
 .screen-reader-text {
   position: absolute;
   top: -9999px;
