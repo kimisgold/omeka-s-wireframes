@@ -203,6 +203,7 @@ body {
         }
     }
     
+    .property-selector,
     .field {
         float: left;
         width: 100%;
@@ -243,6 +244,11 @@ body {
         
     fieldset {
         @include trailer();
+    }
+    
+    .property-selector input[type="text"],
+    .property-selector > ul {
+        width: 90%;
     }
     
     /* @end */
@@ -872,6 +878,7 @@ th a[class="sorted-desc"] {
         padding-right: 0;
     }
     
+    .property-selector button,
     .property .set-property {
         position: absolute;
         top: -9999px;
@@ -880,6 +887,7 @@ th a[class="sorted-desc"] {
         @include border-radius(0px);
     }
     
+    .property-selector li li li:hover button,
     .property:hover .set-property {
         top: 0;
         right: 0;
@@ -894,7 +902,20 @@ th a[class="sorted-desc"] {
             top: auto;
             left: auto;
         }
-        
+    }
+    
+    .property-selector li li li:hover .description.show .o-icon-info + p {
+        top: rhythm(1.5);
+        left: 0;
+        padding-left: 2em;
+        background-color: #fff;
+        z-index: 1;
+    }
+    
+    .property-selector ul {
+        list-style: none;
+        padding-left: 0;
+
         .description {
             display: inline-block;
             
@@ -914,16 +935,11 @@ th a[class="sorted-desc"] {
         }
     }
     
-    .properties .property:hover .description.show .o-icon-info + p {
-        top: rhythm(1.5);
-        left: 0;
-        padding-left: 2em;
-        background-color: #fff;
-        z-index: 1;
-    }
-    
-    
+    .property-selector > ul,
     .properties > ul {
+        list-style: none;
+        padding-left: 0;
+        
         li {
             float: left;
             width: 100%;

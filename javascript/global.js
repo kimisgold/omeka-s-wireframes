@@ -35,22 +35,19 @@
         
         // Populate field template with vocabularies, then make a fresh new property field.
         $.getJSON('../javascript/vocabularies.json',function(data) {
-            var properties_list_template = $('.template .all-vocabs ul');
-            var count = 0;
+            var properties_list = $('.property-selector > ul > li > ul');
             $.each(data, function(i) {
-                count++;
-                $('.template .all-vocabs .count').text(count);
-                var current_vocab = $('<li class="vocabulary">' + i + '<ul></ul></li>');
+                var current_vocab = $('<li>' + i + '<ul></ul></li>');
                 $.each(data[i][0], function(key, value) {
                     var new_property = $('<li class="property">' + key + '</li>');
                     var property_desc = $('<div class="description"><p class="o-icon-info"><span class="screen-reader-text">More Info</span></p></div>');
                     property_desc.append($('<p>' + value + '</p>'));
-                    var set_property = $('<button class="set-property">Set Property</button>');
+                    var set_property = $('<button>Set Property</button>');
                     new_property.append(property_desc);
                     new_property.append(set_property);
                     current_vocab.children('ul').append(new_property);
                 });
-                properties_list_template.append(current_vocab);                
+                properties_list.append(current_vocab);                
             });
             
             if ($('#resource-values').length > 0) {
@@ -209,7 +206,7 @@
         });
         
         // Show property descriptions when clicking "more-info" icon.
-        add_edit_items.on('click', '.property .o-icon-info', function() {
+        add_edit_items.on('click', '.property-selector .o-icon-info', function() {
             $(this).parents('.description').toggleClass('show');
         });
         
@@ -238,7 +235,7 @@
         });
         
         // Show properties
-        add_edit_items.on('click', '.properties li', function(e) {
+        add_edit_items.on('click', '.property-selector li', function(e) {
             e.stopPropagation();
             if ($(this).children('li')) {
                 $(this).toggleClass('show');
