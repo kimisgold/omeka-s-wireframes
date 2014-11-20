@@ -32,11 +32,11 @@
             <ul class="actions">
                 <li><a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a></li>
             </ul>
-            <div class="field-meta">
-                <input type="text" name="class-label-1" value="Label" />
+            <div class="custom-label">
+                <input type="text" name="property-label-1" value="Label" />
             </div>
-            <div class="field-content">
-                <textarea name="class-comment-1">Comment</textarea>
+            <div class="custom-comment">
+                <textarea name="property-comment-1">Comment</textarea>
             </div>
         </div>
         <button>Add new class</button>
@@ -84,10 +84,10 @@
             <ul class="actions">
                 <li><a href="#" class="o-icon-delete"><span class="screen-reader-text">Delete</span></a></li>
             </ul>
-            <div class="field-meta">
+            <div class="custom-label">
                 <input type="text" name="property-label-1" value="Label" />
             </div>
-            <div class="field-content">
+            <div class="custom-comment">
                 <textarea name="property-comment-1">Comment</textarea>
             </div>
         </div>

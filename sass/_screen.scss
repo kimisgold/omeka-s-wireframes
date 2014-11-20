@@ -887,7 +887,7 @@ th a[class="sorted-desc"] {
         @include border-radius(0px);
     }
     
-    .property-selector li li li:hover button,
+    .property-selector .property:hover button,
     .property:hover .set-property {
         top: 0;
         right: 0;
@@ -904,7 +904,7 @@ th a[class="sorted-desc"] {
         }
     }
     
-    .property-selector li li li:hover .description.show .o-icon-info + p {
+    .property-selector .property:hover .description.show .o-icon-info + p {
         top: rhythm(1.5);
         left: 0;
         padding-left: 2em;
@@ -1003,7 +1003,7 @@ th a[class="sorted-desc"] {
             @include leader(.25);
         }
         
-        & > li li li {
+        & > .property {
             font-weight: normal;
             padding: rhythm(.25) 10px rhythm(.25) 2em;
             position: relative;
@@ -1697,6 +1697,32 @@ th a[class="sorted-desc"] {
     font-style: italic;
 }
 
+/* @end */
+
+/* @group ----- Custom Vocabulary ----- */
+    
+.custom-label {
+    width: span(3 of 10);
+    float: left;
+    clear: left;
+    position: relative;
+    padding-right: rhythm(.25);
+}
+
+.custom-comment {
+    width: span(6 of 10);
+    float: left;
+    position: relative;
+}
+
+.custom-label input,
+.custom-comment textarea {
+    width: 100%;
+    height: rhythm(1.5);
+    padding: rhythm(.25);
+}
+
+    
 /* @end */
 
 /* @group ----- Edit Resource Template ----- */
