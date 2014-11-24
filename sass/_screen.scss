@@ -388,7 +388,8 @@ header {
     float: left;
 }
 
-#search button {
+#search button,
+#search .button {
     width: rhythm(1.5);
     text-indent: -9999px;
     float: left;
@@ -1731,6 +1732,41 @@ th a[class="sorted-desc"] {
     list-style: none;
     padding-left: 0;
     margin-left: 0;
+}
+
+.resource-template table {
+    width: 100%;
+    background-color: rgba(0,0,0,.08);
+}
+
+.resource-template th,
+.resource-template td {
+    padding: rhythm(.25);
+    vertical-align: top;
+}
+
+.resource-template textarea {
+    height: 1.5 * $base-line-height;
+    padding: rhythm(.25);
+    width: 100%;
+}
+
+.resource-template th:first-of-type,
+.resource-template td:first-of-type, {
+    width: span(2 of 10);
+    padding-right: rhythm();
+}
+
+.resource-template th:nth-of-type(2) {
+    width: span(2 of 10);
+}
+
+.resource-template th:nth-of-type(3) {
+    width: span(4 of 10);
+}
+
+.resource-template .local-name {
+    font-style: italic;
 }
 
 /* @end */
