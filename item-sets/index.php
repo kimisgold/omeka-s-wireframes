@@ -4,12 +4,10 @@
 <h1>Item Sets</h1>
 
 <div id="page-actions">
-    <a href="#" class="button">Add Item Set</a>
+    <a href="add" class="button">Add Item Set</a>
 </div>
 
 <?php include('../common/pagination.php'); ?>
-
-<a href="#" class="batch-edit button">Batch Edit Selected</a>
 
 <div class="mobile-container">
     <table>

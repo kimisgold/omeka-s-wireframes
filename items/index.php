@@ -15,8 +15,6 @@
 
 <?php include('../common/pagination.php'); ?>
 
-<a href="batch-edit" class="batch-edit button">Batch edit selected</a>
-
 <div class="mobile-container">
     <table id="items-list">
         <thead>
