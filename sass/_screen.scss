@@ -46,9 +46,9 @@ h1 {
 }
 
 h2 {
-    font-size: 1.75 * $base-font-size;
-    line-height: 2 * $base-line-height;
-    @include trailer(1, 1.75 * $base-font-size);
+    font-size: 1.875 * $base-font-size;
+    line-height: 1.5 * $base-line-height;
+    @include trailer(1.125, 1.875 * $base-font-size);
 }
 
 h3 {
@@ -195,7 +195,7 @@ body {
         background-color: #e7e7e7;
         padding: rhythm(.25);
         position: relative;
-        border-color: rgba(0,0,0,.08);
+        border-color: $gray-on-white;
         @include leading-border(1px, 0, $base-font-size, solid);
         
         &:first-child {
@@ -319,7 +319,7 @@ header {
     background-color: #fff;
     padding: rhythm(.25);
     @include border-radius(0 0 3px 3px);
-    border-color: rgba(0,0,0,.08);
+    border-color: $gray-on-white;
     @include rhythm-borders(1px, 0, $base-font-size, solid);
 }
 
@@ -441,18 +441,6 @@ nav ul {
     margin: 0;
 }
 
-#menu > ul > li > a:before {
-    width: $base-font-size;
-    height: $base-font-size;
-    display: inline-block;
-    margin-right: .5em;
-    font-family: "FontAwesome";
-}
-
-#menu a {
-    font-family: "Source Sans Pro", sans-serif;
-}
-
 nav.pagination form {
     display: inline-block;
     min-width: min-content;
@@ -476,6 +464,63 @@ nav.pagination form input[type="text"] {
 .mobile-container {
     position: relative;
 }
+
+    /* @group ----- Top-level navigation ----- */
+    
+    #menu .navigation > li:not(:first-of-type) {
+        @include leader(.25);
+    }
+    
+    #menu .navigation > li:not(:last-of-type) {
+        border-color: $gray-on-white;
+        @include trailing-border(1px, .25, $base-font-size, solid);
+    }
+    
+    #menu .navigation li li {
+        display: none;
+    }
+    
+    #menu .navigation li.active li {
+        display: block;
+        margin-left: rhythm();
+    }
+    
+    #menu .navigation li.active {
+        font-weight: bold;
+        
+        a:before,        
+        li:not(.active) {
+            font-weight: normal;
+        }
+    }
+    
+    #menu a:before {
+        font-family: "FontAwesome";
+        display: inline-block;
+        width: rhythm();
+    }
+    
+    #menu .resources:before {
+        content: $fa-var-cubes;
+    }
+    
+    #menu .ontology:before {
+        content: $fa-var-book;
+    }
+    
+    #menu .users:before {
+        content: $fa-var-users;
+    }
+    
+    #menu .modules:before {
+        content: $fa-var-plus-square;
+    }
+    
+    #menu li li a:before {
+        content: $fa-var-caret-right;
+    }
+    
+    /* @end */
 
 /* @end */
 
@@ -540,17 +585,43 @@ div[role="main"] {
     display: inline-block;
 }
 
-.actions li {
-    margin-left: .25em;
+.actions a,
+.actions a:before,
+.actions button,
+.actions button:before {
+    width: $base-line-height;
+    height: $base-line-height;
+    line-height: $base-line-height;
+    vertical-align: top;
+    text-align: center;
 }
 
-.actions a {
+.actions a,
+.actions button {
     opacity: .5;
 }
 
 .actions a:hover,
-.actions a:active {
+.actions a:active,
+.actions button:hover {
     opacity: 1;
+}
+
+.actions button {
+    background-color: transparent;
+    color: lighten($red, 20%);
+    margin: 0;
+    text-indent: -9999px;
+    position: relative;
+    padding: 0;
+    min-height: 0;
+    
+    &:before {
+        text-indent: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 
 .resource-name {
@@ -625,8 +696,8 @@ th a[class="sorted-desc"] {
     z-index: 3;
     padding: rhythm(.5) gutter();
     border-left: 1px solid #d2d2d2;
-    overflow-x: hidden;
     overflow-y: scroll;
+    overflow-x: hidden;
     width: span(4 of 16) - gutter(32);
     @include transition-duration(.5s);
     
@@ -639,7 +710,7 @@ th a[class="sorted-desc"] {
         right: gutter();
         top: rhythm(.5);
     }
-
+        
     h4 {
         @include trailer(.5);
     }
@@ -913,7 +984,7 @@ th a[class="sorted-desc"] {
     .unset label,
     .unset .inputs {
         display: none;
-    }å
+    }
     
     .property-selector button,
     .property .set-property {
@@ -1112,7 +1183,7 @@ th a[class="sorted-desc"] {
     .field-description .o-icon-info {
         margin: 0;
     }
-    
+
     .field-description .o-icon-info {
         &:hover + p {
             top: rhythm(1.5);
@@ -1147,7 +1218,7 @@ th a[class="sorted-desc"] {
         top: -9999px;
         left: -9999px;
     }
-        
+    
     .inputs {
         width: span(6 of 10);
         float: left;
@@ -1156,7 +1227,7 @@ th a[class="sorted-desc"] {
         &:only-child {
             width: 100%;
         }
-        
+                
         label {
             margin-right: 1em;
         }
@@ -1167,21 +1238,21 @@ th a[class="sorted-desc"] {
         input[type="password"],
         input[type="email"] {
             width: 100%;
-            height: rhythm(1.5);
+            min-height: rhythm(1.5);
             padding: rhythm(.25);
             margin: rhythm(.25) 0;
         }
-
+        
         select {
             margin: 0;
         }
-        
+
         .button,
         button,
         input[type="submit"] {
             margin: rhythm(.25) 0;
         }
-        
+    
         .tab {
             display: block;
             float: left;
@@ -1283,7 +1354,7 @@ th a[class="sorted-desc"] {
     /* @group ----- Files ----- */
     
     .upload-zone {
-        background-color: rgba(0,0,0,.08);
+        background-color: $gray-on-white;
         padding: rhythm(2) gutter() rhythm() gutter();
         text-align: center;
         
@@ -1897,6 +1968,10 @@ body.show .property {
     font-style: italic;
 }
 
+.resource-template .field {
+    @include trailer();
+}
+
 /* @end */
 
 /* @group ----- Browse Modules ----- */
@@ -1909,6 +1984,10 @@ body.show .property {
     display: none;
 }
 
+.state-filter select {
+    @include trailer(.5);
+}
+
 /* @end */
 
 /* @group ----- Advanced Search ----- */
@@ -1918,18 +1997,18 @@ body.show .property {
     display: inline-block;
 }
 
-.all-properties select,
-.all-properties input[type="text"],
+#value-queries select,
+#value-queries input[type="text"],
 .class-names select,
 .class-names input[type="text"],
-.have-have-not select,
-.have-have-not input[type="text"] {
+#has-property-queries select,
+#has-property-queries input[type="text"] {
     width: 49%;
     @include calc('margin-right','1% - 4px');
 }
 
-.specific-properties select,
-.specific-properties input[type="text"] {
+#property-queries select,
+#property-queries input[type="text"] {
     width: 32.33%;
     @include calc('margin-right','1% - 4px');
 }

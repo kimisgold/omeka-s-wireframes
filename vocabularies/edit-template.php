@@ -4,6 +4,14 @@
 <h1>Add Resource Template</h1>
 
 <form id="resource-template">
+    <div class="field">
+        <div class="field-meta">
+            <label for="template-name">Template Name</label>
+        </div>
+        <div class="inputs">
+            <input type="text" name="template-name" />
+        </div>
+    </div>
     <table>
         <thead>
             <tr>

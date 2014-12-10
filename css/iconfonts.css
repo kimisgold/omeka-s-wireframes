@@ -258,7 +258,7 @@
 }
 
 /* line 11, ../sass/font-awesome/_icons.scss */
-.fa-user:before, .o-icon-current-user:before {
+.fa-user:before, .o-icon-user:before {
   content: "";
 }
 
