@@ -40,7 +40,7 @@
             <li><a href="#" class="o-icon-assets">Assets</a></li>
             <li><a href="<?php echo $root; ?>/omeka-s-wireframes/modules/" class="o-icon-module">Modules</a></li>
             <li><a href="<?php echo $root; ?>/omeka-s-wireframes/users/" class="o-icon-users">Users</a></li>
-            <li><a href="#" class="o-icon-site">Sites</a></li>
+            <li><a href="<?php echo $root; ?>/omeka-s-wireframes/sites/" class="o-icon-site">Sites</a></li>
             <li><a href="#" class="o-icon-settings">Settings</a></li>
         </ul>
     </nav>
