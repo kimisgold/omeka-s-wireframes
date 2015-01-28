@@ -10,7 +10,7 @@
     <link href="<?php echo $root; ?>/omeka-s-wireframes/css/style.css" rel="stylesheet" type="text/css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="<?php echo $root; ?>/omeka-s-wireframes/javascript/global.js"></script>
-    <?php echo $js; ?>
+    <?php if (isset($js)) { echo $js; } ?>
 </head>
 <body class="<?php echo $bodyClass; ?>">
 <header>
@@ -33,7 +33,7 @@
         </form>
     </div>
     <nav id="menu" role="navigation">
-        <ul>
+        <ul class="navigation">
             <li><a href="<?php echo $root; ?>/omeka-s-wireframes/items/" class="o-icon-items">Items</a></li>
             <li><a href="<?php echo $root; ?>/omeka-s-wireframes/item-sets/" class="o-icon-item-set">Item Sets</a></li>
             <li><a href="<?php echo $root; ?>/omeka-s-wireframes/vocabularies/" class="o-icon-vocab">Vocabularies</a></li>

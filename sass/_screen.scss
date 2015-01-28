@@ -1,4 +1,5 @@
 @import "font-awesome/variables";
+@import "mixins";
 
 /* @group ----- Generic HTML elements ----- */
 
@@ -62,7 +63,7 @@ h4 {
 }
 
 p {
-    @include trailer();
+    margin: rhythm() 0;
 }
 
 ul {
@@ -148,6 +149,10 @@ body {
     
     /* @group ----- Form elements ----- */
     
+    textarea {
+        clear: both;
+    }
+    
     input,
     textarea,
     button {
@@ -223,13 +228,7 @@ body {
     
     .property-selector,
     .field {
-        float: left;
-        width: 100%;
-        background-color: #e7e7e7;
-        padding: rhythm(.25);
-        position: relative;
-        border-color: $gray-on-white;
-        @include leading-border(1px, 0, $base-font-size, solid);
+        @include field-row;
         
         &:first-child {
             border-color: transparent;
@@ -260,6 +259,10 @@ body {
     .property-selector input[type="text"],
     .property-selector > ul {
         width: 90%;
+    }
+    
+    .property-selector > ul {
+        margin: 0;
     }
     
     /* @end */
@@ -589,6 +592,13 @@ div[role="main"] {
     margin-right: .25em;
 }
 
+.browse h2 {
+    font-size: 1.25 * $base-font-size;
+    line-height: 1 * $base-font-size;
+    margin: rhythm(.5, 1.25 * $base-font-size) 0;
+    display: block;
+}
+
 .actions {
     margin: 0;
     display: block;
@@ -651,13 +661,15 @@ div[role="main"] {
     white-space: nowrap;
 }
 
-th a[class^="sort"] {
+th a.sortable,
+th .sorted-asc,
+th .sorted-desc {
     display: block;
     width: 100%;
 }
 
-th a[class="sorted-asc"],
-th a[class="sorted-desc"] {
+th .sorted-asc,
+th .sorted-desc {
     border-color: #d2d2d2;
     padding: 0 .5em;
     @include trailing-border(3px, .25, $base-font-size, solid);
@@ -665,20 +677,29 @@ th a[class="sorted-desc"] {
     @include calc('width', '100% + 1em');
 }
 
-[class*="sort"]:after,
-[class*="sort"]:before {
+th a.sortable:after,
+th .sorted-asc:after,
+th .sorted-desc:after,
+th a.sortable:before,
+th .sorted-asc:before,
+th .sorted-desc:before {
     position: absolute;
     font-size: .75 * $base-font-size;
     right: .5em;
     top: rhythm(.625);
+    z-index: 2;
 }
 
-[class*="sort"]:hover:after {
+th a.sortable:hover:after,
+th .sorted-asc:hover:after,
+th .sorted-desc:hover:after {
     color: $red;
 }
 
 .sortable:after,
-[class*="sort"]:before {
+th a.sortable:before,
+th .sorted-asc:before,
+th .sorted-desc:before {
     content: $fa-var-sort;
     color: #999;
 }
@@ -694,12 +715,10 @@ th a[class="sorted-desc"] {
     content: $fa-var-sort-asc;
 }
 
-[class*="sort"]:before {
+th a.sortable:before,
+th .sorted-asc:before,
+th .sorted-desc:before {
     z-index: 1;
-}
-
-[class*="sort"]:after {
-    z-index: 2;
 }
 
 .sidebar {
@@ -725,13 +744,19 @@ th a[class="sorted-desc"] {
         right: gutter();
         top: rhythm(.5);
     }
-        
+            
     h4 {
-        @include trailer(.5);
+        @include trailer(.25);
+        background-color: transparent;
+        padding: 0;
+        
+        + .value {
+            @include leader(0);
+        }
     }
     
     .vocabulary,
-    .property {
+    .meta-group {
         @include trailer();
     }
     
@@ -901,11 +926,15 @@ th a[class="sorted-desc"] {
     @include leader();
 }
 
-    /* @group ----- Metadata ----- */
+    /* @group ----- Edit Metadata ----- */
     
     #add-item .remove.field {
         background-color: lighten($red, 30%);
         opacity: .6;
+    }
+    
+    .template {
+        display: none;
     }
     
     .field.template {
@@ -938,7 +967,7 @@ th a[class="sorted-desc"] {
         label {
             display: inline-block;
             max-width: 80%;
-            line-height: 1.5 * $base-line-height;
+            padding: rhythm(.25) 0;
         }
         
         input {
@@ -1047,9 +1076,9 @@ th a[class="sorted-desc"] {
     }
     
     .property-selector .property:hover .description.show .o-icon-info + p {
-        top: rhythm(1.5);
+        top: rhythm(.75);
         left: 0;
-        padding-left: 2em;
+        padding-left: 1.125em;
         background-color: #fff;
         z-index: 1;
     }
@@ -1107,10 +1136,10 @@ th a[class="sorted-desc"] {
             
             &:after,
             & > ul > li:after {
-                content: "\f0da";
+                content: $fa-var-caret-right;
                 font-family: "FontAwesome";
                 position: absolute;
-                right: 10px;
+                right: rhythm(.625);
                 top: rhythm(.25);
             }
             
@@ -1118,17 +1147,24 @@ th a[class="sorted-desc"] {
                 padding: rhythm(.25) 0;
             }
             
+            li li {
+                padding: rhythm(.25) rhythm(.75);
+                @include border-radius(0);
+            }
+            
             & > ul > li:before {
                 content: "— ";
+                margin-left: rhythm(.25);
             }
     
             & > ul > li:after {
-                right: 0;
+                right: rhythm(.25);
             }
-            
-            &.show:after {
-                content: "\f0d7" !important;
-            }
+
+        }
+
+        li:not(.property).show:after {
+            content: $fa-var-caret-down !important;
         }
         
         & > li ul,
@@ -1168,6 +1204,12 @@ th a[class="sorted-desc"] {
         &:hover {
             background-color: transparent;
         }
+    }
+    
+    .selected-resources {
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
     
     .selected {
@@ -1256,10 +1298,10 @@ th a[class="sorted-desc"] {
             min-height: rhythm(1.5);
             padding: rhythm(.25);
             margin: rhythm(.25) 0;
-            
-            &:only-child {
-                margin: 0;
-            }
+        }
+        
+        *:only-child {
+            margin: 0 !important;
         }
         
         select {
@@ -1370,7 +1412,7 @@ th a[class="sorted-desc"] {
     
     /* @end */
     
-    /* @group ----- Files ----- */
+    /* @group ----- Edit Files ----- */
     
     .upload-zone {
         background-color: $gray-on-white;
@@ -1388,15 +1430,24 @@ th a[class="sorted-desc"] {
     
     /* @end */
     
-    /* @group ----- Site Modules ---- */
+    /* @group ----- Edit Pages ----- */
     
-    #site-modules th:first-of-type,
-    #site-modules td:first-of-type {
-        width: $base-line-height;
-        text-align: center;
-        background-color: $gray-on-white;
+    .block-actions {
+        @include leader();
+        background-color: rgba(0,0,0,.04);
+        width: 100%;
+        padding: rhythm(.25);
+        @include border-radius(3px);
+        
+        button {
+            margin-bottom: 0;
+        }
     }
-
+    
+    .pages.add .sidebar {
+        @include calc('left', '100%-24px');
+    }
+    
     /* @end */
 
 /* @end */
@@ -1620,15 +1671,6 @@ th a[class="sorted-desc"] {
             background-color: transparent;
             color: $red;
             width: rhythm(1.5);
-            
-            &:after {
-                content: "\f00c";
-                font-family: 'FontAwesome';
-                text-indent: 0;
-                position: absolute;
-                top: rhythm(.25);
-                right: rhythm(.5);
-            }
         }
         
         &:hover, 
@@ -1955,6 +1997,24 @@ body.show .property {
 
 /* @end */
 
+/* @group ----- Show Resource Template ----- */
+    
+.class-row {
+    @include bleed-x(rhythm());
+    border-color: $gray-on-white;
+    @include trailing-border(1px, .5, $base-font-size, solid);
+}
+
+.class-label {
+    font-weight: bold;
+    
+    &:after {
+        content: ": ";
+    }
+}
+
+/* @end */
+
 /* @group ----- Edit Resource Template ----- */
 
 .resource-template .properties ul {
@@ -1998,8 +2058,72 @@ body.show .property {
     font-style: italic;
 }
 
-.resource-template .field {
-    @include trailer(.5);
+.resource-template .property-row {
+    @include field-row;
+    cursor: move;
+    
+    label:first-child,
+    input[type="text"],
+    textarea {
+        display: inline-block;
+        width: span(3 of 10);
+        vertical-align: top;
+    }
+    
+    label:first-child {
+        cursor: move;
+        padding: rhythm(.25) 0;
+    }
+    
+    &:before {
+        content: $fa-var-reorder;
+        font-family: "FontAwesome";
+        position: absolute;
+        right: .5em;
+        top: rhythm(.5, 1.25 * $base-font-size);
+        font-size: 1.25 * $base-font-size;
+        line-height: $base-line-height;
+        opacity: .1;
+    }
+}
+
+.resource-template .property-row label:first-child {
+    width: span(2 of 10);
+    margin-right: span(1 of 10);
+}
+
+.resource-template .property-row .actions {
+    position: absolute;
+    right: span(7 of 10);
+    top: rhythm(.5);
+    padding: 0 rhythm(.25);
+}
+
+.resource-template #properties {
+    margin: rhythm() 0 0;
+    clear: both;
+    padding: 0;
+    
+    & > li:first-child {
+        @include field-row;
+    }
+}
+
+.resource-template .property-heading {
+    font-weight: bold;
+    display: inline-block;
+    width: span(3 of 10);
+}
+
+.resource-template .property-heading:not(:first-child),
+.resource-template .property-row input[type="text"],
+.resource-template .property-row textarea {
+    margin-left: -4px;
+}
+
+.resource-template .property-row input[type="text"] {
+    width: span(2.75 of 10);
+    margin-right: span(.25 of 10);
 }
 
 /* @end */
@@ -2018,6 +2142,114 @@ body.show .property {
     @include trailer(.5);
 }
 
+/* @end */
+
+/* @group ----- Top-level Sites ----- */
+
+.image.placeholder {
+    background-color: $gray-on-white;
+    height: rhythm(6);
+    @include calc('width', '100%-' + rhythm());
+    @include trailer(.5);
+}
+
+.add.sites .theme,
+.site.settings .theme {
+    width: span(2.3125 of 10);
+    display: inline-block;
+    margin-right: span(.2625 of 10);
+    margin-left: -4px;
+    margin-bottom: rhythm();
+    background-color: $gray-on-white;
+    padding: rhythm(.5);
+    cursor: pointer;
+    
+    &:nth-of-type(4n) {
+        margin-right: 0;
+    }
+    
+    &:hover {
+        @include box-shadow(0px 0px 0 2px $gray-on-white inset);
+    }
+    
+    &.selected {
+        @include box-shadow(0px 0px 0 4px $gray-on-white inset);
+    }
+    
+    h4 {
+        @include trailer(.5, 1.25 * $base-font-size);
+    }
+
+    p {
+        font-weight: normal;
+        margin: rhythm(.5) 0;
+    }
+}
+
+div.theme:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+div.theme:first-of-type,
+div.theme:nth-of-type(4n + 1) {
+    margin-left: 0;
+}
+
+/* @end */
+
+/* @group ----- Site-level Admin ----- */
+
+.back-to-top {
+    display: block;
+    @include border-radius(3px);
+    background-color: rgba(255,255,255,.35);
+    border-color: $gray-on-white;
+    @include padding-leader(.5);
+    @include trailing-border(1px, .5, $base-font-size, solid);
+    @include bleed-x(rhythm(.75));
+    
+    &:before {
+        font-family: "FontAwesome";
+        content: $fa-var-reply;
+        display: inline-block;
+        margin-right: 1em;
+        font-size: .5 * $base-line-height;
+        line-height: $base-font-size;
+    }
+}
+
+    /* @group ----- Pages Browse ----- */
+    
+    .page-tree {
+        padding: 0;
+        margin: rhythm() 0 rhythm(2);
+    }
+    
+    .page-tree li {
+        list-style: none;
+        position: relative;
+    }
+    
+    .page-tree .actions {
+        position: absolute;
+        right: rhythm(.25);
+        top: rhythm(.25);
+    }
+    
+    .page-tree > li > a,
+    .page-tree .child-pages > li > a {
+        background-color: $gray-on-white;
+        padding: rhythm(.25);
+        display: block;
+        @include trailer(.25);
+        
+        &:before {
+            margin-right: .5em;
+        }
+    }
+    
+    /* @end */
+    
 /* @end */
 
 /* @group ----- Advanced Search ----- */

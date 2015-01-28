@@ -1,4 +1,4 @@
-<?php $bodyClass = "browse site"; ?>
+<?php $bodyClass = "browse sites"; ?>
 
 <?php include('../header.php'); ?>
 
