@@ -220,6 +220,14 @@
                 current_field.toggleClass('remove');
             }
         });
+
+        add_edit_items.on('change', '.media.field select', function(e) {
+            var select = $(this);
+            var fileType = select.find('option:selected').attr('value');
+            select.siblings('.active').removeClass('active');
+            select.siblings('.' + fileType).addClass('active');
+            console.log(fileType);
+        });
         
         // Make new property field whenever "add property" button clicked.
         $(document).on('click', '.add-property', function(e) {
